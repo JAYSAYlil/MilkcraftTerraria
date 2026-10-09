@@ -18,7 +18,7 @@
 
 ## 安装
 
-推荐在 tModLoader 创意工坊订阅，或从本仓库 Releases 下载 `MilkcraftTerraria.tmod`。
+在 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3816192019)订阅，或从 [GitHub Releases](https://github.com/JAYSAYlil/MilkcraftTerraria/releases/tag/v0.2.13) 下载 `MilkcraftTerraria.tmod`。
 手动安装时，在 tModLoader 的模组菜单打开模组文件夹，将 `.tmod` 放入并启用，重新加载后进入世界。
 仅支持 tModLoader，原版 Terraria 不直接加载 `.tmod`。
 
