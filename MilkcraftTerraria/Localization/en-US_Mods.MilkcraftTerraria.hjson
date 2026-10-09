@@ -1,0 +1,843 @@
+Items: {
+	UndeadWarhorseSummon: {
+		DisplayName: Undead Warhorse
+		Tooltip: Permanent mount. Runs quickly; flight reserve is 120 ticks and recovers after landing.
+	}
+
+	CelestialTenguSummon: {
+		DisplayName: Celestial Tengu
+		Tooltip: Permanent mount. Sustained flight, hovering, and nimble turning.
+	}
+
+	WhiteTigerSummon: {
+		DisplayName: White Tiger
+		Tooltip: A swift ground mount. Double-tap left or right to dash into enemies.
+	}
+
+	WhiteNineTailedFoxSummon: {
+		DisplayName: White Nine-Tailed Fox
+		Tooltip: The evolved nine-tailed form of the Snow Fox. Double-tap left or right to dash into enemies.
+	}
+
+	RhinoSummon: {
+		DisplayName: Rhino
+		Tooltip: A sturdy ground mount that grants defense and damages enemies on contact.
+	}
+
+	FlameWarhorseSummon: {
+		DisplayName: Flame Warhorse
+		Tooltip: Leaves enemy-burning fire while running on solid ground.
+	}
+
+	WhiteUnicornSummon: {
+		DisplayName: White Unicorn
+		Tooltip: A mount with sustained flight and white hoof sparks.
+	}
+
+	DazhouIronSword: {
+		DisplayName: Dazhou's Iron Sword
+		Tooltip: Recreates the Zenith's sword barrage.
+	}
+
+	HiddenIronSword: {
+		DisplayName: Broken Iron Sword
+		Tooltip: A crafting material for Dazhou's Iron Sword.
+	}
+
+	BlackIronOre: {
+		DisplayName: Black Iron Ore
+		Tooltip: Found underground and smelted into Black Iron Bars.
+	}
+
+	PinkDiamondOre: {
+		DisplayName: Pink Diamond Ore
+		Tooltip: A placeable pink diamond ore block.
+	}
+
+	PinkDiamond: {
+		DisplayName: Pink Diamond
+		Tooltip: A material for Milkcraft equipment and alchemy.
+	}
+
+	EnchantmentHeart: {
+		DisplayName: Enchantment Heart
+		Tooltip: An enchanting-table material dropped by the Wall of Flesh.
+	}
+
+	TruthSword: {
+		DisplayName: Truth Sword
+		Tooltip: A crafting material dropped by Skeletron Prime.
+	}
+
+	TruthBow: {
+		DisplayName: Truth Bow
+		Tooltip: A crafting material dropped by the Destroyer.
+	}
+
+	TruthStaff: {
+		DisplayName: Truth Staff
+		Tooltip: A crafting material dropped by the Twins.
+	}
+
+	CrystalSkull: {
+		DisplayName: Crystal Skull
+		Tooltip: A core for crafting Templar Potions.
+	}
+
+	AlienKeratin: {
+		DisplayName: Alien Keratin
+		Tooltip: A core for crafting Nightmare Potions.
+	}
+
+	ArcaneCore: {
+		DisplayName: Arcane Core
+		Tooltip: A core for crafting Fallen Potions.
+	}
+
+	BrokenSwordHilt: {
+		DisplayName: Broken Sword Hilt
+		Tooltip: A Golem-cycle material for Soulforged recipes.
+	}
+
+	BrokenBowstring: {
+		DisplayName: Broken Bowstring
+		Tooltip: A Golem-cycle material for Abyss recipes.
+	}
+
+	BrokenStaffHandle: {
+		DisplayName: Broken Staff Handle
+		Tooltip: A Golem-cycle material for Dark recipes.
+	}
+
+	WitherTear: {
+		DisplayName: Wither Tear
+		Tooltip: The Warrior alchemy core from the Golem cycle.
+	}
+
+	DemonWing: {
+		DisplayName: Demon Wing
+		Tooltip: The Ranger alchemy core from the Golem cycle.
+	}
+
+	EnchantedShinbone: {
+		DisplayName: Enchanted Shinbone
+		Tooltip: The Mage alchemy core from the Golem cycle.
+	}
+
+	TemplarPotion: {
+		DisplayName: Templar Potion
+		Tooltip: A Milkcraft alchemy material; cannot be consumed.
+	}
+
+	NightmarePotion: {
+		DisplayName: Nightmare Potion
+		Tooltip: A Milkcraft alchemy material; cannot be consumed.
+	}
+
+	FallenPotion: {
+		DisplayName: Fallen Potion
+		Tooltip: A Milkcraft alchemy material; cannot be consumed.
+	}
+
+	SoulforgedPotion: {
+		DisplayName: Soulforged Potion
+		Tooltip: A Milkcraft alchemy material; cannot be consumed.
+	}
+
+	AbyssPotion: {
+		DisplayName: Abyss Potion
+		Tooltip: A Milkcraft alchemy material; cannot be consumed.
+	}
+
+	DarkPotion: {
+		DisplayName: Dark Potion
+		Tooltip: A Milkcraft alchemy material; cannot be consumed.
+	}
+
+	IronHelmet: {
+		DisplayName: Iron Helmet
+		Tooltip: Part of the Iron armor set.
+	}
+
+	IronChestplate: {
+		DisplayName: Iron Chestplate
+		Tooltip: Part of the Iron armor set.
+	}
+
+	IronGreaves: {
+		DisplayName: Iron Greaves
+		Tooltip: Part of the Iron armor set.
+	}
+
+	LeatherHeadband: {
+		DisplayName: Leather Headband
+		Tooltip: Part of the Leather armor set.
+	}
+
+	LeatherTunic: {
+		DisplayName: Leather Tunic
+		Tooltip: Part of the Leather armor set.
+	}
+
+	LeatherLeggings: {
+		DisplayName: Leather Leggings
+		Tooltip: Part of the Leather armor set.
+	}
+
+	ClothHood: {
+		DisplayName: Coarse Cloth Hood
+		Tooltip: Increases maximum mana by 20.
+	}
+
+	ClothRobe: {
+		DisplayName: Coarse Cloth Robe
+		Tooltip: Increases maximum mana by 20.
+	}
+
+	ClothLeggings: {
+		DisplayName: Coarse Cloth Leggings
+		Tooltip: Part of the Coarse Cloth armor set.
+	}
+
+	KnightHelmet: {
+		DisplayName: Knight Helmet
+		Tooltip: Increases melee damage by 5%.
+	}
+
+	KnightChestplate: {
+		DisplayName: Knight Chestplate
+		Tooltip: Increases melee critical strike chance by 3%.
+	}
+
+	KnightGreaves: {
+		DisplayName: Knight Greaves
+		Tooltip: Part of the Knight armor set.
+	}
+
+	HuntingHood: {
+		DisplayName: Hunting Hood
+		Tooltip: Increases ranged damage by 5%.
+	}
+
+	HuntingChestplate: {
+		DisplayName: Hunting Chestplate
+		Tooltip: Increases ranged critical strike chance by 3%.
+	}
+
+	HuntingLeggings: {
+		DisplayName: Hunting Leggings
+		Tooltip: Increases movement speed by 5%.
+	}
+
+	EnergyHood: {
+		DisplayName: Energy Hood
+		Tooltip: Increases maximum mana by 20 and magic damage by 5%.
+	}
+
+	EnergyRobe: {
+		DisplayName: Energy Robe
+		Tooltip: Increases maximum mana by 40 and magic damage by 5%.
+	}
+
+	EnergyLeggings: {
+		DisplayName: Energy Leggings
+		Tooltip: Part of the Energy armor set.
+	}
+
+	IronSword: {
+		DisplayName: Iron Sword
+		Tooltip: A melee weapon.
+	}
+
+	IronBow: {
+		DisplayName: Iron Bow
+		Tooltip: A ranged weapon that uses arrows.
+	}
+
+	IronStaff: {
+		DisplayName: Iron Staff
+		Tooltip: Magic weapon. Costs 5 mana to fire an ember bolt.
+	}
+
+	KnightSword: {
+		DisplayName: Knight Sword
+		Tooltip: A melee weapon that launches a red sword wave when swung.
+	}
+
+	HuntingBow: {
+		DisplayName: Hunting Bow
+		Tooltip: A ranged weapon; wooden arrows are upgraded into hunting arrows.
+	}
+
+	EnergyStaff: {
+		DisplayName: Energy Staff
+		Tooltip: Magic weapon. Costs 7 mana to fire an energy bolt.
+	}
+
+	IronShield: {
+		DisplayName: Iron Shield
+		Tooltip: Accessory: +3 defense. With the complete Iron set, raises its barrier to 15 (10 without the shield).
+	}
+
+	IronQuiver: {
+		DisplayName: Leather Quiver
+		Tooltip: Accessory: +5% ranged damage and +10% arrow speed. Paired with Iron Bow, arrows use the silver-gray paired look (no homing). With the complete Leather set, a valid hit grants +12% movement speed for 3 seconds (6-second cooldown).
+	}
+
+	BeginnerTome: {
+		DisplayName: Beginner Tome
+		Tooltip: Accessory: +20 maximum mana, +4% magic damage, and 3% reduced mana cost. Paired with Iron Staff, bolts use the amber paired look (no homing). With the complete Cloth set, restores 15% of mana actually spent (up to 12) every 6 seconds in combat.
+	}
+
+	KnightBulwark: {
+		DisplayName: Knight Bulwark
+		Tooltip: Accessory: +4 defense, knockback immunity, and 3% damage reduction. With the complete Knight set, raises its barrier to 30 and improves the brief melee bonus when it breaks.
+	}
+
+	HuntingQuiver: {
+		DisplayName: Hunting Quiver
+		Tooltip: Accessory: +8% ranged damage, 20% ammo conservation, and +10% arrow speed. Paired with Hunting Bow, arrows use the ice-blue paired look (no homing). With the complete Hunting set, the third hit on one enemy deals +25% damage.
+	}
+
+	EnergyTome: {
+		DisplayName: Energy Tome
+		Tooltip: Accessory: +40 maximum mana, +8% magic damage, and 6% reduced mana cost. Paired with Energy Staff, bolts use the purple paired look (no homing). With the complete Energy set, its mana barrier absorbs 18 damage instead of 12.
+	}
+
+	CoarseWool: {
+		DisplayName: Coarse Wool
+		Tooltip: A textile and mage crafting material.
+	}
+
+	BlackIronBar: {
+		DisplayName: Black Iron Bar
+		Tooltip: A refined black iron crafting material.
+	}
+
+	Alcohol: {
+		DisplayName: Alcohol
+		Tooltip: An alchemy ingredient.
+	}
+
+	MagicIronBar: {
+		DisplayName: Magic Iron Bar
+		Tooltip: An advanced forging material.
+	}
+
+	WildLeather: {
+		DisplayName: Wild Leather
+		Tooltip: An advanced leather crafting material.
+	}
+
+	MagicWool: {
+		DisplayName: Magic Wool
+		Tooltip: An advanced textile crafting material.
+	}
+
+	MilkcraftWorkbench: {
+		DisplayName: Milkcraft Workbench
+		Tooltip: A basic crafting station.
+	}
+
+	MilkcraftFurnace: {
+		DisplayName: Milkcraft Furnace
+		Tooltip: Smelts crafting materials.
+	}
+
+	MilkcraftLoom: {
+		DisplayName: Textile Loom
+		Tooltip: Crafts cloth and leather equipment.
+	}
+
+	MilkcraftForge: {
+		DisplayName: Refining Forge
+		Tooltip: Forges metal equipment.
+	}
+
+	MilkcraftDistillery: {
+		DisplayName: Distillery
+		Tooltip: Produces alcohol.
+	}
+
+	MilkcraftAlchemyTable: {
+		DisplayName: Alchemy Table
+		Tooltip: Requires nearby bottles.
+	}
+
+	MilkcraftEnchantingTable: {
+		DisplayName: Enchanting Table
+		Tooltip: Crafts mage equipment and magic materials.
+	}
+
+	TemplarHelmet: {
+		DisplayName: Templar Helmet
+		Tooltip: Part of the Templar set; +4% melee damage and +8% melee critical chance.
+	}
+
+	TemplarChestplate: {
+		DisplayName: Templar Chestplate
+		Tooltip: Part of the Templar set; +8% melee damage.
+	}
+
+	TemplarGreaves: {
+		DisplayName: Templar Greaves
+		Tooltip: Part of the Templar set; +4% melee damage and +6% melee attack speed.
+	}
+
+	TemplarSword: {
+		DisplayName: Templar Sword
+		Tooltip: Melee greatsword that releases a blue-white wave with each swing.
+	}
+
+	TemplarShield: {
+		DisplayName: Templar Shield
+		Tooltip: Accessory: +6 defense, knockback immunity, and 6% damage reduction. With the complete Templar set, raises the barrier to 50.
+	}
+
+	NightmareHood: {
+		DisplayName: Eternal Nightmare Hood
+		Tooltip: Part of the Eternal Nightmare set; +4% ranged damage and +10% ranged critical chance.
+	}
+
+	NightmareChestplate: {
+		DisplayName: Eternal Nightmare Chestplate
+		Tooltip: Part of the Eternal Nightmare set; +8% ranged damage.
+	}
+
+	NightmareLeggings: {
+		DisplayName: Eternal Nightmare Leggings
+		Tooltip: Part of the Eternal Nightmare set; +4% ranged damage and +6% ranged attack speed.
+	}
+
+	NightmareBow: {
+		DisplayName: Eternal Nightmare Bow
+		Tooltip: Ranged weapon.
+	}
+
+	NightmareQuiver: {
+		DisplayName: Eternal Nightmare Quiver
+		Tooltip: Accessory: +12% ranged damage, 20% ammo conservation, and +10% arrow speed. With the Nightmare Bow, arrows become homing. With the complete set, its homing pursuit deals 60% damage every 1.5 seconds.
+	}
+
+	FallenHood: {
+		DisplayName: Fallen Angel Hood
+		Tooltip: Part of the Fallen Angel set; +5% magic damage, +20 maximum mana, and +10% magic critical chance.
+	}
+
+	FallenRobe: {
+		DisplayName: Fallen Angel Robe
+		Tooltip: Part of the Fallen Angel set; +7% magic damage and +20 maximum mana.
+	}
+
+	FallenLeggings: {
+		DisplayName: Fallen Angel Leggings
+		Tooltip: Part of the Fallen Angel set; +4% magic damage, +20 maximum mana, and +6% magic attack speed.
+	}
+
+	FallenStaff: {
+		DisplayName: Fallen Angel Staff
+		Tooltip: Magic weapon that fires a blue-gold bolt.
+	}
+
+	FallenTome: {
+		DisplayName: Fallen Angel Tome
+		Tooltip: Accessory: +40 maximum mana, +12% magic damage, 8% reduced mana cost, and automatic mana potion use. With the Fallen Staff, bolts become homing; the complete set restores health and spent mana in combat.
+	}
+
+	SoulforgedHelmet: {
+		DisplayName: Soulforged Helmet
+		Tooltip: Part of the Soulforged Resolve set; +6% melee damage and +8% melee critical chance.
+	}
+
+	SoulforgedChestplate: {
+		DisplayName: Soulforged Chestplate
+		Tooltip: Part of the Soulforged Resolve set; +10% melee damage.
+	}
+
+	SoulforgedGreaves: {
+		DisplayName: Soulforged Greaves
+		Tooltip: Part of the Soulforged Resolve set; +5% melee damage and +6% melee attack speed.
+	}
+
+	SoulforgedSword: {
+		DisplayName: Soulforged Sword
+		Tooltip: Melee greatsword that releases a red-black wave with each swing.
+	}
+
+	SoulforgedShield: {
+		DisplayName: Soulforged Shield
+		Tooltip: Accessory: +8 defense, knockback immunity, and 10% damage reduction. With the complete Soulforged set, raises the barrier to 90.
+	}
+
+	AbyssHood: {
+		DisplayName: Abyss Walker Hood
+		Tooltip: Part of the Abyss Walker set; +6% ranged damage and +12% ranged critical chance.
+	}
+
+	AbyssChestplate: {
+		DisplayName: Abyss Walker Chestplate
+		Tooltip: Part of the Abyss Walker set; +10% ranged damage.
+	}
+
+	AbyssLeggings: {
+		DisplayName: Abyss Walker Leggings
+		Tooltip: Part of the Abyss Walker set; +5% ranged damage and +6% ranged attack speed.
+	}
+
+	AbyssBow: {
+		DisplayName: Abyss Walker Bow
+		Tooltip: Ranged weapon: 65 damage and 18-tick use time. Fires two slightly spread arrows per shot for one arrow of ammunition.
+	}
+
+	AbyssQuiver: {
+		DisplayName: Abyss Walker Quiver
+		Tooltip: Accessory: +15% ranged damage, +5% ranged critical chance, 20% ammo conservation, and +10% arrow speed. With the Abyss Bow, arrows become homing; the complete set adds penetration to its pursuit.
+	}
+
+	DarkHood: {
+		DisplayName: Dark Messenger Hood
+		Tooltip: Part of the Dark Messenger set; +6% magic damage, +30 maximum mana, and +12% magic critical chance.
+	}
+
+	DarkRobe: {
+		DisplayName: Dark Messenger Robe
+		Tooltip: Part of the Dark Messenger set; +10% magic damage and +25 maximum mana.
+	}
+
+	DarkLeggings: {
+		DisplayName: Dark Messenger Leggings
+		Tooltip: Part of the Dark Messenger set; +5% magic damage, +25 maximum mana, and +8% magic attack speed.
+	}
+
+	DarkStaff: {
+		DisplayName: Dark Messenger Staff
+		Tooltip: Magic weapon that fires a red-blue star bolt.
+	}
+
+	DarkTome: {
+		DisplayName: Dark Messenger Tome
+		Tooltip: Accessory: +60 maximum mana, +15% magic damage, 10% reduced mana cost, and automatic mana potion use. With the Dark Staff, bolts become homing; the complete set adds a dark echo.
+	}
+
+	OriginBar: {
+		DisplayName: Origin Bar
+		Tooltip: T3 forging material.
+	}
+
+	OrnateLeather: {
+		DisplayName: Ornate Leather
+		Tooltip: T3 leather material.
+	}
+
+	RunicWool: {
+		DisplayName: Runic Wool
+		Tooltip: T3 textile material.
+	}
+
+	CinderBar: {
+		DisplayName: Cinder Bar
+		Tooltip: T4 forging material.
+	}
+
+	BaneboundLeather: {
+		DisplayName: Banebound Leather
+		Tooltip: T4 leather material.
+	}
+
+	SighWool: {
+		DisplayName: Sigh Wool
+		Tooltip: T4 textile material.
+	}
+
+	T3EquipmentLicense: {
+		DisplayName: T3 Equipment License
+		Tooltip: Permanently unlocks T3 Warrior, Ranger, and Mage gear when consumed.
+	}
+
+	T4EquipmentLicense: {
+		DisplayName: T4 Equipment License
+		Tooltip: Permanently unlocks T4 Warrior, Ranger, and Mage gear when consumed.
+	}
+}
+
+GolemBagBonus: {
+	Warrior: Milkcraft bonus in this bag: Warrior (broken material + core)
+	Ranger: Milkcraft bonus in this bag: Ranger (broken material + core)
+	Mage: Milkcraft bonus in this bag: Mage (broken material + core)
+}
+
+Projectiles: {
+	DazhouZenithBlade.DisplayName: Dazhou Sword Blade
+	EmberBolt.DisplayName: Ember Bolt
+	EnergyBolt.DisplayName: Energy Bolt
+	HuntingArrow.DisplayName: Hunting Arrow
+	KnightSwordWave.DisplayName: Knight Sword Wave
+	TemplarWave.DisplayName: Blue-White Sword Wave
+	SoulforgedWave.DisplayName: Red-Black Sword Wave
+	FallenBolt.DisplayName: Blue-Gold Magic Bolt
+	DarkBolt.DisplayName: Red-Blue Star Bolt
+	SuitPassiveProjectile.DisplayName: Suit Passive Projectile
+	MilkcraftEnchantExplosionVfx.DisplayName: Milkcraft Enchant Explosion Vfx
+	FlameWarhorseTrailFire.DisplayName: Flame Warhorse Trail Fire
+}
+
+Enchanting: {
+	Title: Milkcraft Enchanting
+	Cost: Coin cost: {0}
+	CostSelectItem: Select an item to see the coin cost
+	CoinPlatinum: "{0} platinum"
+	CoinGold: "{0} gold"
+	CoinSilver: "{0} silver"
+	CoinCopper: "{0} copper"
+	CoinSeparator: ", "
+	BalanceEnough: Enough coins (including coin storage)
+	BalanceInsufficient: Not enough coins (check inventory and coin storage)
+	NoCharge: This enchantment is already applied; no fee
+	Instructions: Select an inventory item, then choose an enchantment. Reapplying replaces its current effect.
+	ItemHeader: Enchantable items in your inventory
+	TypeHeader: Available enchantments
+	Current: Current enchantment: {0}
+	Apply: Apply
+	Close: Close
+	SelectItem: Select an item in your inventory first.
+	AlreadyApplied: This item already has that enchantment.
+	Applied: Enchantment applied.
+	ApplyFailed: Enchantment failed. Check coins, item, and table range.
+	None: None
+
+	Types: {
+		Sharpness: Sharpness
+		Power: Power
+		Spell: Spell
+		Critical: Critical
+		Provocation: Provocation
+		Stealth: Stealth
+		ShieldWall: Shield Wall
+		Armor: Armor
+		Resistance: Resistance
+		Ice: Ice
+		Healing: Healing
+		Explosive: Explosive
+	}
+
+	Tooltip: {
+		Sharpness: Damage increased by 6%.
+		Power: Matching ranged damage increased by 6%.
+		Spell: Matching magic damage increased by 6%.
+		Critical: Matching class critical chance increased by 4 percentage points.
+		Provocation: While held, +400 aggro and +4 defense.
+		Stealth: While held, -400 aggro and +4% movement speed.
+		ShieldWall: +4% damage reduction.
+		Armor: +4 defense.
+		Resistance: Enemy projectile damage reduced by 6%.
+		Ice: Valid hits slow enemies for 2 seconds.
+		Healing: Valid hits heal 2 life at most once every 2 seconds, subject to life-steal budget.
+		Explosive: Hits splash 30% damage to nearby enemies; 0.5-second cooldown.
+	}
+}
+
+Conditions: {
+	DownedEvilBoss: Available after defeating the Eater of Worlds or Brain of Cthulhu
+	T3WorldProgress: Available after defeating any Mechanical Boss
+	T4WorldProgress: Available after defeating Golem
+	ActiveAlchemyTable: Requires being near an activated Milkcraft Alchemy Table
+}
+
+Messages: {
+	AlchemyTableActivated: Consumed one Alcohol. This Milkcraft Alchemy Table is permanently activated.
+	AlchemyTableAlreadyActive: This Milkcraft Alchemy Table is already active.
+	AlchemyTableNeedsAlcohol: One Alcohol is required to activate this table.
+}
+
+Progression: {
+	T3LicenseActivated: T3 equipment is now permanently unlocked for this character.
+	T4LicenseActivated: T4 equipment is now permanently unlocked for this character.
+	T3LicenseActive: This character has permanently unlocked T3 equipment.
+	T4LicenseActive: This character has permanently unlocked T4 equipment.
+	T3LicenseReady: This world can activate the T3 license.
+	T4LicenseReady: This world can activate the T4 license.
+	T3LicenseLocked: Defeat any Mechanical Boss in this world first.
+	T4LicenseLocked: Defeat Golem in this world first.
+	T3ChampionTitle: Title unlocked: Mechanical Conqueror.
+	T3ChampionUnlocked: All three Mechanical Bosses defeated. Title unlocked: Mechanical Conqueror.
+}
+
+SetBonuses: {
+	Iron: +5% melee damage. Barrier absorbs 10 damage; recharges after 12 seconds.
+	Leather: +5% ranged damage and movement speed. Valid ranged hits grant +8% movement speed for 3 seconds (6-second cooldown).
+	Cloth: +5% magic damage and 5% reduced mana cost. In combat, restores 10% of mana actually spent (up to 8) every 6 seconds.
+	Knight: +8% melee damage and 5% damage reduction. Barrier absorbs 20 damage; breaking it grants +6% melee damage for 3 seconds; recharges after 12 seconds.
+	Hunting: +8% ranged damage. The third ranged hit on one enemy deals +15% damage; hits must be at least 15 frames apart.
+	Energy: 10% reduced mana cost and +3 mana regeneration. After spending 20 mana, a valid magic hit grants a 12-damage barrier; 12-second recharge after it breaks.
+	Templar: +2% melee damage. Barrier absorbs 30 damage; recharges after 12 seconds.
+	Nightmare: +2% ranged damage. Valid ranged hits summon a 40%-damage homing pursuit every 2 seconds.
+	Fallen: +2% magic damage and 10% reduced mana cost. Every 6 seconds in magic combat, restores 10 health and 15% of mana spent (up to 30).
+	Soulforged: +4% melee damage and 8% damage reduction. Barrier absorbs 60 damage; breaking it grants +10% melee damage for 4 seconds; recharges after 12 seconds.
+	Abyss: +4% ranged damage. Valid ranged hits summon a 65%-damage homing pursuit every 1.5 seconds.
+	Dark: +4% magic damage and 10% reduced mana cost. Valid magic hits summon a 60%-damage homing echo every 2 seconds.
+}
+
+PassiveStatus: {
+	Barrier: Barrier {0}/{1}; recharge in {2}s
+	Link: Matching passive: {0}; passive cooldown {1}s
+	Active: active
+	Inactive: inactive
+	ArmorActive: Full-set passive active
+	ArmorInactive: Full-set passive inactive (requires all three armor pieces)
+	AccessoryActive: Functional accessory bonus active
+	AccessoryInactive: Accessory bonus inactive (equip in a functional slot)
+	PairActive: Matching full-set enhancement active
+	PairInactive: Matching full-set enhancement inactive
+	Hunting: Hunt marks {0}/{1}
+	Duration: Effect active for {0}s
+	ManaWindow: Spent {0} mana; recovery window {1}s
+	EnergyCharge: Mana charge {0}/{1}
+	Cooldown: Passive cooldown {0}s
+}
+
+PassiveBuffs: {
+	Iron: Iron Barrier
+	Leather: Leather Windstep
+	Cloth: Cloth Mana Cycle
+	Knight: Knight's Resolve
+	Hunting: Hunting Mark
+	Energy: Energy Barrier
+	Templar: Templar Aegis
+	Nightmare: Nightmare Pursuit
+	Fallen: Fallen Renewal
+	Soulforged: Soulforged Vigor
+	Abyss: Abyss Pursuit
+	Dark: Dark Echo
+}
+
+PassiveVfxUi: {
+	BarrierReady: Barrier {0}/{1} · ready
+	BarrierCooldown: Barrier {0}/{1} · restores in {2}s
+	ArmorActive: Set passive active
+	ArmorInactive: Set passive inactive — complete the matching armor set
+	AccessoryActive: Functional accessory effect active
+	AccessoryInactive: Equip in a functional accessory slot to activate
+	PairActive: Matched accessory synergy active
+	PairInactive: Matching complete set required for synergy
+	Hunting: Hunt mark {0}/{1}
+	Duration: Effect active · {0}s
+	ManaWindow: Mana spent {0} · cycle {1}s
+	EnergyCharge: Mana charge {0}/{1}
+	EnergyWaiting: Charge ready {0}/{1}; next valid magic hit restores the barrier
+	ManaReady: Recovery charged ({0} mana spent); waiting for a valid magic hit
+	Cooldown: Proc cooldown · {0}s
+}
+
+MapObject: {
+	MilkcraftWorkbenchTile: Milkcraft Workbench
+	MilkcraftFurnaceTile: Milkcraft Furnace
+	MilkcraftLoomTile: Textile Loom
+	MilkcraftForgeTile: Refining Forge
+	MilkcraftDistilleryTile: Distillery
+	MilkcraftAlchemyTableTile: Alchemy Table
+	MilkcraftEnchantingTableTile: Enchanting Table
+	BlackIronOreTile: Black Iron Ore
+	PinkDiamondOreTile: Pink Diamond Ore
+}
+
+Buffs: {
+	PassiveStatusAbyss: {
+		DisplayName: Passive Status Abyss
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusAbyss.Description
+	}
+
+	PassiveStatusCloth: {
+		DisplayName: Passive Status Cloth
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusCloth.Description
+	}
+
+	PassiveStatusDark: {
+		DisplayName: Passive Status Dark
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusDark.Description
+	}
+
+	PassiveStatusEnergy: {
+		DisplayName: Passive Status Energy
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusEnergy.Description
+	}
+
+	PassiveStatusFallen: {
+		DisplayName: Passive Status Fallen
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusFallen.Description
+	}
+
+	PassiveStatusHunting: {
+		DisplayName: Passive Status Hunting
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusHunting.Description
+	}
+
+	PassiveStatusIron: {
+		DisplayName: Passive Status Iron
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusIron.Description
+	}
+
+	PassiveStatusKnight: {
+		DisplayName: Passive Status Knight
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusKnight.Description
+	}
+
+	PassiveStatusLeather: {
+		DisplayName: Passive Status Leather
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusLeather.Description
+	}
+
+	PassiveStatusNightmare: {
+		DisplayName: Passive Status Nightmare
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusNightmare.Description
+	}
+
+	PassiveStatusSoulforged: {
+		DisplayName: Passive Status Soulforged
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusSoulforged.Description
+	}
+
+	PassiveStatusTemplar: {
+		DisplayName: Passive Status Templar
+		Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusTemplar.Description
+	}
+
+	MilkcraftFrosted: {
+		DisplayName: Frosted
+		Description: Movement speed reduced by 20%
+	}
+
+	CelestialTenguMountBuff: {
+		DisplayName: Celestial Tengu
+		Description: Sustained flight and hovering
+	}
+
+	UndeadWarhorseMountBuff: {
+		DisplayName: Undead Warhorse
+		Description: Fast running; flight reserve is 120 ticks
+	}
+
+	WhiteTigerMountBuff: {
+		DisplayName: White Tiger
+		Description: Double-tap a direction to dash and damage enemies
+	}
+
+	WhiteNineTailedFoxMountBuff: {
+		DisplayName: White Nine-Tailed Fox
+		Description: Double-tap a direction to perform a stronger dash
+	}
+
+	RhinoMountBuff: {
+		DisplayName: Rhino
+		Description: Grants 8 defense and damages enemies on contact while mounted
+	}
+
+	FlameWarhorseMountBuff: {
+		DisplayName: Flame Warhorse
+		Description: Leaves lingering fire while running on solid ground
+	}
+
+	WhiteUnicornMountBuff: {
+		DisplayName: White Unicorn
+		Description: Sustained flight with hover
+	}
+}

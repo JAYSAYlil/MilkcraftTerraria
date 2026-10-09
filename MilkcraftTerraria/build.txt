@@ -1,0 +1,5 @@
+displayName = 奶块 × 泰拉瑞亚
+author = JaySay
+version = 0.2.13
+side = Both
+homepage = https://github.com/JAYSAYlil/MilkcraftTerraria

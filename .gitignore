@@ -1,0 +1,17 @@
+.vs/
+.idea/
+**/bin/
+**/obj/
+**/__pycache__/
+*.user
+*.suo
+*.pdb
+*.log
+*.plr
+*.wld
+*.bak
+build-sandbox/
+dist/
+.env
+.env.*
+steam_appid.txt

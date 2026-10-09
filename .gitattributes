@@ -1,0 +1,6 @@
+* text=auto
+*.cs text eol=lf
+*.md text eol=lf
+*.hjson text eol=lf
+*.png binary
+*.tmod binary

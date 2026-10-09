@@ -1,0 +1,843 @@
+Items: {
+	UndeadWarhorseSummon: {
+		DisplayName: 亡灵军马
+		Tooltip: 永久坐骑。地面奔跑迅捷；飞行储备为 120 帧，落地后恢复。
+	}
+
+	CelestialTenguSummon: {
+		DisplayName: 圣天狗
+		Tooltip: 永久坐骑。可以持续飞行、悬停并灵活转向。
+	}
+
+	WhiteTigerSummon: {
+		DisplayName: 白虎
+		Tooltip: 地面迅捷坐骑。连续双击左右键冲刺并撞击敌人。
+	}
+
+	WhiteNineTailedFoxSummon: {
+		DisplayName: 白色九尾狐
+		Tooltip: 圣雪狐进化而来的九尾坐骑。连续双击左右键冲刺并重击敌人。
+	}
+
+	RhinoSummon: {
+		DisplayName: 犀牛
+		Tooltip: 坚实的地面坐骑；骑乘时提高防御并冲撞敌人。
+	}
+
+	FlameWarhorseSummon: {
+		DisplayName: 烈焰战马
+		Tooltip: 地面坐骑；在坚实地面奔跑时留下灼烧敌人的火焰。
+	}
+
+	WhiteUnicornSummon: {
+		DisplayName: 白色独角兽
+		Tooltip: 可持续飞行的坐骑；蹄下会散落白色微光。
+	}
+
+	DazhouIronSword: {
+		DisplayName: 大粥的铁剑
+		Tooltip: 复刻天顶剑的飞剑攻势。
+	}
+
+	HiddenIronSword: {
+		DisplayName: 断掉的铁剑
+		Tooltip: 用于合成大粥的铁剑。
+	}
+
+	BlackIronOre: {
+		DisplayName: 黑铁矿石
+		Tooltip: 可在地下找到，也可熔炼成黑铁锭。
+	}
+
+	PinkDiamondOre: {
+		DisplayName: 粉钻矿
+		Tooltip: 可放置的粉钻矿石。
+	}
+
+	PinkDiamond: {
+		DisplayName: 粉钻
+		Tooltip: 奶块装备与炼金配方材料。
+	}
+
+	EnchantmentHeart: {
+		DisplayName: 附魔之心
+		Tooltip: 血肉墙掉落的附魔台材料。
+	}
+
+	TruthSword: {
+		DisplayName: 真理之剑
+		Tooltip: 机械骷髅王掉落的合成材料。
+	}
+
+	TruthBow: {
+		DisplayName: 真理之弓
+		Tooltip: 毁灭者掉落的合成材料。
+	}
+
+	TruthStaff: {
+		DisplayName: 真理之杖
+		Tooltip: 双子魔眼掉落的合成材料。
+	}
+
+	CrystalSkull: {
+		DisplayName: 水晶颅骨
+		Tooltip: 制作圣殿药水的核心。
+	}
+
+	AlienKeratin: {
+		DisplayName: 异种角质
+		Tooltip: 制作梦魇药水的核心。
+	}
+
+	ArcaneCore: {
+		DisplayName: 奥术核心
+		Tooltip: 制作堕落药水的核心。
+	}
+
+	BrokenSwordHilt: {
+		DisplayName: 破碎的剑柄
+		Tooltip: 石巨人循环掉落的魂铸配方材料。
+	}
+
+	BrokenBowstring: {
+		DisplayName: 破碎的弓弦
+		Tooltip: 石巨人循环掉落的深渊配方材料。
+	}
+
+	BrokenStaffHandle: {
+		DisplayName: 破碎的杖柄
+		Tooltip: 石巨人循环掉落的黑暗配方材料。
+	}
+
+	WitherTear: {
+		DisplayName: 凋零之泪
+		Tooltip: 石巨人战士循环掉落的炼金核心。
+	}
+
+	DemonWing: {
+		DisplayName: 恶魔之翼
+		Tooltip: 石巨人射手循环掉落的炼金核心。
+	}
+
+	EnchantedShinbone: {
+		DisplayName: 附魔胫骨
+		Tooltip: 石巨人法师循环掉落的炼金核心。
+	}
+
+	TemplarPotion: {
+		DisplayName: 圣殿药水
+		Tooltip: 奶块炼金材料，不可饮用。
+	}
+
+	NightmarePotion: {
+		DisplayName: 梦魇药水
+		Tooltip: 奶块炼金材料，不可饮用。
+	}
+
+	FallenPotion: {
+		DisplayName: 堕落药水
+		Tooltip: 奶块炼金材料，不可饮用。
+	}
+
+	SoulforgedPotion: {
+		DisplayName: 魂铸药水
+		Tooltip: 奶块炼金材料，不可饮用。
+	}
+
+	AbyssPotion: {
+		DisplayName: 深渊药水
+		Tooltip: 奶块炼金材料，不可饮用。
+	}
+
+	DarkPotion: {
+		DisplayName: 黑暗药水
+		Tooltip: 奶块炼金材料，不可饮用。
+	}
+
+	IronHelmet: {
+		DisplayName: 铁制头盔
+		Tooltip: 铁甲套装的一部分。
+	}
+
+	IronChestplate: {
+		DisplayName: 铁制胸甲
+		Tooltip: 铁甲套装的一部分。
+	}
+
+	IronGreaves: {
+		DisplayName: 铁制腿甲与战靴
+		Tooltip: 铁甲套装的一部分。
+	}
+
+	LeatherHeadband: {
+		DisplayName: 皮质头饰
+		Tooltip: 皮质套装的一部分。
+	}
+
+	LeatherTunic: {
+		DisplayName: 皮质护胸
+		Tooltip: 皮质套装的一部分。
+	}
+
+	LeatherLeggings: {
+		DisplayName: 皮质护腿与便鞋
+		Tooltip: 皮质套装的一部分。
+	}
+
+	ClothHood: {
+		DisplayName: 粗布兜帽
+		Tooltip: 装备后最大魔力提高20。
+	}
+
+	ClothRobe: {
+		DisplayName: 粗布长袍
+		Tooltip: 装备后最大魔力提高20。
+	}
+
+	ClothLeggings: {
+		DisplayName: 粗布长裤与软鞋
+		Tooltip: 粗布套装的一部分。
+	}
+
+	KnightHelmet: {
+		DisplayName: 骑士头盔
+		Tooltip: 装备后近战伤害提高5%。
+	}
+
+	KnightChestplate: {
+		DisplayName: 骑士胸甲
+		Tooltip: 装备后近战暴击率提高3%。
+	}
+
+	KnightGreaves: {
+		DisplayName: 骑士腿甲与战靴
+		Tooltip: 骑士套装的一部分。
+	}
+
+	HuntingHood: {
+		DisplayName: 狩猎头饰
+		Tooltip: 装备后远程伤害提高5%。
+	}
+
+	HuntingChestplate: {
+		DisplayName: 狩猎护胸
+		Tooltip: 装备后远程暴击率提高3%。
+	}
+
+	HuntingLeggings: {
+		DisplayName: 狩猎护腿与便鞋
+		Tooltip: 装备后移动速度提高5%。
+	}
+
+	EnergyHood: {
+		DisplayName: 能量兜帽
+		Tooltip: 装备后最大魔力提高20，魔法伤害提高5%。
+	}
+
+	EnergyRobe: {
+		DisplayName: 能量法袍
+		Tooltip: 装备后最大魔力提高40，魔法伤害提高5%。
+	}
+
+	EnergyLeggings: {
+		DisplayName: 能量长裤与软鞋
+		Tooltip: 能量套装的一部分。
+	}
+
+	IronSword: {
+		DisplayName: 铁剑
+		Tooltip: 近战武器。
+	}
+
+	IronBow: {
+		DisplayName: 铁弓
+		Tooltip: 远程武器，可使用箭矢。
+	}
+
+	IronStaff: {
+		DisplayName: 铁质法杖
+		Tooltip: 魔法武器，消耗5点魔力发射火焰弹。
+	}
+
+	KnightSword: {
+		DisplayName: 骑士长剑
+		Tooltip: 近战武器；挥动时发射红色剑气。
+	}
+
+	HuntingBow: {
+		DisplayName: 狩猎长弓
+		Tooltip: 远程武器；木箭会强化为狩猎箭。
+	}
+
+	EnergyStaff: {
+		DisplayName: 能量法杖
+		Tooltip: 魔法武器，消耗7点魔力发射能量弹。
+	}
+
+	IronShield: {
+		DisplayName: 铁盾
+		Tooltip: 饰品：防御力提高3。与完整铁套搭配时，屏障提高至15点（不搭配为10点）。
+	}
+
+	IronQuiver: {
+		DisplayName: 皮质箭袋
+		Tooltip: 饰品：远程伤害提高5%，箭速提高10%。与铁弓搭配时箭矢显示为银灰配对箭（不追踪）；与完整皮革套搭配时，有效远程命中使移动速度提高12%，持续3秒，冷却6秒。
+	}
+
+	BeginnerTome: {
+		DisplayName: 初级法典
+		Tooltip: 饰品：最大魔力提高20，魔法伤害提高4%，魔力消耗降低3%。与铁法杖搭配时法术弹显示为琥珀配对弹（不追踪）；与完整粗布套搭配时，战斗中每6秒返还实际消耗魔力的15%，最多12点。
+	}
+
+	KnightBulwark: {
+		DisplayName: 骑士壁垒
+		Tooltip: 饰品：防御力提高4，免疫击退，受到伤害降低3%。与完整骑士套搭配时，屏障提高至30点并强化破盾后的近战增益。
+	}
+
+	HuntingQuiver: {
+		DisplayName: 狩猎箭袋
+		Tooltip: 饰品：远程伤害提高8%，有20%概率不消耗弹药，箭速提高10%。与狩猎长弓搭配时箭矢显示为冰蓝配对箭（不追踪）；与完整狩猎套搭配时，对同一敌人的第三次命中伤害提高25%。
+	}
+
+	EnergyTome: {
+		DisplayName: 能量法典
+		Tooltip: 饰品：最大魔力提高40，魔法伤害提高8%，魔力消耗降低6%。与能量法杖搭配时法术弹显示为紫色配对弹（不追踪）；与完整能量套搭配时，魔力屏障提高至18点（不搭配为12点）。
+	}
+
+	CoarseWool: {
+		DisplayName: 粗布
+		Tooltip: 纺织装备与法师材料。
+	}
+
+	BlackIronBar: {
+		DisplayName: 黑铁锭
+		Tooltip: 精炼后的黑铁材料。
+	}
+
+	Alcohol: {
+		DisplayName: 酒精
+		Tooltip: 炼制材料。
+	}
+
+	MagicIronBar: {
+		DisplayName: 魔铁锭
+		Tooltip: 进阶锻造材料。
+	}
+
+	WildLeather: {
+		DisplayName: 狂野兽皮
+		Tooltip: 进阶皮革材料。
+	}
+
+	MagicWool: {
+		DisplayName: 魔法羊毛
+		Tooltip: 进阶纺织材料。
+	}
+
+	MilkcraftWorkbench: {
+		DisplayName: 奶块合成台
+		Tooltip: 基础制作工作站。
+	}
+
+	MilkcraftFurnace: {
+		DisplayName: 奶块熔炉
+		Tooltip: 用于熔炼材料。
+	}
+
+	MilkcraftLoom: {
+		DisplayName: 纺织台
+		Tooltip: 用于制作布料与皮革装备。
+	}
+
+	MilkcraftForge: {
+		DisplayName: 精炼锻造台
+		Tooltip: 用于锻造金属装备。
+	}
+
+	MilkcraftDistillery: {
+		DisplayName: 蒸馏台
+		Tooltip: 用于制作酒精。
+	}
+
+	MilkcraftAlchemyTable: {
+		DisplayName: 炼金台
+		Tooltip: 需靠近瓶子，可制作炼金材料。
+	}
+
+	MilkcraftEnchantingTable: {
+		DisplayName: 附魔台
+		Tooltip: 用于制作法师装备与魔法材料。
+	}
+
+	TemplarHelmet: {
+		DisplayName: 圣殿骑士头盔
+		Tooltip: 圣殿骑士套装的一部分；增加4%近战伤害和8%近战暴击率。
+	}
+
+	TemplarChestplate: {
+		DisplayName: 圣殿骑士胸甲
+		Tooltip: 圣殿骑士套装的一部分；增加8%近战伤害。
+	}
+
+	TemplarGreaves: {
+		DisplayName: 圣殿骑士护腿与战靴
+		Tooltip: 圣殿骑士套装的一部分；增加4%近战伤害和6%近战攻速。
+	}
+
+	TemplarSword: {
+		DisplayName: 圣殿骑士长剑
+		Tooltip: 近战长剑，挥动时发射蓝白剑气。
+	}
+
+	TemplarShield: {
+		DisplayName: 圣殿骑士盾
+		Tooltip: 饰品：防御力提高6，免疫击退，受到伤害降低6%。与完整圣殿套搭配时，屏障提高至50点。
+	}
+
+	NightmareHood: {
+		DisplayName: 永恒梦魇兜帽
+		Tooltip: 永恒梦魇套装的一部分；增加4%远程伤害和10%远程暴击率。
+	}
+
+	NightmareChestplate: {
+		DisplayName: 永恒梦魇胸甲
+		Tooltip: 永恒梦魇套装的一部分；增加8%远程伤害。
+	}
+
+	NightmareLeggings: {
+		DisplayName: 永恒梦魇护腿与战靴
+		Tooltip: 永恒梦魇套装的一部分；增加4%远程伤害和6%远程攻速。
+	}
+
+	NightmareBow: {
+		DisplayName: 永恒梦魇猎弓
+		Tooltip: 远程武器。
+	}
+
+	NightmareQuiver: {
+		DisplayName: 永恒梦魇箭袋
+		Tooltip: 饰品：远程伤害提高12%，有20%概率不消耗弹药，箭速提高10%。与梦魇弓搭配时箭矢自动追踪；完整套装使追击伤害提高至60%，间隔1.5秒。
+	}
+
+	FallenHood: {
+		DisplayName: 堕落天使兜帽
+		Tooltip: 堕落天使套装的一部分；增加5%魔法伤害、20点最大魔力和10%魔法暴击率。
+	}
+
+	FallenRobe: {
+		DisplayName: 堕落天使长袍
+		Tooltip: 堕落天使套装的一部分；增加7%魔法伤害和20点最大魔力。
+	}
+
+	FallenLeggings: {
+		DisplayName: 堕落天使护腿与软鞋
+		Tooltip: 堕落天使套装的一部分；增加4%魔法伤害、20点最大魔力和6%魔法攻速。
+	}
+
+	FallenStaff: {
+		DisplayName: 堕落天使法杖
+		Tooltip: 魔法武器，发射蓝金魔法弹。
+	}
+
+	FallenTome: {
+		DisplayName: 堕落天使法典
+		Tooltip: 饰品：最大魔力提高40，魔法伤害提高12%，魔力消耗降低8%，自动使用魔力药水。与堕落法杖搭配时弹体自动追踪；完整套装在战斗中恢复生命与已消耗魔力。
+	}
+
+	SoulforgedHelmet: {
+		DisplayName: 魂铸意志头盔
+		Tooltip: 魂铸意志套装的一部分；增加6%近战伤害和8%近战暴击率。
+	}
+
+	SoulforgedChestplate: {
+		DisplayName: 魂铸意志胸甲
+		Tooltip: 魂铸意志套装的一部分；增加10%近战伤害。
+	}
+
+	SoulforgedGreaves: {
+		DisplayName: 魂铸意志护腿与战靴
+		Tooltip: 魂铸意志套装的一部分；增加5%近战伤害和6%近战攻速。
+	}
+
+	SoulforgedSword: {
+		DisplayName: 魂铸意志长剑
+		Tooltip: 近战长剑，挥动时发射红黑剑气。
+	}
+
+	SoulforgedShield: {
+		DisplayName: 魂铸意志盾
+		Tooltip: 饰品：防御力提高8，免疫击退，受到伤害降低10%。与完整魂铸套搭配时，屏障提高至90点。
+	}
+
+	AbyssHood: {
+		DisplayName: 深渊行者兜帽
+		Tooltip: 深渊行者套装的一部分；增加6%远程伤害和12%远程暴击率。
+	}
+
+	AbyssChestplate: {
+		DisplayName: 深渊行者胸甲
+		Tooltip: 深渊行者套装的一部分；增加10%远程伤害。
+	}
+
+	AbyssLeggings: {
+		DisplayName: 深渊行者护腿与战靴
+		Tooltip: 深渊行者套装的一部分；增加5%远程伤害和6%远程攻速。
+	}
+
+	AbyssBow: {
+		DisplayName: 深渊行者猎弓
+		Tooltip: 远程武器，65点伤害，18帧使用间隔；每次发射两支小角度散开的箭矢，只消耗一支弹药。
+	}
+
+	AbyssQuiver: {
+		DisplayName: 深渊行者箭袋
+		Tooltip: 饰品：远程伤害提高15%，远程暴击提高5%，有20%概率不消耗弹药，箭速提高10%。与深渊弓搭配时箭矢自动追踪；完整套装使追击额外穿透。
+	}
+
+	DarkHood: {
+		DisplayName: 黑暗信使兜帽
+		Tooltip: 黑暗信使套装的一部分；增加6%魔法伤害、30点最大魔力和12%魔法暴击率。
+	}
+
+	DarkRobe: {
+		DisplayName: 黑暗信使长袍
+		Tooltip: 黑暗信使套装的一部分；增加10%魔法伤害和25点最大魔力。
+	}
+
+	DarkLeggings: {
+		DisplayName: 黑暗信使护腿与软鞋
+		Tooltip: 黑暗信使套装的一部分；增加5%魔法伤害、25点最大魔力和8%魔法攻速。
+	}
+
+	DarkStaff: {
+		DisplayName: 黑暗信使法杖
+		Tooltip: 魔法武器，发射红蓝星芒弹。
+	}
+
+	DarkTome: {
+		DisplayName: 黑暗信使法典
+		Tooltip: 饰品：最大魔力提高60，魔法伤害提高15%，魔力消耗降低10%，自动使用魔力药水。与黑暗法杖搭配时弹体自动追踪；完整套装会追加黑暗回响。
+	}
+
+	OriginBar: {
+		DisplayName: 源质锭
+		Tooltip: T3锻造材料。
+	}
+
+	OrnateLeather: {
+		DisplayName: 华丽皮革
+		Tooltip: T3皮革材料。
+	}
+
+	RunicWool: {
+		DisplayName: 魔纹羊毛
+		Tooltip: T3纺织材料。
+	}
+
+	CinderBar: {
+		DisplayName: 赤炼锭
+		Tooltip: T4锻造材料。
+	}
+
+	BaneboundLeather: {
+		DisplayName: 破魔鞣革
+		Tooltip: T4皮革材料。
+	}
+
+	SighWool: {
+		DisplayName: 叹息羊毛
+		Tooltip: T4纺织材料。
+	}
+
+	T3EquipmentLicense: {
+		DisplayName: T3装备许可
+		Tooltip: 消耗后永久解锁T3战士、射手与法师装备。
+	}
+
+	T4EquipmentLicense: {
+		DisplayName: T4装备许可
+		Tooltip: 消耗后永久解锁T4战士、射手与法师装备。
+	}
+}
+
+GolemBagBonus: {
+	Warrior: 本袋奶块追加奖励：战士（破碎材料＋核心）
+	Ranger: 本袋奶块追加奖励：射手（破碎材料＋核心）
+	Mage: 本袋奶块追加奖励：法师（破碎材料＋核心）
+}
+
+Projectiles: {
+	DazhouZenithBlade.DisplayName: 大粥剑影
+	EmberBolt.DisplayName: 火焰弹
+	EnergyBolt.DisplayName: 能量弹
+	HuntingArrow.DisplayName: 狩猎箭
+	KnightSwordWave.DisplayName: 红色剑气
+	TemplarWave.DisplayName: 蓝白剑气
+	SoulforgedWave.DisplayName: 红黑剑气
+	FallenBolt.DisplayName: 蓝金魔法弹
+	DarkBolt.DisplayName: 红蓝星芒弹
+	// SuitPassiveProjectile.DisplayName: Suit Passive Projectile
+	// MilkcraftEnchantExplosionVfx.DisplayName: Milkcraft Enchant Explosion Vfx
+	// FlameWarhorseTrailFire.DisplayName: Flame Warhorse Trail Fire
+}
+
+Enchanting: {
+	Title: 奶块附魔
+	Cost: 金币费用：{0}
+	CostSelectItem: 选中物品后显示金币费用
+	CoinPlatinum: "{0}铂金"
+	CoinGold: "{0}金"
+	CoinSilver: "{0}银"
+	CoinCopper: "{0}铜"
+	CoinSeparator: " "
+	BalanceEnough: 钱币余额足够（包括钱币储存）
+	BalanceInsufficient: 钱币不足（检查背包与钱币储存）
+	NoCharge: 已是该附魔，本次不收费
+	Instructions: 选择背包物品，再选择附魔。重新附魔会替换当前效果。
+	ItemHeader: 背包中的可附魔物品
+	TypeHeader: 可选附魔
+	Current: 当前附魔：{0}
+	Apply: 确认附魔
+	Close: 关闭
+	SelectItem: 先选择一个背包物品。
+	AlreadyApplied: 该物品已经拥有此附魔。
+	Applied: 附魔已成功应用。
+	ApplyFailed: 附魔失败：请检查钱币、物品与附魔台距离。
+	None: 无
+
+	Types: {
+		Sharpness: 锋利
+		Power: 力量
+		Spell: 魔咒
+		Critical: 暴击
+		Provocation: 挑衅
+		Stealth: 隐蔽
+		ShieldWall: 盾墙
+		Armor: 护甲
+		Resistance: 抗性
+		Ice: 寒冰
+		Healing: 治愈
+		Explosive: 爆裂
+	}
+
+	Tooltip: {
+		Sharpness: 伤害提高6%。
+		Power: 对应远程伤害提高6%。
+		Spell: 对应魔法伤害提高6%。
+		Critical: 对应职业暴击率提高4%。
+		Provocation: 手持时仇恨提高400，防御提高4。
+		Stealth: 手持时仇恨降低400，移动速度提高4%。
+		ShieldWall: 额外伤害减免提高4%。
+		Armor: 防御提高4。
+		Resistance: 受到敌对弹幕伤害降低6%。
+		Ice: 有效命中使敌人减速2秒。
+		Healing: 有效命中治疗2点生命，每2秒最多一次，并受生命窃取预算限制。
+		Explosive: 命中对附近敌人造成30%溅射伤害；冷却0.5秒。
+	}
+}
+
+Conditions: {
+	DownedEvilBoss: 击败世界吞噬者或克苏鲁之脑后可制作
+	T3WorldProgress: 任意机械Boss被击败后可制作
+	T4WorldProgress: 石巨人被击败后可制作
+	ActiveAlchemyTable: 需要处于已激活的奶块炼金台旁
+}
+
+Messages: {
+	AlchemyTableActivated: 已消耗1份酒精，永久激活这张奶块炼金台。
+	AlchemyTableAlreadyActive: 这张奶块炼金台已经激活。
+	AlchemyTableNeedsAlcohol: 需要1份酒精才能激活奶块炼金台。
+}
+
+Progression: {
+	T3LicenseActivated: 已永久解锁T3装备许可。
+	T4LicenseActivated: 已永久解锁T4装备许可。
+	T3LicenseActive: 当前角色已永久解锁T3装备。
+	T4LicenseActive: 当前角色已永久解锁T4装备。
+	T3LicenseReady: 该世界进度允许激活T3许可。
+	T4LicenseReady: 该世界进度允许激活T4许可。
+	T3LicenseLocked: 需要当前世界击败任意机械Boss。
+	T4LicenseLocked: 需要当前世界击败石巨人。
+	T3ChampionTitle: 已获得称号：机械征服者。
+	T3ChampionUnlocked: 已击败全部三位机械Boss，获得称号“机械征服者”。
+}
+
+SetBonuses: {
+	Iron: 近战伤害提高5%。屏障吸收10点伤害，12秒后恢复。
+	Leather: 远程伤害与移动速度提高5%。有效远程命中使移动速度提高8%，持续3秒，冷却6秒。
+	Cloth: 魔法伤害提高5%，魔力消耗降低5%。战斗中每6秒返还实际消耗魔力的10%，最多8点。
+	Knight: 近战伤害提高8%，受到伤害降低5%。屏障吸收20点伤害；破盾后近战伤害提高6%，持续3秒，12秒后恢复。
+	Hunting: 远程伤害提高8%。对同一敌人的第三次远程命中伤害提高15%，计数间隔至少15帧。
+	Energy: 魔力消耗降低10%，魔力回复提高3。消耗20点魔力后，有效魔法命中获得12点屏障；破盾后12秒恢复。
+	Templar: 近战伤害额外提高2%。屏障吸收30点伤害，12秒后恢复。
+	Nightmare: 远程伤害额外提高2%。有效远程命中召唤40%伤害的追踪追击，每2秒一次。
+	Fallen: 魔法伤害额外提高2%，魔力消耗降低10%。魔法战斗中每6秒恢复10生命并返还实际耗魔的15%，最多30点。
+	Soulforged: 近战伤害额外提高4%，受到伤害降低8%。屏障吸收60点伤害；破盾后近战伤害提高10%，持续4秒，12秒后恢复。
+	Abyss: 远程伤害额外提高4%。有效远程命中召唤65%伤害的追踪追击，每1.5秒一次。
+	Dark: 魔法伤害额外提高4%，魔力消耗降低10%。有效魔法命中召唤60%伤害的追踪回响，每2秒一次。
+}
+
+PassiveStatus: {
+	Barrier: 屏障 {0}/{1}，{2}秒后恢复
+	Link: 配对效果：{0}；被动冷却 {1} 秒
+	Active: 已激活
+	Inactive: 未激活
+	// ArmorActive: Full-set passive active
+	// ArmorInactive: Full-set passive inactive (requires all three armor pieces)
+	// AccessoryActive: Functional accessory bonus active
+	// AccessoryInactive: Accessory bonus inactive (equip in a functional slot)
+	// PairActive: Matching full-set enhancement active
+	// PairInactive: Matching full-set enhancement inactive
+	// Hunting: Hunt marks {0}/{1}
+	// Duration: Effect active for {0}s
+	// ManaWindow: Spent {0} mana; recovery window {1}s
+	// EnergyCharge: Mana charge {0}/{1}
+	// Cooldown: Passive cooldown {0}s
+}
+
+PassiveBuffs: {
+	Iron: 铁壁战意
+	Leather: 迅捷步法
+	Cloth: 法力回响
+	Knight: 骑士壁垒
+	Hunting: 猎印
+	Energy: 能量护盾
+	Templar: 圣光守护
+	Nightmare: 梦魇追击
+	Fallen: 圣愈回响
+	Soulforged: 魂铸战意
+	Abyss: 深渊追击
+	Dark: 暗影追击
+}
+
+PassiveVfxUi: {
+	BarrierReady: 护盾 {0}/{1} · 就绪
+	BarrierCooldown: 护盾 {0}/{1} · {2} 秒后恢复
+	ArmorActive: 套装被动已激活
+	ArmorInactive: 套装被动未激活 · 穿齐对应套装以启用
+	AccessoryActive: 饰品功能已激活
+	AccessoryInactive: 放入功能饰品栏以启用
+	PairActive: 同阶套装与饰品配套强化已激活
+	PairInactive: 穿齐对应套装并装备配套饰品以强化
+	Hunting: 猎印 {0}/{1}
+	Duration: 效果生效 · {0} 秒
+	ManaWindow: 已消耗法力 {0} · 周期 {1} 秒
+	EnergyCharge: 法力蓄能 {0}/{1}
+	EnergyWaiting: 蓄能已满 {0}/{1}，等待有效魔法命中恢复护盾
+	ManaReady: 回响已蓄满（已消耗 {0} 点法力），等待有效魔法命中
+	Cooldown: 被动冷却 · {0} 秒
+}
+
+MapObject: {
+	MilkcraftWorkbenchTile: 奶块合成台
+	MilkcraftFurnaceTile: 奶块熔炉
+	MilkcraftLoomTile: 纺织台
+	MilkcraftForgeTile: 精炼锻造台
+	MilkcraftDistilleryTile: 蒸馏台
+	MilkcraftAlchemyTableTile: 炼金台
+	MilkcraftEnchantingTableTile: 附魔台
+	BlackIronOreTile: 黑铁矿石
+	PinkDiamondOreTile: 粉钻矿
+}
+
+Buffs: {
+	PassiveStatusAbyss: {
+		// DisplayName: Passive Status Abyss
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusAbyss.Description
+	}
+
+	PassiveStatusCloth: {
+		// DisplayName: Passive Status Cloth
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusCloth.Description
+	}
+
+	PassiveStatusDark: {
+		// DisplayName: Passive Status Dark
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusDark.Description
+	}
+
+	PassiveStatusEnergy: {
+		// DisplayName: Passive Status Energy
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusEnergy.Description
+	}
+
+	PassiveStatusFallen: {
+		// DisplayName: Passive Status Fallen
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusFallen.Description
+	}
+
+	PassiveStatusHunting: {
+		// DisplayName: Passive Status Hunting
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusHunting.Description
+	}
+
+	PassiveStatusIron: {
+		// DisplayName: Passive Status Iron
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusIron.Description
+	}
+
+	PassiveStatusKnight: {
+		// DisplayName: Passive Status Knight
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusKnight.Description
+	}
+
+	PassiveStatusLeather: {
+		// DisplayName: Passive Status Leather
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusLeather.Description
+	}
+
+	PassiveStatusNightmare: {
+		// DisplayName: Passive Status Nightmare
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusNightmare.Description
+	}
+
+	PassiveStatusSoulforged: {
+		// DisplayName: Passive Status Soulforged
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusSoulforged.Description
+	}
+
+	PassiveStatusTemplar: {
+		// DisplayName: Passive Status Templar
+		// Description: Mods.MilkcraftTerraria.Buffs.PassiveStatusTemplar.Description
+	}
+
+	MilkcraftFrosted: {
+		DisplayName: 寒霜
+		Description: 移动速度降低 20%
+	}
+
+	CelestialTenguMountBuff: {
+		DisplayName: 圣天狗
+		Description: 持续飞行并可悬停
+	}
+
+	UndeadWarhorseMountBuff: {
+		DisplayName: 亡灵军马
+		Description: 快速奔跑；飞行储备为 120 帧
+	}
+
+	WhiteTigerMountBuff: {
+		DisplayName: 白虎
+		Description: 连续双击方向键冲刺并造成伤害
+	}
+
+	WhiteNineTailedFoxMountBuff: {
+		DisplayName: 白色九尾狐
+		Description: 连续双击方向键发动强化冲刺
+	}
+
+	RhinoMountBuff: {
+		DisplayName: 犀牛
+		Description: 骑乘时提高 8 点防御并撞击敌人
+	}
+
+	FlameWarhorseMountBuff: {
+		DisplayName: 烈焰战马
+		Description: 地面奔跑留下持续燃烧的火焰
+	}
+
+	WhiteUnicornMountBuff: {
+		DisplayName: 白色独角兽
+		Description: 无限飞行并可悬停
+	}
+}

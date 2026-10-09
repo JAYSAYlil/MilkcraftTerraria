@@ -1,0 +1,29 @@
+[h1]奶块 × 泰拉瑞亚 | Milkcraft × Terraria[/h1]
+喜欢奶块的装备和坐骑美术，也想在泰拉瑞亚里自由切换职业、单人探索？本模组将经典三职业装备与高级坐骑适配为二维像素素材，并按泰拉瑞亚进度重新设计玩法。
+
+[h2]目前包含[/h2]
+[list]
+[*]T1–T4 战士、射手、法师十二套装备，配套剑、弓、法杖及盾牌、箭袋、法典。
+[*]完整套装的独立被动、饰品稳定收益与同套配对强化；T3/T4 配对弓杖具有自动追踪特殊弹幕。
+[*]七种专职工作站、黑铁矿与粉钻、六种固定成功药水、Boss 配对材料和永久穿戴许可。
+[*]十二种钱币付费特殊附魔，选定必成，与原版哥布林重铸词条叠加。
+[*]七种永久坐骑：亡灵军马、圣天狗、白虎、白色九尾狐、犀牛、烈焰战马和白色独角兽。
+[*]终局武器大粥的铁剑；可合成物品支持原版微光分解。
+[/list]
+
+[h2]阶段与使用[/h2]
+T1 为困难模式前基础装备；T2 对应克苏鲁之脑／世界吞噬者之后；T3 对应机械三王与神圣套时期；T4 对应石巨人之后；大粥的铁剑在月亮领主之后制作。
+炼金没有随机失败，核心固定掉落、加工批量产出，角色可自由切换职业。
+支持 Terraria 1.4.4.9 / tModLoader 1.4.4 stable，无其他模组前置。普通安装不赠送测试物资。
+已有角色／世界可以继续使用；新矿脉和地下白虎宝箱奖励需要新世界，旧世界可从 Boss 和钓鱼匣取得材料与白虎。
+
+[h2]0.2.13[/h2]
+新增五种坐骑及各自冲刺、碰撞、地面火焰和持续飞行能力，并降低亡灵军马、圣天狗的地面奔跑换帧速度。装备和已有美术设计保留。
+
+[url=https://github.com/JAYSAYlil/MilkcraftTerraria]源码、完整配方、坐骑指南、素材来源和问题反馈[/url]
+个人非官方奶块题材模组，像素素材依公开资料重建，未提取客户端资源。当前以单人游玩为主要验证范围，尚未进行双客户端联机实测。
+
+[h2]English[/h2]
+Milkcraft-inspired melee, ranged and magic equipment across four tiers, passive accessories, crafting stations, deterministic alchemy, coin-based special enchantments that stack with vanilla prefixes, and seven permanent mounts.
+Progression follows vanilla Terraria: pre-Hardmode, evil boss, mechanical bosses, post-Golem, and a Moon Lord endgame sword. Requires tModLoader 1.4.4 stable; no other mod dependencies.
+This is an unofficial fan project. Pixel artwork is reconstructed from public references rather than extracted client assets. Single-player is the primary tested mode.

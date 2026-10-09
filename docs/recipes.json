@@ -1,0 +1,2437 @@
+{
+  "version": "0.2.13",
+  "source": "MilkcraftTerraria",
+  "craftable_mod_items": 93,
+  "expected_mod_item_count": 112,
+  "recipes": [
+    {
+      "key": "IronHelmet",
+      "name": "铁制头盔",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 5,
+          "kind": "group"
+        },
+        {
+          "key": "GoldBarGroup",
+          "name": "金锭／铂金锭",
+          "count": 1,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronChestplate",
+      "name": "铁制胸甲",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 8,
+          "kind": "group"
+        },
+        {
+          "key": "GoldBarGroup",
+          "name": "金锭／铂金锭",
+          "count": 1,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronGreaves",
+      "name": "铁制腿甲与战靴",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 11,
+          "kind": "group"
+        },
+        {
+          "key": "GoldBarGroup",
+          "name": "金锭／铂金锭",
+          "count": 1,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "LeatherHeadband",
+      "name": "皮质头饰",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Leather",
+          "name": "皮革",
+          "count": 5,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "LeatherTunic",
+      "name": "皮质护胸",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Leather",
+          "name": "皮革",
+          "count": 8,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "LeatherLeggings",
+      "name": "皮质护腿与便鞋",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Leather",
+          "name": "皮革",
+          "count": 11,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "ClothHood",
+      "name": "粗布兜帽",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "CoarseWool",
+          "name": "粗布",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "ClothRobe",
+      "name": "粗布长袍",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "CoarseWool",
+          "name": "粗布",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "ClothLeggings",
+      "name": "粗布长裤与软鞋",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "CoarseWool",
+          "name": "粗布",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "KnightHelmet",
+      "name": "骑士头盔",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "KnightChestplate",
+      "name": "骑士胸甲",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "KnightGreaves",
+      "name": "骑士腿甲与战靴",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "HuntingHood",
+      "name": "狩猎头饰",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "HuntingChestplate",
+      "name": "狩猎护胸",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "HuntingLeggings",
+      "name": "狩猎护腿与便鞋",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "EnergyHood",
+      "name": "能量兜帽",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "MagicWool",
+          "name": "魔法羊毛",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "EnergyRobe",
+      "name": "能量法袍",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "MagicWool",
+          "name": "魔法羊毛",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "EnergyLeggings",
+      "name": "能量长裤与软鞋",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "MagicWool",
+          "name": "魔法羊毛",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronSword",
+      "name": "铁剑",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 7,
+          "kind": "group"
+        },
+        {
+          "key": "GoldBarGroup",
+          "name": "金锭／铂金锭",
+          "count": 1,
+          "kind": "group"
+        },
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 2,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronBow",
+      "name": "铁弓",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 3,
+          "kind": "group"
+        },
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 5,
+          "kind": "group"
+        },
+        {
+          "key": "Cobweb",
+          "name": "蛛网",
+          "count": 6,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronStaff",
+      "name": "铁质法杖",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "CoarseWool",
+          "name": "粗布",
+          "count": 2,
+          "kind": "mod"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 3,
+          "kind": "group"
+        },
+        {
+          "key": "FallenStar",
+          "name": "坠落之星",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "KnightSword",
+      "name": "骑士长剑",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronSword",
+          "name": "铁剑",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "HuntingBow",
+      "name": "狩猎长弓",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBow",
+          "name": "铁弓",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 4,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "EnergyStaff",
+      "name": "能量法杖",
+      "output": 1,
+      "station": "铁砧／铅砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronStaff",
+          "name": "铁质法杖",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "MagicWool",
+          "name": "魔法羊毛",
+          "count": 4,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "CoarseWool",
+      "name": "粗布",
+      "output": 4,
+      "station": "纺织台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Silk",
+          "name": "丝绸",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "BlackIronBar",
+      "name": "黑铁锭",
+      "output": 1,
+      "station": "奶块熔炉",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "BlackIronOre",
+          "name": "黑铁矿石",
+          "count": 3,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "Alcohol",
+      "name": "酒精",
+      "output": 3,
+      "station": "蒸馏台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Mushroom",
+          "name": "蘑菇",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Gel",
+          "name": "凝胶",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MagicIronBar",
+      "name": "魔铁锭",
+      "output": 8,
+      "station": "奶块熔炉",
+      "condition_keys": [
+        "DownedEvilBoss"
+      ],
+      "ingredients": [
+        {
+          "key": "BlackIronBar",
+          "name": "黑铁锭",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "WildLeather",
+      "name": "狂野兽皮",
+      "output": 8,
+      "station": "纺织台",
+      "condition_keys": [
+        "DownedEvilBoss"
+      ],
+      "ingredients": [
+        {
+          "key": "Leather",
+          "name": "皮革",
+          "count": 4,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "JungleSpores",
+          "name": "丛林孢子",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MagicWool",
+      "name": "魔法羊毛",
+      "output": 8,
+      "station": "纺织台",
+      "condition_keys": [
+        "DownedEvilBoss"
+      ],
+      "ingredients": [
+        {
+          "key": "CoarseWool",
+          "name": "粗布",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "FallenStar",
+          "name": "坠落之星",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftWorkbench",
+      "name": "奶块合成台",
+      "output": 1,
+      "station": "徒手",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 12,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftFurnace",
+      "name": "奶块熔炉",
+      "output": 1,
+      "station": "奶块合成台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "StoneBlock",
+          "name": "石块",
+          "count": 20,
+          "kind": "vanilla"
+        },
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 4,
+          "kind": "group"
+        },
+        {
+          "key": "Torch",
+          "name": "火把",
+          "count": 3,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftLoom",
+      "name": "纺织台",
+      "output": 1,
+      "station": "奶块合成台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 12,
+          "kind": "group"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 1,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftForge",
+      "name": "精炼锻造台",
+      "output": 1,
+      "station": "奶块合成台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 5,
+          "kind": "group"
+        },
+        {
+          "key": "StoneBlock",
+          "name": "石块",
+          "count": 6,
+          "kind": "vanilla"
+        },
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 4,
+          "kind": "group"
+        },
+        {
+          "key": "TinkerersWorkshop",
+          "name": "工匠作坊",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftDistillery",
+      "name": "蒸馏台",
+      "output": 1,
+      "station": "奶块合成台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Glass",
+          "name": "玻璃",
+          "count": 6,
+          "kind": "vanilla"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 2,
+          "kind": "group"
+        },
+        {
+          "key": "GrayBrick",
+          "name": "灰砖",
+          "count": 6,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftAlchemyTable",
+      "name": "炼金台",
+      "output": 1,
+      "station": "奶块合成台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Glass",
+          "name": "玻璃",
+          "count": 6,
+          "kind": "vanilla"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 2,
+          "kind": "group"
+        },
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 8,
+          "kind": "group"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "MilkcraftEnchantingTable",
+      "name": "附魔台",
+      "output": 1,
+      "station": "奶块合成台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "StoneBlock",
+          "name": "石块",
+          "count": 8,
+          "kind": "vanilla"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 2,
+          "kind": "group"
+        },
+        {
+          "key": "FallenStar",
+          "name": "坠落之星",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "EnchantmentHeart",
+          "name": "附魔之心",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "Leather",
+      "name": "皮革",
+      "output": 4,
+      "station": "纺织台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Silk",
+          "name": "丝绸",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Gel",
+          "name": "凝胶",
+          "count": 2,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "vanilla-added"
+    },
+    {
+      "key": "PinkDiamondOre",
+      "name": "粉钻矿",
+      "output": 1,
+      "station": "徒手",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronShield",
+      "name": "铁盾",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 6,
+          "kind": "group"
+        },
+        {
+          "key": "GoldBarGroup",
+          "name": "金锭／铂金锭",
+          "count": 1,
+          "kind": "group"
+        },
+        {
+          "key": "WoodGroup",
+          "name": "任意木材",
+          "count": 4,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "IronQuiver",
+      "name": "皮质箭袋",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Leather",
+          "name": "皮革",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Cobweb",
+          "name": "蛛网",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "BeginnerTome",
+      "name": "初级法典",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "CoarseWool",
+          "name": "粗布",
+          "count": 3,
+          "kind": "mod"
+        },
+        {
+          "key": "Leather",
+          "name": "皮革",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "FallenStar",
+          "name": "坠落之星",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "KnightBulwark",
+      "name": "骑士壁垒",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronShield",
+          "name": "铁盾",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "HuntingQuiver",
+      "name": "狩猎箭袋",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 6,
+          "kind": "mod"
+        },
+        {
+          "key": "WoodenArrow",
+          "name": "木箭",
+          "count": 50,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "EnergyTome",
+      "name": "能量法典",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "BeginnerTome",
+          "name": "初级法典",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "MagicWool",
+          "name": "魔法羊毛",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 2,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "OriginBar",
+      "name": "源质锭",
+      "output": 8,
+      "station": "奶块熔炉",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "MagicIronBar",
+          "name": "魔铁锭",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "HallowedBar",
+          "name": "神圣锭",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "TemplarPotion",
+          "name": "圣殿药水",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "OrnateLeather",
+      "name": "华丽皮革",
+      "output": 8,
+      "station": "纺织台",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "WildLeather",
+          "name": "狂野兽皮",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "Silk",
+          "name": "丝绸",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "NightmarePotion",
+          "name": "梦魇药水",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "RunicWool",
+      "name": "魔纹羊毛",
+      "output": 8,
+      "station": "纺织台",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "MagicWool",
+          "name": "魔法羊毛",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "FallenStar",
+          "name": "坠落之星",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "FallenPotion",
+          "name": "堕落药水",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "CinderBar",
+      "name": "赤炼锭",
+      "output": 8,
+      "station": "奶块熔炉",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "ChlorophyteBar",
+          "name": "叶绿锭",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "SoulforgedPotion",
+          "name": "魂铸药水",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "BaneboundLeather",
+      "name": "破魔鞣革",
+      "output": 8,
+      "station": "纺织台",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "Silk",
+          "name": "丝绸",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "AbyssPotion",
+          "name": "深渊药水",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SighWool",
+      "name": "叹息羊毛",
+      "output": 8,
+      "station": "纺织台",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 4,
+          "kind": "mod"
+        },
+        {
+          "key": "CrystalShard",
+          "name": "水晶碎块",
+          "count": 1,
+          "kind": "vanilla"
+        },
+        {
+          "key": "DarkPotion",
+          "name": "黑暗药水",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "T3EquipmentLicense",
+      "name": "T3装备许可",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "T4EquipmentLicense",
+      "name": "T4装备许可",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "BaneboundLeather",
+          "name": "破魔鞣革",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "TemplarHelmet",
+      "name": "圣殿骑士头盔",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "TemplarChestplate",
+      "name": "圣殿骑士胸甲",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "TemplarGreaves",
+      "name": "圣殿骑士护腿与战靴",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "NightmareHood",
+      "name": "永恒梦魇兜帽",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "NightmareChestplate",
+      "name": "永恒梦魇胸甲",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "NightmareLeggings",
+      "name": "永恒梦魇护腿与战靴",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FallenHood",
+      "name": "堕落天使兜帽",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FallenRobe",
+      "name": "堕落天使长袍",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FallenLeggings",
+      "name": "堕落天使护腿与软鞋",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "TemplarSword",
+      "name": "圣殿骑士长剑",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "TruthSword",
+          "name": "真理之剑",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "NightmareBow",
+      "name": "永恒梦魇猎弓",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "TruthBow",
+          "name": "真理之弓",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 6,
+          "kind": "mod"
+        },
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 4,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FallenStaff",
+      "name": "堕落天使法杖",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "TruthStaff",
+          "name": "真理之杖",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 6,
+          "kind": "mod"
+        },
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 4,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SoulforgedHelmet",
+      "name": "魂铸意志头盔",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SoulforgedChestplate",
+      "name": "魂铸意志胸甲",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SoulforgedGreaves",
+      "name": "魂铸意志护腿与战靴",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "AbyssHood",
+      "name": "深渊行者兜帽",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BaneboundLeather",
+          "name": "破魔鞣革",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "AbyssChestplate",
+      "name": "深渊行者胸甲",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BaneboundLeather",
+          "name": "破魔鞣革",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "AbyssLeggings",
+      "name": "深渊行者护腿与战靴",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BaneboundLeather",
+          "name": "破魔鞣革",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DarkHood",
+      "name": "黑暗信使兜帽",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 5,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DarkRobe",
+      "name": "黑暗信使长袍",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 8,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DarkLeggings",
+      "name": "黑暗信使护腿与软鞋",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 11,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SoulforgedSword",
+      "name": "魂铸意志长剑",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BrokenSwordHilt",
+          "name": "破碎的剑柄",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "AbyssBow",
+      "name": "深渊行者猎弓",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BrokenBowstring",
+          "name": "破碎的弓弦",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "BaneboundLeather",
+          "name": "破魔鞣革",
+          "count": 6,
+          "kind": "mod"
+        },
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 4,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DarkStaff",
+      "name": "黑暗信使法杖",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BrokenStaffHandle",
+          "name": "破碎的杖柄",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 6,
+          "kind": "mod"
+        },
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 4,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "TemplarShield",
+      "name": "圣殿骑士盾",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "KnightBulwark",
+          "name": "骑士壁垒",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "NightmareQuiver",
+      "name": "永恒梦魇箭袋",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "HuntingQuiver",
+          "name": "狩猎箭袋",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "OrnateLeather",
+          "name": "华丽皮革",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FallenTome",
+      "name": "堕落天使法典",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "EnergyTome",
+          "name": "能量法典",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "RunicWool",
+          "name": "魔纹羊毛",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SoulforgedShield",
+      "name": "魂铸意志盾",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "TemplarShield",
+          "name": "圣殿骑士盾",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "CinderBar",
+          "name": "赤炼锭",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "AbyssQuiver",
+      "name": "深渊行者箭袋",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "NightmareQuiver",
+          "name": "永恒梦魇箭袋",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "BaneboundLeather",
+          "name": "破魔鞣革",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DarkTome",
+      "name": "黑暗信使法典",
+      "output": 1,
+      "station": "精炼锻造台",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "FallenTome",
+          "name": "堕落天使法典",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 6,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "TemplarPotion",
+      "name": "圣殿药水",
+      "output": 6,
+      "station": "炼金台",
+      "condition_keys": [
+        "ActiveAlchemyTable",
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "CrystalSkull",
+          "name": "水晶颅骨",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SoulofFright",
+          "name": "恐惧之魂",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Daybloom",
+          "name": "太阳花",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "NightmarePotion",
+      "name": "梦魇药水",
+      "output": 6,
+      "station": "炼金台",
+      "condition_keys": [
+        "ActiveAlchemyTable",
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "AlienKeratin",
+          "name": "异种角质",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SoulofMight",
+          "name": "力量之魂",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Moonglow",
+          "name": "月光草",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FallenPotion",
+      "name": "堕落药水",
+      "output": 6,
+      "station": "炼金台",
+      "condition_keys": [
+        "ActiveAlchemyTable",
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "ArcaneCore",
+          "name": "奥术核心",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SoulofSight",
+          "name": "视域之魂",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Deathweed",
+          "name": "死亡草",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SoulforgedPotion",
+      "name": "魂铸药水",
+      "output": 6,
+      "station": "炼金台",
+      "condition_keys": [
+        "ActiveAlchemyTable",
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "WitherTear",
+          "name": "凋零之泪",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "LunarTabletFragment",
+          "name": "日耀碑牌碎片",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Fireblossom",
+          "name": "火焰花",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "AbyssPotion",
+      "name": "深渊药水",
+      "output": 6,
+      "station": "炼金台",
+      "condition_keys": [
+        "ActiveAlchemyTable",
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "DemonWing",
+          "name": "恶魔之翼",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "Ectoplasm",
+          "name": "灵气",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Moonglow",
+          "name": "月光草",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DarkPotion",
+      "name": "黑暗药水",
+      "output": 6,
+      "station": "炼金台",
+      "condition_keys": [
+        "ActiveAlchemyTable",
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "BottledWater",
+          "name": "瓶装水",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Alcohol",
+          "name": "酒精",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "PinkDiamond",
+          "name": "粉钻",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "EnchantedShinbone",
+          "name": "附魔胫骨",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "CrystalShard",
+          "name": "水晶碎块",
+          "count": 2,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Deathweed",
+          "name": "死亡草",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "DazhouIronSword",
+      "name": "大粥的铁剑",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IronSword",
+          "name": "铁剑",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "KnightSword",
+          "name": "骑士长剑",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "TemplarSword",
+          "name": "圣殿骑士长剑",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "SoulforgedSword",
+          "name": "魂铸意志长剑",
+          "count": 1,
+          "kind": "mod"
+        },
+        {
+          "key": "HiddenIronSword",
+          "name": "断掉的铁剑",
+          "count": 1,
+          "kind": "mod"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "UndeadWarhorseSummon",
+      "name": "亡灵军马",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 8,
+          "kind": "mod"
+        },
+        {
+          "key": "SoulofFright",
+          "name": "恐惧之魂",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Silk",
+          "name": "丝绸",
+          "count": 10,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "CelestialTenguSummon",
+      "name": "圣天狗",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T4WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "SighWool",
+          "name": "叹息羊毛",
+          "count": 8,
+          "kind": "mod"
+        },
+        {
+          "key": "BeetleHusk",
+          "name": "甲虫外壳",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "SoulofFlight",
+          "name": "飞翔之魂",
+          "count": 10,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "RhinoSummon",
+      "name": "犀牛",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "HallowedBar",
+          "name": "神圣锭",
+          "count": 10,
+          "kind": "vanilla"
+        },
+        {
+          "key": "OriginBar",
+          "name": "源质锭",
+          "count": 8,
+          "kind": "mod"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 6,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FlameWarhorseSummon",
+      "name": "烈焰战马",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [
+        "T3WorldProgress"
+      ],
+      "ingredients": [
+        {
+          "key": "HallowedBar",
+          "name": "神圣锭",
+          "count": 10,
+          "kind": "vanilla"
+        },
+        {
+          "key": "HellstoneBar",
+          "name": "狱石锭",
+          "count": 8,
+          "kind": "vanilla"
+        },
+        {
+          "key": "SoulofFright",
+          "name": "恐惧之魂",
+          "count": 5,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
+    }
+  ],
+  "uncraftable": [
+    {
+      "key": "HiddenIronSword",
+      "name": "断掉的铁剑",
+      "acquisition": "月亮领主本体100%掉落1"
+    },
+    {
+      "key": "BlackIronOre",
+      "name": "黑铁矿石",
+      "acquisition": "新世界自然矿脉挖掘；完整克脑／世吞固定120（专家／大师宝藏袋）"
+    },
+    {
+      "key": "PinkDiamond",
+      "name": "粉钻",
+      "acquisition": "粉钻矿挖掘；完整克脑／世吞固定24（专家／大师宝藏袋）"
+    },
+    {
+      "key": "EnchantmentHeart",
+      "name": "附魔之心",
+      "acquisition": "血肉墙100%掉落1（专家／大师宝藏袋）"
+    },
+    {
+      "key": "TruthSword",
+      "name": "真理之剑",
+      "acquisition": "机械骷髅王100%掉落1，与水晶颅骨配对"
+    },
+    {
+      "key": "CrystalSkull",
+      "name": "水晶颅骨",
+      "acquisition": "机械骷髅王100%掉落1，与真理之剑配对"
+    },
+    {
+      "key": "TruthBow",
+      "name": "真理之弓",
+      "acquisition": "毁灭者100%掉落1，与异种角质配对"
+    },
+    {
+      "key": "AlienKeratin",
+      "name": "异种角质",
+      "acquisition": "毁灭者100%掉落1，与真理之弓配对"
+    },
+    {
+      "key": "TruthStaff",
+      "name": "真理之杖",
+      "acquisition": "双子魔眼两只全部击败后100%掉落1，与奥术核心配对"
+    },
+    {
+      "key": "ArcaneCore",
+      "name": "奥术核心",
+      "acquisition": "双子魔眼两只全部击败后100%掉落1，与真理之杖配对"
+    },
+    {
+      "key": "BrokenSwordHilt",
+      "name": "破碎的剑柄",
+      "acquisition": "石巨人战士轮次，与凋零之泪配对各1"
+    },
+    {
+      "key": "WitherTear",
+      "name": "凋零之泪",
+      "acquisition": "石巨人战士轮次，与破碎的剑柄配对各1"
+    },
+    {
+      "key": "BrokenBowstring",
+      "name": "破碎的弓弦",
+      "acquisition": "石巨人射手轮次，与恶魔之翼配对各1"
+    },
+    {
+      "key": "DemonWing",
+      "name": "恶魔之翼",
+      "acquisition": "石巨人射手轮次，与破碎的弓弦配对各1"
+    },
+    {
+      "key": "BrokenStaffHandle",
+      "name": "破碎的杖柄",
+      "acquisition": "石巨人法师轮次，与附魔胫骨配对各1"
+    },
+    {
+      "key": "EnchantedShinbone",
+      "name": "附魔胫骨",
+      "acquisition": "石巨人法师轮次，与破碎的杖柄配对各1"
+    },
+    {
+      "key": "WhiteTigerSummon",
+      "name": "白虎",
+      "acquisition": "新世界地下森林木箱／金箱／活木箱和丛林常春藤箱10%；原版钓鱼匣（含困难模式版本）开匣10%"
+    },
+    {
+      "key": "WhiteNineTailedFoxSummon",
+      "name": "白色九尾狐",
+      "acquisition": "世纪之花25%；专家／大师从宝藏袋获得，单次机会"
+    },
+    {
+      "key": "WhiteUnicornSummon",
+      "name": "白色独角兽",
+      "acquisition": "石巨人后，光之女皇夜光25%、白光100%；专家／大师宝藏袋保留击杀状态，不按开袋时辰判定"
+    }
+  ]
+}
