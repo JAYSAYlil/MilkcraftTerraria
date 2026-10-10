@@ -73,24 +73,6 @@ public sealed class ProgressionGolemCycleSystem : ModSystem
     };
 }
 
-/// <summary>
-/// tML returns early for vanilla OpenableBag items before querying GlobalItem.CanRightClick.
-/// Temporarily route the Golem bag through its normal GlobalItem hook so each bag can bind
-/// its persisted role before the unchanged ItemSlot/ItemDropDatabase open path runs.
-/// </summary>
-public sealed class ProgressionGolemBagRoutingSystem : ModSystem
-{
-    private bool _oldOpenableBag;
-    public override void PostSetupContent()
-    {
-        _oldOpenableBag = ItemID.Sets.OpenableBag[ItemID.GolemBossBag];
-        ItemID.Sets.OpenableBag[ItemID.GolemBossBag] = false;
-    }
-
-    public override void Unload()
-        => ItemID.Sets.OpenableBag[ItemID.GolemBossBag] = _oldOpenableBag;
-}
-
 /// <summary>Stores the assigned role on each vanilla bag, including save and network state.</summary>
 public sealed class ProgressionGolemBagRole : GlobalItem
 {
@@ -125,19 +107,8 @@ public sealed class ProgressionGolemBagRole : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        if (item.type != ItemID.GolemBossBag || Role == GolemRewardRole.None)
-            return;
-        string roleKey = Role switch
-        {
-            GolemRewardRole.Warrior => "Warrior",
-            GolemRewardRole.Ranger => "Ranger",
-            GolemRewardRole.Mage => "Mage",
-            _ => null
-        };
-        if (roleKey is null)
-            return;
-        tooltips.Add(new TooltipLine(Mod, "MilkcraftGolemBonus",
-            Language.GetTextValue($"Mods.MilkcraftTerraria.GolemBagBonus.{roleKey}")));
+        // Existing saved role tags remain readable for old worlds, but this
+        // migration no longer advertises or grants the retired cycle reward.
     }
 
     public override bool CanStack(Item destination, Item source)

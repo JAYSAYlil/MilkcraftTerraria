@@ -1,5 +1,6 @@
 using System;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
@@ -16,6 +17,10 @@ public sealed class PlayKitPlayer : ModPlayer
     private bool _balanceKitGranted;
     private bool _mountKitGranted;
     private bool _mountKit0213Granted;
+    private bool _bossMountKitGranted;
+    private bool _bossCollectionKitGranted;
+    private bool _nebulaToolsKitGranted;
+    private bool _bossPetKitGranted;
     private static bool Enabled => Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_PLAY_KIT") == "1" || Environment.GetEnvironmentVariable("PLAY_KIT") == "1";
     private static bool BalanceKitEnabled => Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_BALANCE_PLAY_KIT") == "1";
 
@@ -56,6 +61,87 @@ public sealed class PlayKitPlayer : ModPlayer
             Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<WhiteUnicornSummon>());
             Main.NewText("0.2.13 坐骑试玩补给已发放：白虎、白色九尾狐、犀牛、烈焰战马、白色独角兽各 1 件；空间不足时掉在脚边。", 220, 190, 120);
         }
+        if (!_bossMountKitGranted)
+        {
+            _bossMountKitGranted = true;
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<WraithWarriorSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<JungleLordSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<BansheeSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<ObsidianGuardianSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<SphinxSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<FrostWitchSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<CastleCoreSummon>());
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ModContent.ItemType<WhiteDodoSummon>());
+            Main.NewText("0.3.0 Boss试玩补给已发放：7种Boss召唤物与极地陆行鸟各1件；空间不足时掉在脚边。", 220, 190, 120);
+        }
+        if (!_bossCollectionKitGranted)
+        {
+            _bossCollectionKitGranted = true;
+            IEntitySource source = Player.GetSource_GiftOrReward();
+
+            Player.QuickSpawnItem(source, ModContent.ItemType<WraithWarriorBag>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<JungleLordBag>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<BansheeBag>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<ObsidianGuardianBag>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<SphinxBag>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<FrostWitchBag>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<CastleCoreBag>());
+
+            Player.QuickSpawnItem(source, ModContent.ItemType<WraithWarriorMask>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<JungleLordMask>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<BansheeMask>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<ObsidianGuardianMask>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<SphinxMask>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<FrostWitchMask>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<CastleCoreMask>());
+
+            Player.QuickSpawnItem(source, ModContent.ItemType<WraithWarriorTrophy>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<JungleLordTrophy>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<BansheeTrophy>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<ObsidianGuardianTrophy>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<SphinxTrophy>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<FrostWitchTrophy>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<CastleCoreTrophy>());
+
+            Player.QuickSpawnItem(source, ModContent.ItemType<WraithWarriorRelic>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<JungleLordRelic>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<BansheeRelic>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<ObsidianGuardianRelic>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<SphinxRelic>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<FrostWitchRelic>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<CastleCoreRelic>());
+
+            Player.QuickSpawnItem(source, ModContent.ItemType<WraithWarriorProof>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<JungleLordProof>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<BansheeProof>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<CastleCoreClearSeal>());
+
+            Item empoweredCastleBag = new();
+            empoweredCastleBag.SetDefaults(ModContent.ItemType<CastleCoreBag>());
+            empoweredCastleBag.GetGlobalItem<CastleCoreBagItemState>().EmpoweredAtKill = true;
+            Player.QuickSpawnItem(source, empoweredCastleBag);
+            Main.NewText("0.3.0.1 Boss试玩收藏补给已发放：宝藏袋、面具、纪念章、遗物与凭证；另有1个白昼强化城堡核心袋。背包空间不足的物品会掉在脚边。", 220, 190, 120);
+        }
+        if (!_nebulaToolsKitGranted)
+        {
+            _nebulaToolsKitGranted = true;
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ItemID.NebulaPickaxe);
+            Player.QuickSpawnItem(Player.GetSource_GiftOrReward(), ItemID.LunarHamaxeNebula);
+            Main.NewText("0.3.1 Boss试玩补给已发放：星云镐与星云锤斧各1把；空间不足时掉在脚边。", 220, 190, 120);
+        }
+        if (!_bossPetKitGranted)
+        {
+            _bossPetKitGranted = true;
+            IEntitySource source = Player.GetSource_GiftOrReward();
+            Player.QuickSpawnItem(source, ModContent.ItemType<WraithWarriorPetSummon>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<JungleLordPetSummon>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<BansheePetSummon>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<ObsidianGuardianPetSummon>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<SphinxPetSummon>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<FrostWitchPetSummon>());
+            Player.QuickSpawnItem(source, ModContent.ItemType<CastleCorePetSummon>());
+            Main.NewText("0.3.1 Boss宠物试玩补给已发放：七种Boss宠物召唤物各1件；空间不足时掉在脚边。", 220, 190, 120);
+        }
         if (_kitGranted && _tier3Tier4KitGranted && _passiveKitGranted) return;
 
         bool grantOriginalKit = !_kitGranted;
@@ -65,7 +151,9 @@ public sealed class PlayKitPlayer : ModPlayer
         foreach (ModItem content in ModContent.GetInstance<MilkcraftTerrariaMod>().GetContent<ModItem>())
         {
             if (content is IronQuiver or UndeadWarhorseSummon or CelestialTenguSummon
-                or WhiteTigerSummon or WhiteNineTailedFoxSummon or RhinoSummon or FlameWarhorseSummon or WhiteUnicornSummon) continue;
+                or WhiteTigerSummon or WhiteNineTailedFoxSummon or RhinoSummon or FlameWarhorseSummon or WhiteUnicornSummon
+                or WhiteDodoSummon || content is BossSummonItem or MilkcraftBossPetSummon or MilkcraftBossBag or BossProofItem or BossDisplayItem
+                || content.Name.EndsWith("Mask", StringComparison.Ordinal)) continue;
             bool isLateTier = content is Tier3T4ArmorItem or Tier3T4WeaponItem or Tier3T4AccessoryItem or
                 Tier3T4MaterialItem or TierEquipmentLicenseItem;
             if (isLateTier ? !grantLateTierKit : !grantOriginalKit)
@@ -106,6 +194,10 @@ public sealed class PlayKitPlayer : ModPlayer
         tag["milkcraft0210BalanceKitGranted"] = _balanceKitGranted;
         tag["milkcraft0212MountKitGranted"] = _mountKitGranted;
         tag["milkcraft0213MountKitGranted"] = _mountKit0213Granted;
+        tag["milkcraft030BossMountKitGranted"] = _bossMountKitGranted;
+        tag["milkcraft0301BossCollectionKitGranted"] = _bossCollectionKitGranted;
+        tag["milkcraft031NebulaToolsKitGranted"] = _nebulaToolsKitGranted;
+        tag["milkcraft031BossPetKitGranted"] = _bossPetKitGranted;
     }
 
     public override void LoadData(TagCompound tag)
@@ -116,5 +208,9 @@ public sealed class PlayKitPlayer : ModPlayer
         _balanceKitGranted = tag.GetBool("milkcraft0210BalanceKitGranted");
         _mountKitGranted = tag.GetBool("milkcraft0212MountKitGranted");
         _mountKit0213Granted = tag.GetBool("milkcraft0213MountKitGranted");
+        _bossMountKitGranted = tag.GetBool("milkcraft030BossMountKitGranted");
+        _bossCollectionKitGranted = tag.GetBool("milkcraft0301BossCollectionKitGranted");
+        _nebulaToolsKitGranted = tag.GetBool("milkcraft031NebulaToolsKitGranted");
+        _bossPetKitGranted = tag.GetBool("milkcraft031BossPetKitGranted");
     }
 }

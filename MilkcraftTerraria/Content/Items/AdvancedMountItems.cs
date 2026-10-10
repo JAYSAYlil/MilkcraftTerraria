@@ -101,3 +101,11 @@ public sealed class WhiteUnicornSummon : ExpansionMountSummon
     protected override int BuffType => ModContent.BuffType<WhiteUnicornMountBuff>();
     protected override int Rarity => ItemRarityID.Red;
 }
+
+public sealed class WhiteDodoSummon : ExpansionMountSummon
+{
+    public override string Texture => $"{Mod.Name}/Content/Items/WhiteDodoSummon";
+    protected override int MountType => ModContent.MountType<WhiteDodoMount>();
+    protected override int BuffType => ModContent.BuffType<WhiteDodoMountBuff>();
+    protected override int Rarity => ItemRarityID.Pink;
+}

@@ -68,7 +68,7 @@ internal static class AdvancedMountExpansionDiagnostics
         bool oldGameMenu = Main.gameMenu;
         bool oldLighting = SmokeSystem.ForcePreviewLighting;
         bool begun = false;
-        const int width = 920, height = 900;
+        const int width = 920, height = 1080;
         using var target = new RenderTarget2D(device, width, height, false, SurfaceFormat.Color,
             DepthFormat.None, 0, RenderTargetUsage.PreserveContents);
         MethodInfo drawMethod = typeof(Mount).GetMethod("Draw",
@@ -91,7 +91,8 @@ internal static class AdvancedMountExpansionDiagnostics
                 ("white-nine-tailed-fox", ModContent.MountType<WhiteNineTailedFoxMount>()),
                 ("rhino", ModContent.MountType<RhinoMount>()),
                 ("flame-warhorse", ModContent.MountType<FlameWarhorseMount>()),
-                ("white-unicorn", ModContent.MountType<WhiteUnicornMount>())
+                ("white-unicorn", ModContent.MountType<WhiteUnicornMount>()),
+                ("white-dodo", ModContent.MountType<WhiteDodoMount>())
             };
 
             device.SetRenderTarget(target);
@@ -164,7 +165,8 @@ internal static class AdvancedMountExpansionDiagnostics
             report.AppendLine(TestNewMountGroundAbilities(playerIndex));
             report.AppendLine(TestWhiteTigerChestGeneration());
             report.AppendLine(TestPlayKitMigration(playerIndex));
-            report.AppendLine(TestAdvancedMountLootAndBagPersistence(playerIndex));
+            report.AppendLine(TestAdvancedMountLootRegistration());
+            report.AppendLine(ProgressionBossReleaseDiagnostics.Run());
             Main.spriteBatch.End();
             begun = false;
             device.SetRenderTarget(null);
@@ -173,7 +175,8 @@ internal static class AdvancedMountExpansionDiagnostics
             report.AppendLine(RenderNativeActionPoses(outputDirectory, playerIndex, darkInput: false));
             report.AppendLine(RenderNativeActionPoses(outputDirectory, playerIndex, darkInput: true));
             report.AppendLine(TestWhiteUnicornSustainedHover(playerIndex));
-            report.AppendLine("native-standing-rider-render=PASS five mounts, left/right, 3-piece Iron armor, native PlayerRenderer, fixture-white mount lighting");
+            report.AppendLine(TestWhiteDodoLimitedFlight(playerIndex));
+            report.AppendLine("native-standing-rider-render=PASS six mounts, left/right, 3-piece Iron armor, native PlayerRenderer, fixture-white mount lighting");
             return report.ToString();
         }
         finally
@@ -193,7 +196,7 @@ internal static class AdvancedMountExpansionDiagnostics
     private static string RenderNativeActionPoses(string outputDirectory, int playerIndex, bool darkInput)
     {
         GraphicsDevice device = Main.graphics.GraphicsDevice;
-        const int width = 1280, height = 960;
+        const int width = 1280, height = 1150;
         Player oldPlayer = Main.player[playerIndex];
         Vector2 oldScreen = Main.screenPosition;
         Vector2 oldZoom = Main.GameViewMatrix.Zoom;
@@ -208,7 +211,8 @@ internal static class AdvancedMountExpansionDiagnostics
             ("white-nine-tailed-fox", ModContent.MountType<WhiteNineTailedFoxMount>()),
             ("rhino", ModContent.MountType<RhinoMount>()),
             ("flame-warhorse", ModContent.MountType<FlameWarhorseMount>()),
-            ("white-unicorn", ModContent.MountType<WhiteUnicornMount>())
+            ("white-unicorn", ModContent.MountType<WhiteUnicornMount>()),
+            ("white-dodo", ModContent.MountType<WhiteDodoMount>())
         };
         ulong oldGameUpdateCount = Main.GameUpdateCount;
         var suits = new (string Name, int Head, int Body, int Legs)[]
@@ -257,9 +261,11 @@ internal static class AdvancedMountExpansionDiagnostics
                     int poseIndex = col / 2;
                     int direction = col % 2 == 0 ? 1 : -1;
                     bool unicorn = mountCase.Name == "white-unicorn";
+                    bool limitedFlight = mountCase.Name == "white-dodo";
                     string pose = poses[poseIndex];
-                    if (pose is "fly" or "glide" && !unicorn)
+                    if (pose is "fly" or "glide" && !unicorn && !limitedFlight)
                         pose = mountCase.Name is "white-tiger" or "white-nine-tailed-fox" ? "dash" : "fast-run";
+                    if (pose == "glide" && limitedFlight) pose = "fast-run";
                     var suit = suits[Array.IndexOf(mounts, mountCase) % suits.Length];
                     Player actor = SmokeSystem.CreatePreviewPlayer(suit.Head, suit.Body, suit.Legs,
                         walk: pose == "run" || pose == "fast-run", jump: pose is "jump" or "fly" or "glide");
@@ -449,6 +455,44 @@ internal static class AdvancedMountExpansionDiagnostics
         }
     }
 
+    private static string TestWhiteDodoLimitedFlight(int playerIndex)
+    {
+        Player actor = SmokeSystem.CreatePreviewPlayer(ModContent.ItemType<IronHelmet>(),
+            ModContent.ItemType<IronChestplate>(), ModContent.ItemType<IronGreaves>());
+        Player old = Main.player[playerIndex];
+        Main.player[playerIndex] = actor;
+        actor.whoAmI = playerIndex;
+        try
+        {
+            actor.mount.SetMount(ModContent.MountType<WhiteDodoMount>(), actor, true);
+            actor.mount.ResetFlightTime(0f); // Start from the native grounded refill state.
+            actor.controlJump = true;
+            actor.jump = 0;
+            actor.velocity = new Vector2(0f, -6f);
+            int start = actor.mount.FlyTime;
+            int ticks = 0;
+            for (; ticks < start + 2 && actor.mount.FlyTime > 0; ticks++)
+            {
+                actor.mount.UpdateEffects(actor);
+                actor.mount.Flight();
+                if (!float.IsFinite(actor.velocity.X) || !float.IsFinite(actor.velocity.Y))
+                    throw new InvalidOperationException($"WhiteDodo flight generated non-finite velocity at tick {ticks}: {actor.velocity}.");
+            }
+            if (start != 120 || ticks < 119 || actor.mount.FlyTime > 0)
+                throw new InvalidOperationException($"WhiteDodo flight was not finite 120 ticks: start={start}, elapsed={ticks}, remaining={actor.mount.FlyTime}.");
+            bool exhaustedBeforeReset = actor.mount.FlyTime == 0;
+            actor.mount.ResetFlightTime(0f);
+            if (actor.mount.FlyTime != 120)
+                throw new InvalidOperationException($"WhiteDodo landing reset did not restore its 120-tick reserve: {actor.mount.FlyTime}.");
+            return $"white-dodo-native-flight=PASS finiteReserve={start}, elapsed={ticks}, exhausted-before-ResetFlightTime={exhaustedBeforeReset}, reset={actor.mount.FlyTime} (native refill method; not full Player.Update landing fixture)";
+        }
+        finally
+        {
+            actor.mount.Dismount(actor);
+            Main.player[playerIndex] = old;
+        }
+    }
+
     private static string TextureSize(object asset)
     {
         if (asset is null) return "none";
@@ -626,13 +670,14 @@ internal static class AdvancedMountExpansionDiagnostics
                 return actor;
             }
 
-            var cases = new (string Name, int Mount, int Summon)[]
+        var cases = new (string Name, int Mount, int Summon)[]
             {
                 ("white-tiger", ModContent.MountType<WhiteTigerMount>(), ModContent.ItemType<WhiteTigerSummon>()),
                 ("white-nine-tailed-fox", ModContent.MountType<WhiteNineTailedFoxMount>(), ModContent.ItemType<WhiteNineTailedFoxSummon>()),
                 ("rhino", ModContent.MountType<RhinoMount>(), ModContent.ItemType<RhinoSummon>()),
                 ("flame-warhorse", ModContent.MountType<FlameWarhorseMount>(), ModContent.ItemType<FlameWarhorseSummon>()),
-                ("white-unicorn", ModContent.MountType<WhiteUnicornMount>(), ModContent.ItemType<WhiteUnicornSummon>())
+                ("white-unicorn", ModContent.MountType<WhiteUnicornMount>(), ModContent.ItemType<WhiteUnicornSummon>()),
+                ("white-dodo", ModContent.MountType<WhiteDodoMount>(), ModContent.ItemType<WhiteDodoSummon>())
             };
 
             foreach (var mountCase in cases)
@@ -725,7 +770,7 @@ internal static class AdvancedMountExpansionDiagnostics
                     throw new InvalidOperationException($"Mounted {mountCase.Name}/{weapon.Name}/{direction} increased arrows unexpectedly.");
                 casesRun++;
             }
-            return $"advanced-mount-itemcheck=PASS summon=5/5 quickmount-toggle=5/5 mounted-weapons={casesRun}/30 mounts=5 directions=2 IronSword/IronBow/IronStaff";
+            return $"advanced-mount-itemcheck=PASS summon={cases.Length}/{cases.Length} quickmount-toggle={cases.Length}/{cases.Length} mounted-weapons={casesRun}/{cases.Length * 2 * weapons.Length} mounts={cases.Length} directions=2 IronSword/IronBow/IronStaff";
         }
         finally
         {
@@ -1320,6 +1365,38 @@ internal static class AdvancedMountExpansionDiagnostics
             int world = Main.item.Where(item => item is { active: true } && item.type == type).Sum(item => item.stack);
             return inventory + world;
         }
+    }
+
+    private static string TestAdvancedMountLootRegistration()
+    {
+        int tigerType = ModContent.ItemType<WhiteTigerSummon>();
+        int foxType = ModContent.ItemType<WhiteNineTailedFoxSummon>();
+        int crateCount = 0;
+        for (int type = 1; type < ItemID.Count; type++)
+        {
+            if (!ItemID.Sets.IsFishingCrate[type]) continue;
+            CommonDrop rule = Main.ItemDropsDB.GetRulesForItemID(type)
+                .OfType<CommonDrop>().FirstOrDefault(drop => drop.itemId == tigerType);
+            if (rule is null) continue;
+            if (rule.chanceNumerator != 1 || rule.chanceDenominator != 10)
+                throw new InvalidOperationException($"Fishing crate {type} has White Tiger drop {rule.chanceNumerator}/{rule.chanceDenominator}, expected 1/10.");
+            crateCount++;
+        }
+        if (crateCount == 0) throw new InvalidOperationException("No vanilla fishing crate registered the White Tiger drop.");
+
+        List<IItemDropRule> planteraRules = Main.ItemDropsDB.GetRulesForNPCID(NPCID.Plantera);
+        CommonDrop foxNpcRule = planteraRules.OfType<CommonDrop>().FirstOrDefault(drop => drop.itemId == foxType);
+        List<IItemDropRule> planteraBagRules = Main.ItemDropsDB.GetRulesForItemID(ItemID.PlanteraBossBag);
+        CommonDrop foxBagRule = planteraBagRules.OfType<CommonDrop>().FirstOrDefault(drop => drop.itemId == foxType);
+        if (foxNpcRule is null || foxNpcRule.chanceNumerator != 1 || foxNpcRule.chanceDenominator != 4)
+            throw new InvalidOperationException("Plantera normal-mode White Nine-Tailed Fox drop is not 1/4.");
+        if (foxBagRule is null || foxBagRule.chanceNumerator != 1 || foxBagRule.chanceDenominator != 4)
+            throw new InvalidOperationException("Plantera bag White Nine-Tailed Fox drop is not 1/4.");
+
+        int castleBag = ModContent.ItemType<CastleCoreBag>();
+        if (!ItemID.Sets.BossBag[castleBag])
+            throw new InvalidOperationException("Castle Core bag is not registered as a native boss bag.");
+        return $"mount-loot-registration=PASS fishing-crates={crateCount} at 1/10; Plantera fox=normal 1/4 + bag 1/4; White Unicorn acquisition moved to Castle Core and verified by native ItemSlot bag diagnostic";
     }
 
 }

@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using MilkcraftTerraria.Content;
+using MilkcraftTerraria.Content.Items;
 
 namespace MilkcraftTerraria;
 
@@ -15,6 +16,7 @@ public sealed class MilkcraftTerrariaMod : Mod
     internal const byte EnchantApplyRequestMessage = 4;
     internal const byte EnchantApplyResultMessage = 5;
     internal const byte EnchantBankSyncMessage = 6;
+    internal const byte BossSummonRequestMessage = 7;
 
     internal static void SendProgressPacket(Tier3T4ProgressPlayer progress, int toWho, int fromWho, bool initialSync)
     {
@@ -31,6 +33,14 @@ public sealed class MilkcraftTerrariaMod : Mod
     public override void HandlePacket(BinaryReader reader, int whoAmI)
     {
         byte message = reader.ReadByte();
+        if (message == BossSummonRequestMessage)
+        {
+            byte summonPlayerIndex = reader.ReadByte();
+            int bossType = reader.ReadInt16();
+            if (Main.netMode == NetmodeID.Server && summonPlayerIndex == whoAmI && summonPlayerIndex < Main.maxPlayers)
+                BossSummonItem.TrySpawnFromServer(Main.player[summonPlayerIndex], bossType);
+            return;
+        }
         if (message == AlchemyActivationRequestMessage)
         {
             Point16 origin = new(reader.ReadInt16(), reader.ReadInt16());

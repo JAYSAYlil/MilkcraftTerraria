@@ -1,30 +1,12 @@
 {
-  "version": "0.2.13",
-  "base_package_sha256": "08B783CFE116DAD9EF65B2C5634AA0BAA22FF52F2B35BAF0DD6BE2C47006E7A9",
-  "verification": {
-    "native-expanded-final-v26": {
-      "status": "PASS",
-      "log_sha256": "686B9A502943EF4781CB1E1BA200D2C2820DCB0FD33C94D72E8B7DF61CB88424"
-    },
-    "functional-final": {
-      "status": "PASS",
-      "log_sha256": "9C0F4312E9F9FC38CE0271EA4CE9CC2EC055D442CBFFAB50E75A0780BA377E39"
-    },
-    "mount-regression-final": {
-      "status": "PASS",
-      "log_sha256": "6EA99EF9165067089B99C35A1515D13F13C5F6854413DD086D7ABC735DF45E71"
-    }
-  },
-  "content": {
-    "mod_items": 112,
-    "recipes": 94,
-    "prior_png_preserved": 185,
-    "new_mount_png": 15
-  },
-  "multiplayer_live_tested": false,
-  "public_package_sha256": "B3C602BA9A1820678761F2D9CE43321DA4DDEB7CE0001382A726502A4B10B7EC",
-  "public_metadata_only": true,
-  "unchanged_gameplay_source": true,
-  "unchanged_gameplay_png": 200,
-  "public_native_smoke": "PASS"
+  "version": "0.3.3.5",
+  "loader": "2026.8.3.0",
+  "package_sha256": "22FE3EDF95F3E8028F40D2225A0282A9EFD53094DD17A1B06B5ACE3E6F82592A",
+  "registered_items": 159,
+  "related_recipes": 101,
+  "gameplay_assembly_preserved": true,
+  "game_textures_preserved": 351,
+  "real_two_client_test": false,
+  "release_smoke": "PASS",
+  "native_visual": "PASS"
 }

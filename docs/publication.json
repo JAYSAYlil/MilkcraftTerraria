@@ -1,37 +1,8 @@
 {
-  "version": "0.2.13",
-  "published_at_utc": "2026-10-09T03:07:22.238969+00:00",
+  "version": "0.3.3.5",
   "github_repository": "https://github.com/JAYSAYlil/MilkcraftTerraria",
-  "github_release": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/tag/v0.2.13",
+  "github_release": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/tag/v0.3.3.5",
   "steam_workshop": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816192019",
   "steam_workshop_id": 3816192019,
-  "steam_visibility": "Public",
-  "sha256": "B3C602BA9A1820678761F2D9CE43321DA4DDEB7CE0001382A726502A4B10B7EC",
-  "github_anonymous_download": "PASS",
-  "steam_native_download": "PASS",
-  "native_public_build_smoke": "PASS",
-  "original_gameplay_source_preserved": true,
-  "original_gameplay_textures_preserved": 200,
-  "release_assets": [
-    {
-      "name": "MilkcraftTerraria-0.2.13-ModSources.zip",
-      "size": 4059019,
-      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.2.13/MilkcraftTerraria-0.2.13-ModSources.zip"
-    },
-    {
-      "name": "MilkcraftTerraria-0.2.13.zip",
-      "size": 6396867,
-      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.2.13/MilkcraftTerraria-0.2.13.zip"
-    },
-    {
-      "name": "MilkcraftTerraria.tmod",
-      "size": 5357842,
-      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.2.13/MilkcraftTerraria.tmod"
-    },
-    {
-      "name": "SHA256SUMS.txt",
-      "size": 293,
-      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.2.13/SHA256SUMS.txt"
-    }
-  ]
+  "sha256": "22FE3EDF95F3E8028F40D2225A0282A9EFD53094DD17A1B06B5ACE3E6F82592A"
 }

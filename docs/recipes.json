@@ -1,8 +1,8 @@
 {
-  "version": "0.2.13",
+  "version": "0.3.3.5",
   "source": "MilkcraftTerraria",
-  "craftable_mod_items": 93,
-  "expected_mod_item_count": 112,
+  "craftable_mod_items": 100,
+  "expected_mod_item_count": 159,
   "recipes": [
     {
       "key": "IronHelmet",
@@ -1196,20 +1196,20 @@
       ],
       "ingredients": [
         {
-          "key": "OriginBar",
-          "name": "源质锭",
+          "key": "WraithWarriorProof",
+          "name": "怨灵武士凭证",
           "count": 1,
           "kind": "mod"
         },
         {
-          "key": "OrnateLeather",
-          "name": "华丽皮革",
+          "key": "JungleLordProof",
+          "name": "丛林领主凭证",
           "count": 1,
           "kind": "mod"
         },
         {
-          "key": "RunicWool",
-          "name": "魔纹羊毛",
+          "key": "BansheeProof",
+          "name": "女妖凭证",
           "count": 1,
           "kind": "mod"
         }
@@ -1226,20 +1226,8 @@
       ],
       "ingredients": [
         {
-          "key": "CinderBar",
-          "name": "赤炼锭",
-          "count": 1,
-          "kind": "mod"
-        },
-        {
-          "key": "BaneboundLeather",
-          "name": "破魔鞣革",
-          "count": 1,
-          "kind": "mod"
-        },
-        {
-          "key": "SighWool",
-          "name": "叹息羊毛",
+          "key": "CastleCoreClearSeal",
+          "name": "城堡核心通关凭证",
           "count": 1,
           "kind": "mod"
         }
@@ -2335,6 +2323,202 @@
         }
       ],
       "kind": "mod"
+    },
+    {
+      "key": "WraithWarriorSummon",
+      "name": "怨灵武士召唤物",
+      "output": 1,
+      "station": "恶魔祭坛／猩红祭坛",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Silk",
+          "name": "丝绸",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "CorruptionMaterial",
+          "name": "腐肉／椎骨",
+          "count": 5,
+          "kind": "group"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 5,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "JungleLordSummon",
+      "name": "丛林领主召唤物",
+      "output": 1,
+      "station": "恶魔祭坛／猩红祭坛",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "JungleSpores",
+          "name": "丛林孢子",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "Stinger",
+          "name": "毒刺",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 5,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "BansheeSummon",
+      "name": "女妖召唤物",
+      "output": 1,
+      "station": "恶魔祭坛／猩红祭坛",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Lens",
+          "name": "晶状体",
+          "count": 3,
+          "kind": "vanilla"
+        },
+        {
+          "key": "FallenStar",
+          "name": "坠落之星",
+          "count": 3,
+          "kind": "vanilla"
+        },
+        {
+          "key": "IronBarGroup",
+          "name": "铁锭／铅锭",
+          "count": 5,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "ObsidianGuardianSummon",
+      "name": "黑曜石守卫召唤物",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Obsidian",
+          "name": "黑曜石",
+          "count": 10,
+          "kind": "vanilla"
+        },
+        {
+          "key": "HellstoneBar",
+          "name": "狱石锭",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "EarlyHardmodeBar",
+          "name": "钴锭／钯金锭",
+          "count": 5,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "SphinxSummon",
+      "name": "斯芬克斯召唤物",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "Sandstone",
+          "name": "砂岩",
+          "count": 15,
+          "kind": "vanilla"
+        },
+        {
+          "key": "SoulofLight",
+          "name": "光明之魂",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "EarlyHardmodeBar",
+          "name": "钴锭／钯金锭",
+          "count": 5,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "FrostWitchSummon",
+      "name": "冰霜女巫召唤物",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "IceBlock",
+          "name": "冰雪块",
+          "count": 20,
+          "kind": "vanilla"
+        },
+        {
+          "key": "SoulofLight",
+          "name": "光明之魂",
+          "count": 5,
+          "kind": "vanilla"
+        },
+        {
+          "key": "EarlyHardmodeBar",
+          "name": "钴锭／钯金锭",
+          "count": 5,
+          "kind": "group"
+        }
+      ],
+      "kind": "mod"
+    },
+    {
+      "key": "CastleCoreSummon",
+      "name": "城堡核心召唤物",
+      "output": 1,
+      "station": "秘银砧／山铜砧",
+      "condition_keys": [],
+      "ingredients": [
+        {
+          "key": "HallowedBar",
+          "name": "神圣锭",
+          "count": 6,
+          "kind": "vanilla"
+        },
+        {
+          "key": "StoneBlock",
+          "name": "石块",
+          "count": 20,
+          "kind": "vanilla"
+        },
+        {
+          "key": "LihzahrdPowerCell",
+          "name": "丛林蜥蜴电池",
+          "count": 1,
+          "kind": "vanilla"
+        }
+      ],
+      "kind": "mod"
     }
   ],
   "uncraftable": [
@@ -2346,82 +2530,282 @@
     {
       "key": "BlackIronOre",
       "name": "黑铁矿石",
-      "acquisition": "新世界自然矿脉挖掘；完整克脑／世吞固定120（专家／大师宝藏袋）"
+      "acquisition": "新世界自然矿脉挖掘；怨灵武士／丛林领主／女妖每只固定120（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "PinkDiamond",
       "name": "粉钻",
-      "acquisition": "粉钻矿挖掘；完整克脑／世吞固定24（专家／大师宝藏袋）"
+      "acquisition": "粉钻矿挖掘；怨灵武士／丛林领主／女妖每只固定8（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "EnchantmentHeart",
       "name": "附魔之心",
-      "acquisition": "血肉墙100%掉落1（专家／大师宝藏袋）"
+      "acquisition": "黑曜石守卫／斯芬克斯／冰霜女巫每只固定1（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "TruthSword",
       "name": "真理之剑",
-      "acquisition": "机械骷髅王100%掉落1，与水晶颅骨配对"
+      "acquisition": "黑曜石守卫100%掉落1（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "CrystalSkull",
       "name": "水晶颅骨",
-      "acquisition": "机械骷髅王100%掉落1，与真理之剑配对"
+      "acquisition": "黑曜石守卫100%掉落2（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "TruthBow",
       "name": "真理之弓",
-      "acquisition": "毁灭者100%掉落1，与异种角质配对"
+      "acquisition": "斯芬克斯100%掉落1（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "AlienKeratin",
       "name": "异种角质",
-      "acquisition": "毁灭者100%掉落1，与真理之弓配对"
+      "acquisition": "斯芬克斯100%掉落2（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "TruthStaff",
       "name": "真理之杖",
-      "acquisition": "双子魔眼两只全部击败后100%掉落1，与奥术核心配对"
+      "acquisition": "冰霜女巫100%掉落1（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "ArcaneCore",
       "name": "奥术核心",
-      "acquisition": "双子魔眼两只全部击败后100%掉落1，与真理之杖配对"
+      "acquisition": "冰霜女巫100%掉落2（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "BrokenSwordHilt",
       "name": "破碎的剑柄",
-      "acquisition": "石巨人战士轮次，与凋零之泪配对各1"
+      "acquisition": "城堡核心每次100%掉落1，三职业同时获得（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "WitherTear",
       "name": "凋零之泪",
-      "acquisition": "石巨人战士轮次，与破碎的剑柄配对各1"
+      "acquisition": "城堡核心每次100%掉落2，三职业同时获得（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "BrokenBowstring",
       "name": "破碎的弓弦",
-      "acquisition": "石巨人射手轮次，与恶魔之翼配对各1"
+      "acquisition": "城堡核心每次100%掉落1，三职业同时获得（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "DemonWing",
       "name": "恶魔之翼",
-      "acquisition": "石巨人射手轮次，与破碎的弓弦配对各1"
+      "acquisition": "城堡核心每次100%掉落2，三职业同时获得（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "BrokenStaffHandle",
       "name": "破碎的杖柄",
-      "acquisition": "石巨人法师轮次，与附魔胫骨配对各1"
+      "acquisition": "城堡核心每次100%掉落1，三职业同时获得（普通本体；专家／大师宝藏袋）"
     },
     {
       "key": "EnchantedShinbone",
       "name": "附魔胫骨",
-      "acquisition": "石巨人法师轮次，与破碎的杖柄配对各1"
+      "acquisition": "城堡核心每次100%掉落2，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "WhiteDodoSummon",
+      "name": "极地陆行鸟",
+      "acquisition": "冰霜女巫普通本体25%；专家／大师宝藏袋25%"
+    },
+    {
+      "key": "WraithWarriorBag",
+      "name": "怨灵武士宝藏袋",
+      "acquisition": "怨灵武士专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "WraithWarriorMask",
+      "name": "怨灵武士面具",
+      "acquisition": "怨灵武士普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "WraithWarriorTrophy",
+      "name": "怨灵武士纪念章",
+      "acquisition": "怨灵武士本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "WraithWarriorRelic",
+      "name": "怨灵武士遗物",
+      "acquisition": "怨灵武士本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "JungleLordBag",
+      "name": "丛林领主宝藏袋",
+      "acquisition": "丛林领主专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "JungleLordMask",
+      "name": "丛林领主面具",
+      "acquisition": "丛林领主普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "JungleLordTrophy",
+      "name": "丛林领主纪念章",
+      "acquisition": "丛林领主本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "JungleLordRelic",
+      "name": "丛林领主遗物",
+      "acquisition": "丛林领主本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "BansheeBag",
+      "name": "女妖宝藏袋",
+      "acquisition": "女妖专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "BansheeMask",
+      "name": "女妖面具",
+      "acquisition": "女妖普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "BansheeTrophy",
+      "name": "女妖纪念章",
+      "acquisition": "女妖本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "BansheeRelic",
+      "name": "女妖遗物",
+      "acquisition": "女妖本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "ObsidianGuardianBag",
+      "name": "黑曜石守卫宝藏袋",
+      "acquisition": "黑曜石守卫专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "ObsidianGuardianMask",
+      "name": "黑曜石守卫面具",
+      "acquisition": "黑曜石守卫普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "ObsidianGuardianTrophy",
+      "name": "黑曜石守卫纪念章",
+      "acquisition": "黑曜石守卫本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "ObsidianGuardianRelic",
+      "name": "黑曜石守卫遗物",
+      "acquisition": "黑曜石守卫本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "SphinxBag",
+      "name": "斯芬克斯宝藏袋",
+      "acquisition": "斯芬克斯专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "SphinxMask",
+      "name": "斯芬克斯面具",
+      "acquisition": "斯芬克斯普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "SphinxTrophy",
+      "name": "斯芬克斯纪念章",
+      "acquisition": "斯芬克斯本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "SphinxRelic",
+      "name": "斯芬克斯遗物",
+      "acquisition": "斯芬克斯本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "FrostWitchBag",
+      "name": "冰霜女巫宝藏袋",
+      "acquisition": "冰霜女巫专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "FrostWitchMask",
+      "name": "冰霜女巫面具",
+      "acquisition": "冰霜女巫普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "FrostWitchTrophy",
+      "name": "冰霜女巫纪念章",
+      "acquisition": "冰霜女巫本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "FrostWitchRelic",
+      "name": "冰霜女巫遗物",
+      "acquisition": "冰霜女巫本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "CastleCoreBag",
+      "name": "城堡核心宝藏袋",
+      "acquisition": "城堡核心专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "CastleCoreMask",
+      "name": "城堡核心面具",
+      "acquisition": "城堡核心普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "CastleCoreTrophy",
+      "name": "城堡核心纪念章",
+      "acquisition": "城堡核心本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "CastleCoreRelic",
+      "name": "城堡核心遗物",
+      "acquisition": "城堡核心本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "WraithWarriorProof",
+      "name": "怨灵武士凭证",
+      "acquisition": "怨灵武士100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "JungleLordProof",
+      "name": "丛林领主凭证",
+      "acquisition": "丛林领主100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "BansheeProof",
+      "name": "女妖凭证",
+      "acquisition": "女妖100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "CastleCoreClearSeal",
+      "name": "城堡核心通关凭证",
+      "acquisition": "城堡核心100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "WraithWarriorPetSummon",
+      "name": "小怨灵",
+      "acquisition": "怨灵武士普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版宠物栏装备"
+    },
+    {
+      "key": "JungleLordPetSummon",
+      "name": "苔芽领主",
+      "acquisition": "丛林领主普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版宠物栏装备"
+    },
+    {
+      "key": "BansheePetSummon",
+      "name": "鹿角幽灵",
+      "acquisition": "女妖普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版照明宠物栏装备"
+    },
+    {
+      "key": "ObsidianGuardianPetSummon",
+      "name": "小黑曜守卫",
+      "acquisition": "黑曜石守卫普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版宠物栏装备"
+    },
+    {
+      "key": "SphinxPetSummon",
+      "name": "金翼幼狮",
+      "acquisition": "斯芬克斯普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版宠物栏装备"
+    },
+    {
+      "key": "FrostWitchPetSummon",
+      "name": "霜轮精灵",
+      "acquisition": "冰霜女巫普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版照明宠物栏装备"
+    },
+    {
+      "key": "CastleCorePetSummon",
+      "name": "迷你三面核心",
+      "acquisition": "城堡核心普通本体25%；专家／大师宝藏袋25%；每次仅一个抽取路径；原版照明宠物栏装备"
     },
     {
       "key": "WhiteTigerSummon",
       "name": "白虎",
-      "acquisition": "新世界地下森林木箱／金箱／活木箱和丛林常春藤箱10%；原版钓鱼匣（含困难模式版本）开匣10%"
+      "acquisition": "新世界地下森林木箱／金箱／活木箱和丛林常春藤箱10%；原版钓鱼匣（含困难模式版本）开匣10%；怨灵武士／丛林领主／女妖每只10%（普通本体；专家／大师对应袋，单次抽取）"
     },
     {
       "key": "WhiteNineTailedFoxSummon",
@@ -2431,7 +2815,7 @@
     {
       "key": "WhiteUnicornSummon",
       "name": "白色独角兽",
-      "acquisition": "石巨人后，光之女皇夜光25%、白光100%；专家／大师宝藏袋保留击杀状态，不按开袋时辰判定"
+      "acquisition": "石巨人后，城堡核心常规25%、白昼召唤的强化挑战100%；专家／大师宝藏袋保存击杀强化资格，不按开袋时辰判定"
     }
   ]
 }

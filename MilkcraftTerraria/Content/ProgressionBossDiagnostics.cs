@@ -61,14 +61,9 @@ internal static class ProgressionBossDiagnostics
             WorldGen.noTileActions = false;
             WorldGen.destroyObject = false;
 
-            string eater = TestFinalSegmentRewards();
-            string normalDrops = TestNormalBossDrops();
-            string expertBags = TestBossBags(Main.GameMode = 1, player);
-            string masterBags = TestBossBags(Main.GameMode = 2, player);
-            string golem = TestGolemCycleAndActualBagOpen(player);
-            string golemNormal = TestGolemNormalCycle();
-            string golemMaster = TestGolemMasterCycle(player);
-            return eater + "\n" + normalDrops + "\n" + expertBags + "\n" + masterBags + "\n" + golem + "\n" + golemNormal + "\n" + golemMaster;
+            string removedVanillaLoot = ProgressionBossNativeDiagnostics.VerifyLegacyVanillaLootRemoved();
+            string bossStateAndCastleBag = ProgressionBossReleaseDiagnostics.Run();
+            return removedVanillaLoot + "\n" + bossStateAndCastleBag;
         }
         finally
         {

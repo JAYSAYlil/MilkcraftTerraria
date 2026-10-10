@@ -1,6 +1,0 @@
-工具：内置 image_gen
-参考：MilkcraftTerraria/Content/Items/TemplarHelmet.png
-提示词：
-Use case: logo-brand. Create one square Steam Workshop mod icon for Milkcraft × Terraria. The provided tiny pixel sprite is the reference for the central subject, the approved T3 Templar knight helmet: bright gold tall crest, silver-white cheeks, horizontal cyan eye slit and blue cross trim. Preserve this recognizable helmet appearance. Render a crisp handsome pixel-art emblem, centered large with generous margins, a deep navy flat square background, subtle gold and cyan halo accents framing the helmet. Highly legible when downsampled to 80x80 pixels, clear large pixel clusters, Terraria-like shading, no text, no letters, no additional objects or characters, no armor redesign. Only a promotional icon, not an in-game sprite sheet.
-
-技术导出：最近邻缩放为80×80 icon.png、30×30 icon_small.png、480×480 icon_workshop.png。现有游戏装备贴图不变。

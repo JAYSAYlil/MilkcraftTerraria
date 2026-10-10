@@ -61,22 +61,22 @@ Items: {
 
 	EnchantmentHeart: {
 		DisplayName: 附魔之心
-		Tooltip: 血肉墙掉落的附魔台材料。
+		Tooltip: 黑曜石守卫、斯芬克斯或冰霜女巫掉落的附魔台材料。
 	}
 
 	TruthSword: {
 		DisplayName: 真理之剑
-		Tooltip: 机械骷髅王掉落的合成材料。
+		Tooltip: 黑曜石守卫掉落的合成材料。
 	}
 
 	TruthBow: {
 		DisplayName: 真理之弓
-		Tooltip: 毁灭者掉落的合成材料。
+		Tooltip: 斯芬克斯掉落的合成材料。
 	}
 
 	TruthStaff: {
 		DisplayName: 真理之杖
-		Tooltip: 双子魔眼掉落的合成材料。
+		Tooltip: 冰霜女巫掉落的合成材料。
 	}
 
 	CrystalSkull: {
@@ -96,32 +96,32 @@ Items: {
 
 	BrokenSwordHilt: {
 		DisplayName: 破碎的剑柄
-		Tooltip: 石巨人循环掉落的魂铸配方材料。
+		Tooltip: 城堡核心的固定奖励，用于魂铸配方。
 	}
 
 	BrokenBowstring: {
 		DisplayName: 破碎的弓弦
-		Tooltip: 石巨人循环掉落的深渊配方材料。
+		Tooltip: 城堡核心的固定奖励，用于深渊配方。
 	}
 
 	BrokenStaffHandle: {
 		DisplayName: 破碎的杖柄
-		Tooltip: 石巨人循环掉落的黑暗配方材料。
+		Tooltip: 城堡核心的固定奖励，用于黑暗配方。
 	}
 
 	WitherTear: {
 		DisplayName: 凋零之泪
-		Tooltip: 石巨人战士循环掉落的炼金核心。
+		Tooltip: 城堡核心的战士炼金核心奖励。
 	}
 
 	DemonWing: {
 		DisplayName: 恶魔之翼
-		Tooltip: 石巨人射手循环掉落的炼金核心。
+		Tooltip: 城堡核心的射手炼金核心奖励。
 	}
 
 	EnchantedShinbone: {
 		DisplayName: 附魔胫骨
-		Tooltip: 石巨人法师循环掉落的炼金核心。
+		Tooltip: 城堡核心的法师炼金核心奖励。
 	}
 
 	TemplarPotion: {
@@ -558,6 +558,244 @@ Items: {
 		DisplayName: T4装备许可
 		Tooltip: 消耗后永久解锁T4战士、射手与法师装备。
 	}
+
+	WraithWarriorSummon: {
+		DisplayName: 怨灵武士召唤物
+		Tooltip: 消耗1个召唤怨灵武士；克苏鲁之脑或世界吞噬者被击败后可在地表夜间使用。
+	}
+
+	JungleLordSummon: {
+		DisplayName: 丛林领主召唤物
+		Tooltip: 消耗1个召唤丛林领主；克苏鲁之脑或世界吞噬者被击败后可在地表丛林使用。
+	}
+
+	BansheeSummon: {
+		DisplayName: 女妖召唤物
+		Tooltip: 消耗1个召唤女妖；克苏鲁之脑或世界吞噬者被击败后可在地表夜间使用。
+	}
+
+	ObsidianGuardianSummon: {
+		DisplayName: 黑曜石守卫召唤物
+		Tooltip: 消耗1个召唤黑曜石守卫；困难模式雪地使用。
+	}
+
+	SphinxSummon: {
+		DisplayName: 斯芬克斯召唤物
+		Tooltip: 消耗1个召唤斯芬克斯；困难模式地表沙漠使用。
+	}
+
+	FrostWitchSummon: {
+		DisplayName: 冰霜女巫召唤物
+		Tooltip: 消耗1个召唤冰霜女巫；困难模式雪地使用。
+	}
+
+	CastleCoreSummon: {
+		DisplayName: 城堡核心召唤物
+		Tooltip: 消耗1个召唤城堡核心；石巨人被击败后可在地表使用。白天召唤会激活强化挑战：弹幕伤害提高20%，并必定掉落白色独角兽。
+		EmpoweredUnicornGuarantee: 强化挑战弹幕伤害提高20%，并必定掉落白色独角兽坐骑。
+	}
+
+	WhiteDodoSummon: {
+		DisplayName: 极地陆行鸟
+		Tooltip: 永久坐骑；快速奔跑并拥有120帧有限飞行，落地后恢复。
+	}
+
+	WraithWarriorBag: {
+		DisplayName: 怨灵武士宝藏袋
+		// Tooltip: ""
+	}
+
+	JungleLordBag: {
+		DisplayName: 丛林领主宝藏袋
+		// Tooltip: ""
+	}
+
+	BansheeBag: {
+		DisplayName: 女妖宝藏袋
+		// Tooltip: ""
+	}
+
+	ObsidianGuardianBag: {
+		DisplayName: 黑曜石守卫宝藏袋
+		// Tooltip: ""
+	}
+
+	SphinxBag: {
+		DisplayName: 斯芬克斯宝藏袋
+		// Tooltip: ""
+	}
+
+	FrostWitchBag: {
+		DisplayName: 冰霜女巫宝藏袋
+		// Tooltip: ""
+	}
+
+	CastleCoreBag: {
+		DisplayName: 城堡核心宝藏袋
+		Tooltip: ""
+		EmpoweredTooltip: 本袋来自强化挑战：白色独角兽坐骑必定掉落。
+		NormalTooltip: 普通挑战奖励：有25%几率获得白色独角兽坐骑。
+	}
+
+	WraithWarriorMask: {
+		DisplayName: 怨灵武士面具
+		// Tooltip: ""
+	}
+
+	JungleLordMask: {
+		DisplayName: 丛林领主面具
+		// Tooltip: ""
+	}
+
+	BansheeMask: {
+		DisplayName: 女妖面具
+		// Tooltip: ""
+	}
+
+	ObsidianGuardianMask: {
+		DisplayName: 黑曜石守卫面具
+		// Tooltip: ""
+	}
+
+	SphinxMask: {
+		DisplayName: 斯芬克斯面具
+		// Tooltip: ""
+	}
+
+	FrostWitchMask: {
+		DisplayName: 冰霜女巫面具
+		// Tooltip: ""
+	}
+
+	CastleCoreMask: {
+		DisplayName: 城堡核心面具
+		// Tooltip: ""
+	}
+
+	WraithWarriorTrophy: {
+		DisplayName: 怨灵武士纪念章
+		// Tooltip: ""
+	}
+
+	JungleLordTrophy: {
+		DisplayName: 丛林领主纪念章
+		// Tooltip: ""
+	}
+
+	BansheeTrophy: {
+		DisplayName: 女妖纪念章
+		// Tooltip: ""
+	}
+
+	ObsidianGuardianTrophy: {
+		DisplayName: 黑曜石守卫纪念章
+		// Tooltip: ""
+	}
+
+	SphinxTrophy: {
+		DisplayName: 斯芬克斯纪念章
+		// Tooltip: ""
+	}
+
+	FrostWitchTrophy: {
+		DisplayName: 冰霜女巫纪念章
+		// Tooltip: ""
+	}
+
+	CastleCoreTrophy: {
+		DisplayName: 城堡核心纪念章
+		// Tooltip: ""
+	}
+
+	WraithWarriorRelic: {
+		DisplayName: 怨灵武士遗物
+		// Tooltip: ""
+	}
+
+	JungleLordRelic: {
+		DisplayName: 丛林领主遗物
+		// Tooltip: ""
+	}
+
+	BansheeRelic: {
+		DisplayName: 女妖遗物
+		// Tooltip: ""
+	}
+
+	ObsidianGuardianRelic: {
+		DisplayName: 黑曜石守卫遗物
+		// Tooltip: ""
+	}
+
+	SphinxRelic: {
+		DisplayName: 斯芬克斯遗物
+		// Tooltip: ""
+	}
+
+	FrostWitchRelic: {
+		DisplayName: 冰霜女巫遗物
+		// Tooltip: ""
+	}
+
+	CastleCoreRelic: {
+		DisplayName: 城堡核心遗物
+		// Tooltip: ""
+	}
+
+	WraithWarriorProof: {
+		DisplayName: 怨灵武士凭证
+		// Tooltip: ""
+	}
+
+	JungleLordProof: {
+		DisplayName: 丛林领主凭证
+		// Tooltip: ""
+	}
+
+	BansheeProof: {
+		DisplayName: 女妖凭证
+		// Tooltip: ""
+	}
+
+	CastleCoreClearSeal: {
+		DisplayName: 城堡核心通关凭证
+		// Tooltip: ""
+	}
+
+	WraithWarriorPetSummon: {
+		DisplayName: 小怨灵
+		Tooltip: 使用召唤，也可装备在普通宠物栏；取消召唤或卸下栏位即可收回。
+	}
+
+	JungleLordPetSummon: {
+		DisplayName: 苔芽领主
+		Tooltip: 使用召唤，也可装备在普通宠物栏；取消召唤或卸下栏位即可收回。
+	}
+
+	BansheePetSummon: {
+		DisplayName: 鹿角幽灵
+		Tooltip: 使用召唤，也可装备在照明宠物栏；取消召唤或卸下栏位即可收回。
+	}
+
+	ObsidianGuardianPetSummon: {
+		DisplayName: 小黑曜守卫
+		Tooltip: 使用召唤，也可装备在普通宠物栏；取消召唤或卸下栏位即可收回。
+	}
+
+	SphinxPetSummon: {
+		DisplayName: 金翼幼狮
+		Tooltip: 使用召唤，也可装备在普通宠物栏；取消召唤或卸下栏位即可收回。
+	}
+
+	FrostWitchPetSummon: {
+		DisplayName: 霜轮精灵
+		Tooltip: 使用召唤，也可装备在照明宠物栏；取消召唤或卸下栏位即可收回。
+	}
+
+	CastleCorePetSummon: {
+		DisplayName: 迷你三面核心
+		Tooltip: 使用召唤，也可装备在照明宠物栏；取消召唤或卸下栏位即可收回。
+	}
 }
 
 GolemBagBonus: {
@@ -579,6 +817,14 @@ Projectiles: {
 	// SuitPassiveProjectile.DisplayName: Suit Passive Projectile
 	// MilkcraftEnchantExplosionVfx.DisplayName: Milkcraft Enchant Explosion Vfx
 	// FlameWarhorseTrailFire.DisplayName: Flame Warhorse Trail Fire
+	// MilkcraftBossProjectile.DisplayName: Milkcraft Boss Projectile
+	// BansheePet.DisplayName: Banshee Pet
+	// CastleCorePet.DisplayName: Castle Core Pet
+	// FrostWitchPet.DisplayName: Frost Witch Pet
+	// JungleLordPet.DisplayName: Jungle Lord Pet
+	// ObsidianGuardianPet.DisplayName: Obsidian Guardian Pet
+	// SphinxPet.DisplayName: Sphinx Pet
+	// WraithWarriorPet.DisplayName: Wraith Warrior Pet
 }
 
 Enchanting: {
@@ -641,6 +887,8 @@ Conditions: {
 	T3WorldProgress: 任意机械Boss被击败后可制作
 	T4WorldProgress: 石巨人被击败后可制作
 	ActiveAlchemyTable: 需要处于已激活的奶块炼金台旁
+	NormalCastleCore: 普通城堡核心
+	EmpoweredCastleCore: 强化城堡核心
 }
 
 Messages: {
@@ -658,8 +906,8 @@ Progression: {
 	T4LicenseReady: 该世界进度允许激活T4许可。
 	T3LicenseLocked: 需要当前世界击败任意机械Boss。
 	T4LicenseLocked: 需要当前世界击败石巨人。
-	T3ChampionTitle: 已获得称号：机械征服者。
-	T3ChampionUnlocked: 已击败全部三位机械Boss，获得称号“机械征服者”。
+	T3ChampionTitle: 已获得称号：暮色征服者。
+	T3ChampionUnlocked: 已击败黑曜石守卫、斯芬克斯与冰霜女巫，获得称号“暮色征服者”。
 }
 
 SetBonuses: {
@@ -738,6 +986,44 @@ MapObject: {
 	MilkcraftEnchantingTableTile: 附魔台
 	BlackIronOreTile: 黑铁矿石
 	PinkDiamondOreTile: 粉钻矿
+	WraithWarriorTrophyTile: 怨灵武士纪念章
+	JungleLordTrophyTile: 丛林领主纪念章
+	BansheeTrophyTile: 女妖纪念章
+	ObsidianGuardianTrophyTile: 黑曜石守卫纪念章
+	SphinxTrophyTile: 斯芬克斯纪念章
+	FrostWitchTrophyTile: 冰霜女巫纪念章
+	CastleCoreTrophyTile: 城堡核心纪念章
+	WraithWarriorRelicTile: 怨灵武士遗物
+	JungleLordRelicTile: 丛林领主遗物
+	BansheeRelicTile: 女妖遗物
+	ObsidianGuardianRelicTile: 黑曜石守卫遗物
+	SphinxRelicTile: 斯芬克斯遗物
+	FrostWitchRelicTile: 冰霜女巫遗物
+	CastleCoreRelicTile: 城堡核心遗物
+}
+
+NPCs: {
+	WraithWarriorBoss.DisplayName: 怨灵武士
+	JungleLordBoss.DisplayName: 丛林领主
+	BansheeBoss.DisplayName: 女妖
+	ObsidianGuardianBoss.DisplayName: 黑曜石守卫
+	SphinxBoss.DisplayName: 斯芬克斯
+	FrostWitchBoss.DisplayName: 冰霜女巫
+	CastleCoreBoss.DisplayName: 城堡核心
+	CastleSoulCrystal.DisplayName: 城堡魂晶
+	ExplosiveSlimeMinion.DisplayName: 爆焰史莱姆
+	FrostArcherMinion.DisplayName: 寒冰射手
+	FrostNagaMinion.DisplayName: 冰霜娜迦
+	SkeletonArcherMinion.DisplayName: 骷髅射手
+	SkeletonWarriorMinion.DisplayName: 骷髅卫士
+	WraithArcherMinion.DisplayName: 半人鹿射手
+}
+
+Bosses: {
+	CastleCore: {
+		Defeated: 城堡核心已被击败。
+		EmpoweredDefeated: 强化城堡核心已被击败！白色独角兽必定掉落。
+	}
 }
 
 Buffs: {
@@ -839,5 +1125,45 @@ Buffs: {
 	WhiteUnicornMountBuff: {
 		DisplayName: 白色独角兽
 		Description: 无限飞行并可悬停
+	}
+
+	WhiteDodoMountBuff: {
+		DisplayName: 极地陆行鸟
+		Description: 快速奔跑并拥有120帧有限飞行，落地后恢复
+	}
+
+	WraithWarriorPetBuff: {
+		DisplayName: 小怨灵
+		Description: 怨灵武士的纪念宠物
+	}
+
+	JungleLordPetBuff: {
+		DisplayName: 苔芽领主
+		Description: 丛林领主的纪念宠物
+	}
+
+	BansheePetBuff: {
+		DisplayName: 鹿角幽灵
+		Description: 为周围提供蓝绿色微光
+	}
+
+	ObsidianGuardianPetBuff: {
+		DisplayName: 小黑曜守卫
+		Description: 黑曜石守卫的纪念宠物
+	}
+
+	SphinxPetBuff: {
+		DisplayName: 金翼幼狮
+		Description: 斯芬克斯的纪念宠物
+	}
+
+	FrostWitchPetBuff: {
+		DisplayName: 霜轮精灵
+		Description: 为周围提供冰蓝微光
+	}
+
+	CastleCorePetBuff: {
+		DisplayName: 迷你三面核心
+		Description: 微光颜色会随核心表情变化
 	}
 }

@@ -1,29 +1,18 @@
-[h1]奶块 × 泰拉瑞亚 | Milkcraft × Terraria[/h1]
-喜欢奶块的装备和坐骑美术，也想在泰拉瑞亚里自由切换职业、单人探索？本模组将经典三职业装备与高级坐骑适配为二维像素素材，并按泰拉瑞亚进度重新设计玩法。
+[h1]奶块 × 泰拉瑞亚[/h1]
+[b]0.3.3.5 · Terraria 1.4.4 / tModLoader stable · 中文 / English[/b]
 
-[h2]目前包含[/h2]
-[list]
-[*]T1–T4 战士、射手、法师十二套装备，配套剑、弓、法杖及盾牌、箭袋、法典。
-[*]完整套装的独立被动、饰品稳定收益与同套配对强化；T3/T4 配对弓杖具有自动追踪特殊弹幕。
-[*]七种专职工作站、黑铁矿与粉钻、六种固定成功药水、Boss 配对材料和永久穿戴许可。
-[*]十二种钱币付费特殊附魔，选定必成，与原版哥布林重铸词条叠加。
-[*]七种永久坐骑：亡灵军马、圣天狗、白虎、白色九尾狐、犀牛、烈焰战马和白色独角兽。
-[*]终局武器大粥的铁剑；可合成物品支持原版微光分解。
-[/list]
+[h2]三职业装备与武器[/h2]
+战士、射手、法师的T1—T4十二套装备，十三种武器与十二件盾牌、箭袋、法典。套装提供独立被动；同阶职业饰品可增强被动。T3/T4弓与箭袋、法杖与法典配合时具有特殊追踪弹幕。武器、护甲和技能带有对应色彩的光效。
 
-[h2]阶段与使用[/h2]
-T1 为困难模式前基础装备；T2 对应克苏鲁之脑／世界吞噬者之后；T3 对应机械三王与神圣套时期；T4 对应石巨人之后；大粥的铁剑在月亮领主之后制作。
-炼金没有随机失败，核心固定掉落、加工批量产出，角色可自由切换职业。
-支持 Terraria 1.4.4.9 / tModLoader 1.4.4 stable，无其他模组前置。普通安装不赠送测试物资。
-已有角色／世界可以继续使用；新矿脉和地下白虎宝箱奖励需要新世界，旧世界可从 Boss 和钓鱼匣取得材料与白虎。
+[h2]七位Boss[/h2]
+怨灵武士、丛林领主、女妖、黑曜石守卫、斯芬克斯、冰霜女巫、城堡核心。Boss拥有阶段技能、弹幕与援军；专家模式宝藏袋、大师遗物、纪念章、面具及宠物提供收藏奖励。城堡核心的白天挑战拥有强化机制。
 
-[h2]0.2.13[/h2]
-新增五种坐骑及各自冲刺、碰撞、地面火焰和持续飞行能力，并降低亡灵军马、圣天狗的地面奔跑换帧速度。装备和已有美术设计保留。
+[h2]八种坐骑与七种宠物[/h2]
+白虎、白色九尾狐、犀牛、烈焰战马、亡灵军马、圣天狗、白色独角兽、极地陆行鸟。冲刺、碰撞、火焰轨迹和飞行能力各具特色。七位Boss对应七种宠物，其中三种为照明宠物。
 
-[url=https://github.com/JAYSAYlil/MilkcraftTerraria]源码、完整配方、坐骑指南、素材来源和问题反馈[/url]
-个人非官方奶块题材模组，像素素材依公开资料重建，未提取客户端资源。当前以单人游玩为主要验证范围，尚未进行双客户端联机实测。
+[h2]制作与成长[/h2]
+黑铁矿与粉钻矿，七种专职工作站，固定炼金配方，阶段许可与称号，十二种花费钱币的特殊附魔。附魔独立于原版装备词条；可合成物品支持微光分解。
 
-[h2]English[/h2]
-Milkcraft-inspired melee, ranged and magic equipment across four tiers, passive accessories, crafting stations, deterministic alchemy, coin-based special enchantments that stack with vanilla prefixes, and seven permanent mounts.
-Progression follows vanilla Terraria: pre-Hardmode, evil boss, mechanical bosses, post-Golem, and a Moon Lord endgame sword. Requires tModLoader 1.4.4 stable; no other mod dependencies.
-This is an unofficial fan project. Pixel artwork is reconstructed from public references rather than extracted client assets. Single-player is the primary tested mode.
+[url=https://github.com/JAYSAYlil/MilkcraftTerraria/blob/main/docs/content-guide.md]完整内容指南[/url] · [url=https://github.com/JAYSAYlil/MilkcraftTerraria/releases/tag/v0.3.3.5]源码与手动下载[/url]
+宣传图使用实装像素素材组合，场景背景为宣传插画。
+非官方同人模组；奶块、Terraria及tModLoader相关原作归各自权利人。

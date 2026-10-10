@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)][string]$TModLoaderPath)
+param([Parameter(Mandatory=$true)][string]$TModLoaderPath, [switch]$PublicPackage, [string]$PythonCommand = 'python')
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $sourceDir = Join-Path $repoRoot 'MilkcraftTerraria'
@@ -14,3 +14,8 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Build failed' }
 } finally { Pop-Location }
 Copy-Item -LiteralPath (Join-Path $saveDir 'Mods\MilkcraftTerraria.tmod') -Destination $outputDir -Force
+if ($PublicPackage) {
+    $package = Join-Path $outputDir 'MilkcraftTerraria.tmod'
+    & $PythonCommand (Join-Path $PSScriptRoot 'sanitize-package.py') $package $package --source $sourceDir
+    if ($LASTEXITCODE -ne 0) { throw 'Package sanitization failed' }
+}

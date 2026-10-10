@@ -2,11 +2,13 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.GameContent;
 using Terraria.Enums;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
+using ReLogic.Content;
 using System.Linq;
 using MilkcraftTerraria.Content.Items;
 
@@ -106,8 +108,54 @@ public sealed class MilkcraftAlchemyTableTile : MilkcraftStationTile
 }
 public sealed class MilkcraftEnchantingTableTile : MilkcraftStationTile
 {
+    private const int CubeDrawYOffset = 12;
+    private static Asset<Texture2D> _pedestal;
     protected override int WidthTiles => 3;
     protected override int HeightTiles => 3;
+
+    public override bool PreDraw(int i, int j, SpriteBatch spriteBatch)
+    {
+        Tile tile = Main.tile[i, j];
+        int cellX = (tile.TileFrameX / 18) % 3;
+        int cellY = (tile.TileFrameY / 18) % 3;
+        if (cellX == 0 && cellY == 0)
+        {
+            Texture2D cube = TextureAssets.Tile[Type].Value;
+            int baseX = tile.TileFrameX;
+            int baseY = tile.TileFrameY;
+            int topLeftX = i;
+            int topLeftY = j;
+            Vector2 offscreen = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
+            for (int row = 0; row < 3; row++)
+            for (int col = 0; col < 3; col++)
+            {
+                Rectangle source = new(baseX + col * 18, baseY + row * 18, 16, 16);
+                Vector2 position = new((topLeftX + col) * 16f, (topLeftY + row) * 16f - CubeDrawYOffset);
+                spriteBatch.Draw(cube, position - Main.screenPosition + offscreen, source,
+                    Lighting.GetColor(i + col, j + row));
+            }
+        }
+        // The 3x3 cube is rendered as a single lifted atlas; drawing individual
+        // native cells as well would duplicate it and cover the support gap.
+        return false;
+    }
+
+    public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
+    {
+        Tile tile = Main.tile[i, j];
+        int cellX = (tile.TileFrameX / 18) % 3;
+        int cellY = (tile.TileFrameY / 18) % 3;
+        if (cellX != 0 || cellY != 0 || Main.dedServ)
+            return;
+        _pedestal ??= ModContent.Request<Texture2D>($"{Mod.Name}/Content/Tiles/MilkcraftEnchantingPedestal", AssetRequestMode.ImmediateLoad);
+        int topLeftX = i;
+        int topLeftY = j;
+        Vector2 position = new(topLeftX * 16f + 24f, topLeftY * 16f + 39f);
+        Vector2 offscreen = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
+        spriteBatch.Draw(_pedestal.Value, position - Main.screenPosition + offscreen, null,
+            Lighting.GetColor(i, j + 2), 0f, new Vector2(_pedestal.Width() * 0.5f, 0f), 1f,
+            SpriteEffects.None, 0f);
+    }
 
     public override bool RightClick(int i, int j)
     {

@@ -61,22 +61,22 @@ Items: {
 
 	EnchantmentHeart: {
 		DisplayName: Enchantment Heart
-		Tooltip: An enchanting-table material dropped by the Wall of Flesh.
+		Tooltip: An enchanting-table material dropped by the Obsidian Guardian, Sphinx, or Frost Witch.
 	}
 
 	TruthSword: {
 		DisplayName: Truth Sword
-		Tooltip: A crafting material dropped by Skeletron Prime.
+		Tooltip: A crafting material dropped by the Obsidian Guardian.
 	}
 
 	TruthBow: {
 		DisplayName: Truth Bow
-		Tooltip: A crafting material dropped by the Destroyer.
+		Tooltip: A crafting material dropped by the Sphinx.
 	}
 
 	TruthStaff: {
 		DisplayName: Truth Staff
-		Tooltip: A crafting material dropped by the Twins.
+		Tooltip: A crafting material dropped by the Frost Witch.
 	}
 
 	CrystalSkull: {
@@ -96,32 +96,32 @@ Items: {
 
 	BrokenSwordHilt: {
 		DisplayName: Broken Sword Hilt
-		Tooltip: A Golem-cycle material for Soulforged recipes.
+		Tooltip: A Castle Core reward used in Soulforged recipes.
 	}
 
 	BrokenBowstring: {
 		DisplayName: Broken Bowstring
-		Tooltip: A Golem-cycle material for Abyss recipes.
+		Tooltip: A Castle Core reward used in Abyss recipes.
 	}
 
 	BrokenStaffHandle: {
 		DisplayName: Broken Staff Handle
-		Tooltip: A Golem-cycle material for Dark recipes.
+		Tooltip: A Castle Core reward used in Dark recipes.
 	}
 
 	WitherTear: {
 		DisplayName: Wither Tear
-		Tooltip: The Warrior alchemy core from the Golem cycle.
+		Tooltip: A Warrior alchemy core from Castle Core.
 	}
 
 	DemonWing: {
 		DisplayName: Demon Wing
-		Tooltip: The Ranger alchemy core from the Golem cycle.
+		Tooltip: A Ranger alchemy core from Castle Core.
 	}
 
 	EnchantedShinbone: {
 		DisplayName: Enchanted Shinbone
-		Tooltip: The Mage alchemy core from the Golem cycle.
+		Tooltip: A Mage alchemy core from Castle Core.
 	}
 
 	TemplarPotion: {
@@ -558,6 +558,244 @@ Items: {
 		DisplayName: T4 Equipment License
 		Tooltip: Permanently unlocks T4 Warrior, Ranger, and Mage gear when consumed.
 	}
+
+	WraithWarriorSummon: {
+		DisplayName: Wraith Warrior Summon
+		Tooltip: Consumed to summon the Wraith Warrior. Use on the surface at night after defeating the Brain of Cthulhu or Eater of Worlds.
+	}
+
+	JungleLordSummon: {
+		DisplayName: Jungle Lord Summon
+		Tooltip: Consumed to summon the Jungle Lord. Use in the surface jungle after defeating the Brain of Cthulhu or Eater of Worlds.
+	}
+
+	BansheeSummon: {
+		DisplayName: Banshee Summon
+		Tooltip: Consumed to summon the Banshee. Use on the surface at night after defeating the Brain of Cthulhu or Eater of Worlds.
+	}
+
+	ObsidianGuardianSummon: {
+		DisplayName: Obsidian Guardian Summon
+		Tooltip: Consumed to summon the Obsidian Guardian. Use in the snow biome in Hardmode.
+	}
+
+	SphinxSummon: {
+		DisplayName: Sphinx Summon
+		Tooltip: Consumed to summon the Sphinx. Use in the surface desert in Hardmode.
+	}
+
+	FrostWitchSummon: {
+		DisplayName: Frost Witch Summon
+		Tooltip: Consumed to summon the Frost Witch. Use in the snow biome in Hardmode.
+	}
+
+	CastleCoreSummon: {
+		DisplayName: Castle Core Summon
+		Tooltip: Consumed to summon the Castle Core. Use on the surface after defeating Golem. The empowered challenge deals 20% more projectile damage and guarantees the White Unicorn.
+		EmpoweredUnicornGuarantee: Empowered projectiles deal 20% more damage and the White Unicorn mount is guaranteed.
+	}
+
+	WhiteDodoSummon: {
+		DisplayName: Polar Chocobo
+		Tooltip: Permanent mount; fast running and 120 ticks of limited flight, restored on landing.
+	}
+
+	WraithWarriorBag: {
+		DisplayName: Wraith Warrior Treasure Bag
+		Tooltip: ""
+	}
+
+	JungleLordBag: {
+		DisplayName: Jungle Lord Treasure Bag
+		Tooltip: ""
+	}
+
+	BansheeBag: {
+		DisplayName: Banshee Treasure Bag
+		Tooltip: ""
+	}
+
+	ObsidianGuardianBag: {
+		DisplayName: Obsidian Guardian Treasure Bag
+		Tooltip: ""
+	}
+
+	SphinxBag: {
+		DisplayName: Sphinx Treasure Bag
+		Tooltip: ""
+	}
+
+	FrostWitchBag: {
+		DisplayName: Frost Witch Treasure Bag
+		Tooltip: ""
+	}
+
+	CastleCoreBag: {
+		DisplayName: Castle Core Treasure Bag
+		Tooltip: ""
+		EmpoweredTooltip: From the empowered challenge: the White Unicorn mount is guaranteed.
+		NormalTooltip: Normal challenge reward: 25% chance to obtain the White Unicorn mount.
+	}
+
+	WraithWarriorMask: {
+		DisplayName: Wraith Warrior Mask
+		Tooltip: ""
+	}
+
+	JungleLordMask: {
+		DisplayName: Jungle Lord Mask
+		Tooltip: ""
+	}
+
+	BansheeMask: {
+		DisplayName: Banshee Mask
+		Tooltip: ""
+	}
+
+	ObsidianGuardianMask: {
+		DisplayName: Obsidian Guardian Mask
+		Tooltip: ""
+	}
+
+	SphinxMask: {
+		DisplayName: Sphinx Mask
+		Tooltip: ""
+	}
+
+	FrostWitchMask: {
+		DisplayName: Frost Witch Mask
+		Tooltip: ""
+	}
+
+	CastleCoreMask: {
+		DisplayName: Castle Core Mask
+		Tooltip: ""
+	}
+
+	WraithWarriorTrophy: {
+		DisplayName: Wraith Warrior Trophy
+		Tooltip: ""
+	}
+
+	JungleLordTrophy: {
+		DisplayName: Jungle Lord Trophy
+		Tooltip: ""
+	}
+
+	BansheeTrophy: {
+		DisplayName: Banshee Trophy
+		Tooltip: ""
+	}
+
+	ObsidianGuardianTrophy: {
+		DisplayName: Obsidian Guardian Trophy
+		Tooltip: ""
+	}
+
+	SphinxTrophy: {
+		DisplayName: Sphinx Trophy
+		Tooltip: ""
+	}
+
+	FrostWitchTrophy: {
+		DisplayName: Frost Witch Trophy
+		Tooltip: ""
+	}
+
+	CastleCoreTrophy: {
+		DisplayName: Castle Core Trophy
+		Tooltip: ""
+	}
+
+	WraithWarriorRelic: {
+		DisplayName: Wraith Warrior Relic
+		Tooltip: ""
+	}
+
+	JungleLordRelic: {
+		DisplayName: Jungle Lord Relic
+		Tooltip: ""
+	}
+
+	BansheeRelic: {
+		DisplayName: Banshee Relic
+		Tooltip: ""
+	}
+
+	ObsidianGuardianRelic: {
+		DisplayName: Obsidian Guardian Relic
+		Tooltip: ""
+	}
+
+	SphinxRelic: {
+		DisplayName: Sphinx Relic
+		Tooltip: ""
+	}
+
+	FrostWitchRelic: {
+		DisplayName: Frost Witch Relic
+		Tooltip: ""
+	}
+
+	CastleCoreRelic: {
+		DisplayName: Castle Core Relic
+		Tooltip: ""
+	}
+
+	WraithWarriorProof: {
+		DisplayName: Wraith Warrior Proof
+		Tooltip: ""
+	}
+
+	JungleLordProof: {
+		DisplayName: Jungle Lord Proof
+		Tooltip: ""
+	}
+
+	BansheeProof: {
+		DisplayName: Banshee Proof
+		Tooltip: ""
+	}
+
+	CastleCoreClearSeal: {
+		DisplayName: Castle Core Clear Seal
+		Tooltip: ""
+	}
+
+	WraithWarriorPetSummon: {
+		DisplayName: Wraithling
+		Tooltip: Use to summon, or equip in the vanity pet slot. Use again or remove it from the slot to dismiss.
+	}
+
+	JungleLordPetSummon: {
+		DisplayName: Moss Sprout
+		Tooltip: Use to summon, or equip in the vanity pet slot. Use again or remove it from the slot to dismiss.
+	}
+
+	BansheePetSummon: {
+		DisplayName: Antlered Wisp
+		Tooltip: Use to summon, or equip in the light pet slot. Use again or remove it from the slot to dismiss.
+	}
+
+	ObsidianGuardianPetSummon: {
+		DisplayName: Little Obsidian Guardian
+		Tooltip: Use to summon, or equip in the vanity pet slot. Use again or remove it from the slot to dismiss.
+	}
+
+	SphinxPetSummon: {
+		DisplayName: Golden Wing Cub
+		Tooltip: Use to summon, or equip in the vanity pet slot. Use again or remove it from the slot to dismiss.
+	}
+
+	FrostWitchPetSummon: {
+		DisplayName: Frostwheel Sprite
+		Tooltip: Use to summon, or equip in the light pet slot. Use again or remove it from the slot to dismiss.
+	}
+
+	CastleCorePetSummon: {
+		DisplayName: Miniature Three-Faced Core
+		Tooltip: Use to summon, or equip in the light pet slot. Use again or remove it from the slot to dismiss.
+	}
 }
 
 GolemBagBonus: {
@@ -579,6 +817,14 @@ Projectiles: {
 	SuitPassiveProjectile.DisplayName: Suit Passive Projectile
 	MilkcraftEnchantExplosionVfx.DisplayName: Milkcraft Enchant Explosion Vfx
 	FlameWarhorseTrailFire.DisplayName: Flame Warhorse Trail Fire
+	MilkcraftBossProjectile.DisplayName: Milkcraft Boss Projectile
+	BansheePet.DisplayName: Banshee Pet
+	CastleCorePet.DisplayName: Castle Core Pet
+	FrostWitchPet.DisplayName: Frost Witch Pet
+	JungleLordPet.DisplayName: Jungle Lord Pet
+	ObsidianGuardianPet.DisplayName: Obsidian Guardian Pet
+	SphinxPet.DisplayName: Sphinx Pet
+	WraithWarriorPet.DisplayName: Wraith Warrior Pet
 }
 
 Enchanting: {
@@ -641,6 +887,8 @@ Conditions: {
 	T3WorldProgress: Available after defeating any Mechanical Boss
 	T4WorldProgress: Available after defeating Golem
 	ActiveAlchemyTable: Requires being near an activated Milkcraft Alchemy Table
+	NormalCastleCore: Normal Castle Core
+	EmpoweredCastleCore: Empowered Castle Core
 }
 
 Messages: {
@@ -658,8 +906,8 @@ Progression: {
 	T4LicenseReady: This world can activate the T4 license.
 	T3LicenseLocked: Defeat any Mechanical Boss in this world first.
 	T4LicenseLocked: Defeat Golem in this world first.
-	T3ChampionTitle: Title unlocked: Mechanical Conqueror.
-	T3ChampionUnlocked: All three Mechanical Bosses defeated. Title unlocked: Mechanical Conqueror.
+	T3ChampionTitle: Title unlocked: Twilight Conqueror.
+	T3ChampionUnlocked: Obsidian Guardian, Sphinx, and Frost Witch defeated. Title unlocked: Twilight Conqueror.
 }
 
 SetBonuses: {
@@ -738,6 +986,44 @@ MapObject: {
 	MilkcraftEnchantingTableTile: Enchanting Table
 	BlackIronOreTile: Black Iron Ore
 	PinkDiamondOreTile: Pink Diamond Ore
+	WraithWarriorTrophyTile: Wraith Warrior Trophy
+	JungleLordTrophyTile: Jungle Lord Trophy
+	BansheeTrophyTile: Banshee Trophy
+	ObsidianGuardianTrophyTile: Obsidian Guardian Trophy
+	SphinxTrophyTile: Sphinx Trophy
+	FrostWitchTrophyTile: Frost Witch Trophy
+	CastleCoreTrophyTile: Castle Core Trophy
+	WraithWarriorRelicTile: Wraith Warrior Relic
+	JungleLordRelicTile: Jungle Lord Relic
+	BansheeRelicTile: Banshee Relic
+	ObsidianGuardianRelicTile: Obsidian Guardian Relic
+	SphinxRelicTile: Sphinx Relic
+	FrostWitchRelicTile: Frost Witch Relic
+	CastleCoreRelicTile: Castle Core Relic
+}
+
+NPCs: {
+	WraithWarriorBoss.DisplayName: Wraith Warrior
+	JungleLordBoss.DisplayName: Jungle Lord
+	BansheeBoss.DisplayName: Banshee
+	ObsidianGuardianBoss.DisplayName: Obsidian Guardian
+	SphinxBoss.DisplayName: Sphinx
+	FrostWitchBoss.DisplayName: Frost Witch
+	CastleCoreBoss.DisplayName: Castle Core
+	CastleSoulCrystal.DisplayName: Castle Soul Crystal
+	ExplosiveSlimeMinion.DisplayName: Explosive Slime
+	FrostArcherMinion.DisplayName: Frost Archer
+	FrostNagaMinion.DisplayName: Frost Naga
+	SkeletonArcherMinion.DisplayName: Skeleton Archer
+	SkeletonWarriorMinion.DisplayName: Skeleton Guard
+	WraithArcherMinion.DisplayName: Half-Deer Archer
+}
+
+Bosses: {
+	CastleCore: {
+		Defeated: The Castle Core has been defeated.
+		EmpoweredDefeated: The Empowered Castle Core has been defeated! The White Unicorn is guaranteed.
+	}
 }
 
 Buffs: {
@@ -839,5 +1125,45 @@ Buffs: {
 	WhiteUnicornMountBuff: {
 		DisplayName: White Unicorn
 		Description: Sustained flight with hover
+	}
+
+	WhiteDodoMountBuff: {
+		DisplayName: Polar Chocobo
+		Description: Fast running and 120 ticks of limited flight, restored on landing
+	}
+
+	WraithWarriorPetBuff: {
+		DisplayName: Wraithling
+		Description: A keepsake of the Wraith Warrior.
+	}
+
+	JungleLordPetBuff: {
+		DisplayName: Moss Sprout
+		Description: A keepsake of the Jungle Lord.
+	}
+
+	BansheePetBuff: {
+		DisplayName: Antlered Wisp
+		Description: Gives off a soft blue-green light.
+	}
+
+	ObsidianGuardianPetBuff: {
+		DisplayName: Little Obsidian Guardian
+		Description: A keepsake of the Obsidian Guardian.
+	}
+
+	SphinxPetBuff: {
+		DisplayName: Golden Wing Cub
+		Description: A keepsake of the Sphinx.
+	}
+
+	FrostWitchPetBuff: {
+		DisplayName: Frostwheel Sprite
+		Description: Gives off a soft icy light.
+	}
+
+	CastleCorePetBuff: {
+		DisplayName: Miniature Three-Faced Core
+		Description: Its light changes with its expression.
 	}
 }

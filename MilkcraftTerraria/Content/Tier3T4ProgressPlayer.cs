@@ -37,7 +37,8 @@ public sealed class Tier3T4ProgressPlayer : ModPlayer
     };
 
     public static bool WorldGrantsT3ChampionTitle =>
-        NPC.downedMechBoss1 && NPC.downedMechBoss2 && NPC.downedMechBoss3;
+        MilkcraftBossWorldSystem.ObsidianGuardianDowned && MilkcraftBossWorldSystem.SphinxDowned
+        && MilkcraftBossWorldSystem.FrostWitchDowned;
 
     internal bool ActivateLicense(int tier)
     {

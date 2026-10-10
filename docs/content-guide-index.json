@@ -1,0 +1,1086 @@
+{
+  "version": "0.3.3.5",
+  "package_sha256": "22FE3EDF95F3E8028F40D2225A0282A9EFD53094DD17A1B06B5ACE3E6F82592A",
+  "items": 159,
+  "related_recipes": 101,
+  "categories": {
+    "护甲（36）": 36,
+    "武器（13）": 13,
+    "副手饰品（12）": 12,
+    "工作站（7）": 7,
+    "坐骑（8）": 8,
+    "Boss召唤物（7）": 7,
+    "宝藏袋（7）": 7,
+    "时装面具（7）": 7,
+    "纪念章（7）": 7,
+    "大师遗物（7）": 7,
+    "宠物（7）": 7,
+    "材料、药水与许可": 41
+  },
+  "index": [
+    {
+      "key": "IronHelmet",
+      "name": "铁制头盔",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：铁锭／铅锭×5＋金锭／铂金锭×1 → 1件"
+    },
+    {
+      "key": "IronChestplate",
+      "name": "铁制胸甲",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：铁锭／铅锭×8＋金锭／铂金锭×1 → 1件"
+    },
+    {
+      "key": "IronGreaves",
+      "name": "铁制腿甲与战靴",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：铁锭／铅锭×11＋金锭／铂金锭×1 → 1件"
+    },
+    {
+      "key": "LeatherHeadband",
+      "name": "皮质头饰",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：皮革×5 → 1件"
+    },
+    {
+      "key": "LeatherTunic",
+      "name": "皮质护胸",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：皮革×8 → 1件"
+    },
+    {
+      "key": "LeatherLeggings",
+      "name": "皮质护腿与便鞋",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：皮革×11 → 1件"
+    },
+    {
+      "key": "ClothHood",
+      "name": "粗布兜帽",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：粗布×5 → 1件"
+    },
+    {
+      "key": "ClothRobe",
+      "name": "粗布长袍",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：粗布×8 → 1件"
+    },
+    {
+      "key": "ClothLeggings",
+      "name": "粗布长裤与软鞋",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：粗布×11 → 1件"
+    },
+    {
+      "key": "KnightHelmet",
+      "name": "骑士头盔",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：魔铁锭×5 → 1件"
+    },
+    {
+      "key": "KnightChestplate",
+      "name": "骑士胸甲",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：魔铁锭×8 → 1件"
+    },
+    {
+      "key": "KnightGreaves",
+      "name": "骑士腿甲与战靴",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：魔铁锭×11 → 1件"
+    },
+    {
+      "key": "HuntingHood",
+      "name": "狩猎头饰",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：狂野兽皮×5 → 1件"
+    },
+    {
+      "key": "HuntingChestplate",
+      "name": "狩猎护胸",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：狂野兽皮×8 → 1件"
+    },
+    {
+      "key": "HuntingLeggings",
+      "name": "狩猎护腿与便鞋",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：狂野兽皮×11 → 1件"
+    },
+    {
+      "key": "EnergyHood",
+      "name": "能量兜帽",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：魔法羊毛×5 → 1件"
+    },
+    {
+      "key": "EnergyRobe",
+      "name": "能量法袍",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：魔法羊毛×8 → 1件"
+    },
+    {
+      "key": "EnergyLeggings",
+      "name": "能量长裤与软鞋",
+      "category": "护甲（36）",
+      "acquisition": "铁砧／铅砧：魔法羊毛×11 → 1件"
+    },
+    {
+      "key": "TemplarHelmet",
+      "name": "圣殿骑士头盔",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：源质锭×5 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "TemplarChestplate",
+      "name": "圣殿骑士胸甲",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：源质锭×8 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "TemplarGreaves",
+      "name": "圣殿骑士护腿与战靴",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：源质锭×11 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "NightmareHood",
+      "name": "永恒梦魇兜帽",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：华丽皮革×5 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "NightmareChestplate",
+      "name": "永恒梦魇胸甲",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：华丽皮革×8 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "NightmareLeggings",
+      "name": "永恒梦魇护腿与战靴",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：华丽皮革×11 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "FallenHood",
+      "name": "堕落天使兜帽",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：魔纹羊毛×5 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "FallenRobe",
+      "name": "堕落天使长袍",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：魔纹羊毛×8 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "FallenLeggings",
+      "name": "堕落天使护腿与软鞋",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：魔纹羊毛×11 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "SoulforgedHelmet",
+      "name": "魂铸意志头盔",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：赤炼锭×5 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "SoulforgedChestplate",
+      "name": "魂铸意志胸甲",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：赤炼锭×8 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "SoulforgedGreaves",
+      "name": "魂铸意志护腿与战靴",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：赤炼锭×11 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "AbyssHood",
+      "name": "深渊行者兜帽",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：破魔鞣革×5 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "AbyssChestplate",
+      "name": "深渊行者胸甲",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：破魔鞣革×8 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "AbyssLeggings",
+      "name": "深渊行者护腿与战靴",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：破魔鞣革×11 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "DarkHood",
+      "name": "黑暗信使兜帽",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：叹息羊毛×5 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "DarkRobe",
+      "name": "黑暗信使长袍",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：叹息羊毛×8 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "DarkLeggings",
+      "name": "黑暗信使护腿与软鞋",
+      "category": "护甲（36）",
+      "acquisition": "秘银砧／山铜砧：叹息羊毛×11 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "IronSword",
+      "name": "铁剑",
+      "category": "武器（13）",
+      "acquisition": "铁砧／铅砧：铁锭／铅锭×7＋金锭／铂金锭×1＋任意木材×2 → 1件"
+    },
+    {
+      "key": "IronBow",
+      "name": "铁弓",
+      "category": "武器（13）",
+      "acquisition": "铁砧／铅砧：铁锭／铅锭×3＋任意木材×5＋蛛网×6 → 1件"
+    },
+    {
+      "key": "IronStaff",
+      "name": "铁质法杖",
+      "category": "武器（13）",
+      "acquisition": "铁砧／铅砧：粗布×2＋铁锭／铅锭×3＋坠落之星×1 → 1件"
+    },
+    {
+      "key": "KnightSword",
+      "name": "骑士长剑",
+      "category": "武器（13）",
+      "acquisition": "铁砧／铅砧：铁剑×1＋魔铁锭×6 → 1件"
+    },
+    {
+      "key": "HuntingBow",
+      "name": "狩猎长弓",
+      "category": "武器（13）",
+      "acquisition": "铁砧／铅砧：铁弓×1＋魔铁锭×4＋狂野兽皮×4 → 1件"
+    },
+    {
+      "key": "EnergyStaff",
+      "name": "能量法杖",
+      "category": "武器（13）",
+      "acquisition": "铁砧／铅砧：铁质法杖×1＋魔铁锭×4＋魔法羊毛×4 → 1件"
+    },
+    {
+      "key": "TemplarSword",
+      "name": "圣殿骑士长剑",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：真理之剑×1＋源质锭×6 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "NightmareBow",
+      "name": "永恒梦魇猎弓",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：真理之弓×1＋华丽皮革×6＋源质锭×4 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "FallenStaff",
+      "name": "堕落天使法杖",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：真理之杖×1＋魔纹羊毛×6＋源质锭×4 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "SoulforgedSword",
+      "name": "魂铸意志长剑",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：破碎的剑柄×1＋赤炼锭×6 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "AbyssBow",
+      "name": "深渊行者猎弓",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：破碎的弓弦×1＋破魔鞣革×6＋赤炼锭×4 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "DarkStaff",
+      "name": "黑暗信使法杖",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：破碎的杖柄×1＋叹息羊毛×6＋赤炼锭×4 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "DazhouIronSword",
+      "name": "大粥的铁剑",
+      "category": "武器（13）",
+      "acquisition": "秘银砧／山铜砧：铁剑×1＋骑士长剑×1＋圣殿骑士长剑×1＋魂铸意志长剑×1＋断掉的铁剑×1 → 1件"
+    },
+    {
+      "key": "IronShield",
+      "name": "铁盾",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：铁锭／铅锭×6＋金锭／铂金锭×1＋任意木材×4 → 1件"
+    },
+    {
+      "key": "IronQuiver",
+      "name": "皮质箭袋",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：皮革×2＋蛛网×1 → 1件"
+    },
+    {
+      "key": "BeginnerTome",
+      "name": "初级法典",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：粗布×3＋皮革×1＋坠落之星×1 → 1件"
+    },
+    {
+      "key": "KnightBulwark",
+      "name": "骑士壁垒",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：铁盾×1＋魔铁锭×8 → 1件"
+    },
+    {
+      "key": "HuntingQuiver",
+      "name": "狩猎箭袋",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：狂野兽皮×6＋木箭×50 → 1件"
+    },
+    {
+      "key": "EnergyTome",
+      "name": "能量法典",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：初级法典×1＋魔法羊毛×4＋狂野兽皮×2 → 1件"
+    },
+    {
+      "key": "TemplarShield",
+      "name": "圣殿骑士盾",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：骑士壁垒×1＋源质锭×6 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "NightmareQuiver",
+      "name": "永恒梦魇箭袋",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：狩猎箭袋×1＋华丽皮革×6 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "FallenTome",
+      "name": "堕落天使法典",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：能量法典×1＋魔纹羊毛×6 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "SoulforgedShield",
+      "name": "魂铸意志盾",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：圣殿骑士盾×1＋赤炼锭×6 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "AbyssQuiver",
+      "name": "深渊行者箭袋",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：永恒梦魇箭袋×1＋破魔鞣革×6 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "DarkTome",
+      "name": "黑暗信使法典",
+      "category": "副手饰品（12）",
+      "acquisition": "精炼锻造台：堕落天使法典×1＋叹息羊毛×6 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "MilkcraftWorkbench",
+      "name": "奶块合成台",
+      "category": "工作站（7）",
+      "acquisition": "徒手：任意木材×12 → 1件"
+    },
+    {
+      "key": "MilkcraftFurnace",
+      "name": "奶块熔炉",
+      "category": "工作站（7）",
+      "acquisition": "奶块合成台：石块×20＋任意木材×4＋火把×3 → 1件"
+    },
+    {
+      "key": "MilkcraftLoom",
+      "name": "纺织台",
+      "category": "工作站（7）",
+      "acquisition": "奶块合成台：任意木材×12＋铁锭／铅锭×1 → 1件"
+    },
+    {
+      "key": "MilkcraftForge",
+      "name": "精炼锻造台",
+      "category": "工作站（7）",
+      "acquisition": "奶块合成台：铁锭／铅锭×5＋石块×6＋任意木材×4＋工匠作坊×1 → 1件"
+    },
+    {
+      "key": "MilkcraftDistillery",
+      "name": "蒸馏台",
+      "category": "工作站（7）",
+      "acquisition": "奶块合成台：玻璃×6＋铁锭／铅锭×2＋灰砖×6 → 1件"
+    },
+    {
+      "key": "MilkcraftAlchemyTable",
+      "name": "炼金台",
+      "category": "工作站（7）",
+      "acquisition": "奶块合成台：玻璃×6＋铁锭／铅锭×2＋任意木材×8＋粉钻×1 → 1件"
+    },
+    {
+      "key": "MilkcraftEnchantingTable",
+      "name": "附魔台",
+      "category": "工作站（7）",
+      "acquisition": "奶块合成台：石块×8＋铁锭／铅锭×2＋坠落之星×1＋粉钻×1＋附魔之心×1 → 1件"
+    },
+    {
+      "key": "UndeadWarhorseSummon",
+      "name": "亡灵军马",
+      "category": "坐骑（8）",
+      "acquisition": "秘银砧／山铜砧：源质锭×8＋恐惧之魂×5＋丝绸×10 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "CelestialTenguSummon",
+      "name": "圣天狗",
+      "category": "坐骑（8）",
+      "acquisition": "秘银砧／山铜砧：叹息羊毛×8＋甲虫外壳×5＋飞翔之魂×10 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "RhinoSummon",
+      "name": "犀牛",
+      "category": "坐骑（8）",
+      "acquisition": "秘银砧／山铜砧：神圣锭×10＋源质锭×8＋铁锭／铅锭×6 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "FlameWarhorseSummon",
+      "name": "烈焰战马",
+      "category": "坐骑（8）",
+      "acquisition": "秘银砧／山铜砧：神圣锭×10＋狱石锭×8＋恐惧之魂×5 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "WhiteDodoSummon",
+      "name": "极地陆行鸟",
+      "category": "坐骑（8）",
+      "acquisition": "冰霜女巫普通本体25%；专家／大师宝藏袋25%"
+    },
+    {
+      "key": "WhiteTigerSummon",
+      "name": "白虎",
+      "category": "坐骑（8）",
+      "acquisition": "新世界地下森林木箱／金箱／活木箱和丛林常春藤箱10%；原版钓鱼匣（含困难模式版本）开匣10%；怨灵武士／丛林领主／女妖每只10%（普通本体；专家／大师对应袋）"
+    },
+    {
+      "key": "WhiteNineTailedFoxSummon",
+      "name": "白色九尾狐",
+      "category": "坐骑（8）",
+      "acquisition": "世纪之花25%；专家／大师从宝藏袋获得，单次机会"
+    },
+    {
+      "key": "WhiteUnicornSummon",
+      "name": "白色独角兽",
+      "category": "坐骑（8）",
+      "acquisition": "石巨人后，城堡核心常规25%、白昼召唤的强化挑战100%；专家／大师从对应挑战的宝藏袋获得"
+    },
+    {
+      "key": "WraithWarriorSummon",
+      "name": "怨灵武士召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "恶魔祭坛／猩红祭坛：丝绸×5＋腐肉／椎骨×5＋铁锭／铅锭×5 → 1件"
+    },
+    {
+      "key": "JungleLordSummon",
+      "name": "丛林领主召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "恶魔祭坛／猩红祭坛：丛林孢子×5＋毒刺×5＋铁锭／铅锭×5 → 1件"
+    },
+    {
+      "key": "BansheeSummon",
+      "name": "女妖召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "恶魔祭坛／猩红祭坛：晶状体×3＋坠落之星×3＋铁锭／铅锭×5 → 1件"
+    },
+    {
+      "key": "ObsidianGuardianSummon",
+      "name": "黑曜石守卫召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "秘银砧／山铜砧：黑曜石×10＋狱石锭×5＋钴锭／钯金锭×5 → 1件"
+    },
+    {
+      "key": "SphinxSummon",
+      "name": "斯芬克斯召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "秘银砧／山铜砧：砂岩×15＋光明之魂×5＋钴锭／钯金锭×5 → 1件"
+    },
+    {
+      "key": "FrostWitchSummon",
+      "name": "冰霜女巫召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "秘银砧／山铜砧：冰雪块×20＋光明之魂×5＋钴锭／钯金锭×5 → 1件"
+    },
+    {
+      "key": "CastleCoreSummon",
+      "name": "城堡核心召唤物",
+      "category": "Boss召唤物（7）",
+      "acquisition": "秘银砧／山铜砧：神圣锭×6＋石块×20＋丛林蜥蜴电池×1 → 1件"
+    },
+    {
+      "key": "WraithWarriorBag",
+      "name": "怨灵武士宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "怨灵武士专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "JungleLordBag",
+      "name": "丛林领主宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "丛林领主专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "BansheeBag",
+      "name": "女妖宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "女妖专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "ObsidianGuardianBag",
+      "name": "黑曜石守卫宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "黑曜石守卫专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "SphinxBag",
+      "name": "斯芬克斯宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "斯芬克斯专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "FrostWitchBag",
+      "name": "冰霜女巫宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "冰霜女巫专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "CastleCoreBag",
+      "name": "城堡核心宝藏袋",
+      "category": "宝藏袋（7）",
+      "acquisition": "城堡核心专家／大师100%掉落，包含完整固定奖励与钱币"
+    },
+    {
+      "key": "WraithWarriorMask",
+      "name": "怨灵武士面具",
+      "category": "时装面具（7）",
+      "acquisition": "怨灵武士普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "JungleLordMask",
+      "name": "丛林领主面具",
+      "category": "时装面具（7）",
+      "acquisition": "丛林领主普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "BansheeMask",
+      "name": "女妖面具",
+      "category": "时装面具（7）",
+      "acquisition": "女妖普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "ObsidianGuardianMask",
+      "name": "黑曜石守卫面具",
+      "category": "时装面具（7）",
+      "acquisition": "黑曜石守卫普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "SphinxMask",
+      "name": "斯芬克斯面具",
+      "category": "时装面具（7）",
+      "acquisition": "斯芬克斯普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "FrostWitchMask",
+      "name": "冰霜女巫面具",
+      "category": "时装面具（7）",
+      "acquisition": "冰霜女巫普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "CastleCoreMask",
+      "name": "城堡核心面具",
+      "category": "时装面具（7）",
+      "acquisition": "城堡核心普通本体1/7；专家／大师宝藏袋1/7，时装头部"
+    },
+    {
+      "key": "WraithWarriorTrophy",
+      "name": "怨灵武士纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "怨灵武士本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "JungleLordTrophy",
+      "name": "丛林领主纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "丛林领主本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "BansheeTrophy",
+      "name": "女妖纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "女妖本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "ObsidianGuardianTrophy",
+      "name": "黑曜石守卫纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "黑曜石守卫本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "SphinxTrophy",
+      "name": "斯芬克斯纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "斯芬克斯本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "FrostWitchTrophy",
+      "name": "冰霜女巫纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "冰霜女巫本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "CastleCoreTrophy",
+      "name": "城堡核心纪念章",
+      "category": "纪念章（7）",
+      "acquisition": "城堡核心本体全难度10%，挂墙纪念章，不在袋内"
+    },
+    {
+      "key": "WraithWarriorRelic",
+      "name": "怨灵武士遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "怨灵武士本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "JungleLordRelic",
+      "name": "丛林领主遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "丛林领主本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "BansheeRelic",
+      "name": "女妖遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "女妖本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "ObsidianGuardianRelic",
+      "name": "黑曜石守卫遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "黑曜石守卫本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "SphinxRelic",
+      "name": "斯芬克斯遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "斯芬克斯本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "FrostWitchRelic",
+      "name": "冰霜女巫遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "冰霜女巫本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "CastleCoreRelic",
+      "name": "城堡核心遗物",
+      "category": "大师遗物（7）",
+      "acquisition": "城堡核心本体仅大师100%，可摆放金色雕像，不在袋内"
+    },
+    {
+      "key": "WraithWarriorPetSummon",
+      "name": "小怨灵",
+      "category": "宠物（7）",
+      "acquisition": "怨灵武士普通本体25%；专家／大师宝藏袋25%；原版宠物栏装备"
+    },
+    {
+      "key": "JungleLordPetSummon",
+      "name": "苔芽领主",
+      "category": "宠物（7）",
+      "acquisition": "丛林领主普通本体25%；专家／大师宝藏袋25%；原版宠物栏装备"
+    },
+    {
+      "key": "BansheePetSummon",
+      "name": "鹿角幽灵",
+      "category": "宠物（7）",
+      "acquisition": "女妖普通本体25%；专家／大师宝藏袋25%；原版照明宠物栏装备"
+    },
+    {
+      "key": "ObsidianGuardianPetSummon",
+      "name": "小黑曜守卫",
+      "category": "宠物（7）",
+      "acquisition": "黑曜石守卫普通本体25%；专家／大师宝藏袋25%；原版宠物栏装备"
+    },
+    {
+      "key": "SphinxPetSummon",
+      "name": "金翼幼狮",
+      "category": "宠物（7）",
+      "acquisition": "斯芬克斯普通本体25%；专家／大师宝藏袋25%；原版宠物栏装备"
+    },
+    {
+      "key": "FrostWitchPetSummon",
+      "name": "霜轮精灵",
+      "category": "宠物（7）",
+      "acquisition": "冰霜女巫普通本体25%；专家／大师宝藏袋25%；原版照明宠物栏装备"
+    },
+    {
+      "key": "CastleCorePetSummon",
+      "name": "迷你三面核心",
+      "category": "宠物（7）",
+      "acquisition": "城堡核心普通本体25%；专家／大师宝藏袋25%；原版照明宠物栏装备"
+    },
+    {
+      "key": "CoarseWool",
+      "name": "粗布",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：丝绸×1 → 4件"
+    },
+    {
+      "key": "BlackIronBar",
+      "name": "黑铁锭",
+      "category": "材料、药水与许可",
+      "acquisition": "奶块熔炉：黑铁矿石×3 → 1件"
+    },
+    {
+      "key": "Alcohol",
+      "name": "酒精",
+      "category": "材料、药水与许可",
+      "acquisition": "蒸馏台：瓶装水×1＋蘑菇×1＋凝胶×1 → 3件"
+    },
+    {
+      "key": "MagicIronBar",
+      "name": "魔铁锭",
+      "category": "材料、药水与许可",
+      "acquisition": "奶块熔炉：黑铁锭×4＋粉钻×1 → 8件；条件：击败克脑／世吞"
+    },
+    {
+      "key": "WildLeather",
+      "name": "狂野兽皮",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：皮革×4＋酒精×1＋丛林孢子×1 → 8件；条件：击败克脑／世吞"
+    },
+    {
+      "key": "MagicWool",
+      "name": "魔法羊毛",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：粗布×4＋坠落之星×1＋粉钻×1 → 8件；条件：击败克脑／世吞"
+    },
+    {
+      "key": "PinkDiamondOre",
+      "name": "粉钻矿",
+      "category": "材料、药水与许可",
+      "acquisition": "徒手：粉钻×1 → 1件"
+    },
+    {
+      "key": "OriginBar",
+      "name": "源质锭",
+      "category": "材料、药水与许可",
+      "acquisition": "奶块熔炉：魔铁锭×4＋神圣锭×1＋圣殿药水×1 → 8件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "OrnateLeather",
+      "name": "华丽皮革",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：狂野兽皮×4＋丝绸×2＋梦魇药水×1 → 8件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "RunicWool",
+      "name": "魔纹羊毛",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：魔法羊毛×4＋坠落之星×1＋堕落药水×1 → 8件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "CinderBar",
+      "name": "赤炼锭",
+      "category": "材料、药水与许可",
+      "acquisition": "奶块熔炉：源质锭×4＋叶绿锭×1＋魂铸药水×1 → 8件；条件：击败石巨人"
+    },
+    {
+      "key": "BaneboundLeather",
+      "name": "破魔鞣革",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：华丽皮革×4＋丝绸×1＋深渊药水×1 → 8件；条件：击败石巨人"
+    },
+    {
+      "key": "SighWool",
+      "name": "叹息羊毛",
+      "category": "材料、药水与许可",
+      "acquisition": "纺织台：魔纹羊毛×4＋水晶碎块×1＋黑暗药水×1 → 8件；条件：击败石巨人"
+    },
+    {
+      "key": "T3EquipmentLicense",
+      "name": "T3装备许可",
+      "category": "材料、药水与许可",
+      "acquisition": "秘银砧／山铜砧：怨灵武士凭证×1＋丛林领主凭证×1＋女妖凭证×1 → 1件；条件：击败至少一位机械Boss"
+    },
+    {
+      "key": "T4EquipmentLicense",
+      "name": "T4装备许可",
+      "category": "材料、药水与许可",
+      "acquisition": "秘银砧／山铜砧：城堡核心通关凭证×1 → 1件；条件：击败石巨人"
+    },
+    {
+      "key": "TemplarPotion",
+      "name": "圣殿药水",
+      "category": "材料、药水与许可",
+      "acquisition": "炼金台：瓶装水×2＋酒精×1＋粉钻×1＋水晶颅骨×1＋恐惧之魂×2＋太阳花×1 → 6件；条件：附近炼金台已用酒精激活；击败至少一位机械Boss"
+    },
+    {
+      "key": "NightmarePotion",
+      "name": "梦魇药水",
+      "category": "材料、药水与许可",
+      "acquisition": "炼金台：瓶装水×2＋酒精×1＋粉钻×1＋异种角质×1＋力量之魂×2＋月光草×1 → 6件；条件：附近炼金台已用酒精激活；击败至少一位机械Boss"
+    },
+    {
+      "key": "FallenPotion",
+      "name": "堕落药水",
+      "category": "材料、药水与许可",
+      "acquisition": "炼金台：瓶装水×2＋酒精×1＋粉钻×1＋奥术核心×1＋视域之魂×2＋死亡草×1 → 6件；条件：附近炼金台已用酒精激活；击败至少一位机械Boss"
+    },
+    {
+      "key": "SoulforgedPotion",
+      "name": "魂铸药水",
+      "category": "材料、药水与许可",
+      "acquisition": "炼金台：瓶装水×2＋酒精×1＋粉钻×1＋凋零之泪×1＋日耀碑牌碎片×2＋火焰花×1 → 6件；条件：附近炼金台已用酒精激活；击败石巨人"
+    },
+    {
+      "key": "AbyssPotion",
+      "name": "深渊药水",
+      "category": "材料、药水与许可",
+      "acquisition": "炼金台：瓶装水×2＋酒精×1＋粉钻×1＋恶魔之翼×1＋灵气×2＋月光草×1 → 6件；条件：附近炼金台已用酒精激活；击败石巨人"
+    },
+    {
+      "key": "DarkPotion",
+      "name": "黑暗药水",
+      "category": "材料、药水与许可",
+      "acquisition": "炼金台：瓶装水×2＋酒精×1＋粉钻×1＋附魔胫骨×1＋水晶碎块×2＋死亡草×1 → 6件；条件：附近炼金台已用酒精激活；击败石巨人"
+    },
+    {
+      "key": "HiddenIronSword",
+      "name": "断掉的铁剑",
+      "category": "材料、药水与许可",
+      "acquisition": "月亮领主本体100%掉落1"
+    },
+    {
+      "key": "BlackIronOre",
+      "name": "黑铁矿石",
+      "category": "材料、药水与许可",
+      "acquisition": "新世界自然矿脉挖掘；怨灵武士／丛林领主／女妖每只固定120（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "PinkDiamond",
+      "name": "粉钻",
+      "category": "材料、药水与许可",
+      "acquisition": "粉钻矿挖掘；怨灵武士／丛林领主／女妖每只固定8（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "EnchantmentHeart",
+      "name": "附魔之心",
+      "category": "材料、药水与许可",
+      "acquisition": "黑曜石守卫／斯芬克斯／冰霜女巫每只固定1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "TruthSword",
+      "name": "真理之剑",
+      "category": "材料、药水与许可",
+      "acquisition": "黑曜石守卫100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "CrystalSkull",
+      "name": "水晶颅骨",
+      "category": "材料、药水与许可",
+      "acquisition": "黑曜石守卫100%掉落2（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "TruthBow",
+      "name": "真理之弓",
+      "category": "材料、药水与许可",
+      "acquisition": "斯芬克斯100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "AlienKeratin",
+      "name": "异种角质",
+      "category": "材料、药水与许可",
+      "acquisition": "斯芬克斯100%掉落2（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "TruthStaff",
+      "name": "真理之杖",
+      "category": "材料、药水与许可",
+      "acquisition": "冰霜女巫100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "ArcaneCore",
+      "name": "奥术核心",
+      "category": "材料、药水与许可",
+      "acquisition": "冰霜女巫100%掉落2（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "BrokenSwordHilt",
+      "name": "破碎的剑柄",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心每次100%掉落1，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "WitherTear",
+      "name": "凋零之泪",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心每次100%掉落2，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "BrokenBowstring",
+      "name": "破碎的弓弦",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心每次100%掉落1，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "DemonWing",
+      "name": "恶魔之翼",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心每次100%掉落2，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "BrokenStaffHandle",
+      "name": "破碎的杖柄",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心每次100%掉落1，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "EnchantedShinbone",
+      "name": "附魔胫骨",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心每次100%掉落2，三职业同时获得（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "WraithWarriorProof",
+      "name": "怨灵武士凭证",
+      "category": "材料、药水与许可",
+      "acquisition": "怨灵武士100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "JungleLordProof",
+      "name": "丛林领主凭证",
+      "category": "材料、药水与许可",
+      "acquisition": "丛林领主100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "BansheeProof",
+      "name": "女妖凭证",
+      "category": "材料、药水与许可",
+      "acquisition": "女妖100%掉落1（普通本体；专家／大师宝藏袋）"
+    },
+    {
+      "key": "CastleCoreClearSeal",
+      "name": "城堡核心通关凭证",
+      "category": "材料、药水与许可",
+      "acquisition": "城堡核心100%掉落1（普通本体；专家／大师宝藏袋）"
+    }
+  ],
+  "armor": [
+    {
+      "suit": "Iron",
+      "title": "T1铁制",
+      "items": [
+        "IronHelmet",
+        "IronChestplate",
+        "IronGreaves"
+      ]
+    },
+    {
+      "suit": "Leather",
+      "title": "T1皮革",
+      "items": [
+        "LeatherHeadband",
+        "LeatherTunic",
+        "LeatherLeggings"
+      ]
+    },
+    {
+      "suit": "Cloth",
+      "title": "T1粗布",
+      "items": [
+        "ClothHood",
+        "ClothRobe",
+        "ClothLeggings"
+      ]
+    },
+    {
+      "suit": "Knight",
+      "title": "T2骑士",
+      "items": [
+        "KnightHelmet",
+        "KnightChestplate",
+        "KnightGreaves"
+      ]
+    },
+    {
+      "suit": "Hunting",
+      "title": "T2狩猎",
+      "items": [
+        "HuntingHood",
+        "HuntingChestplate",
+        "HuntingLeggings"
+      ]
+    },
+    {
+      "suit": "Energy",
+      "title": "T2能量",
+      "items": [
+        "EnergyHood",
+        "EnergyRobe",
+        "EnergyLeggings"
+      ]
+    },
+    {
+      "suit": "Templar",
+      "title": "T3圣殿骑士",
+      "items": [
+        "TemplarHelmet",
+        "TemplarChestplate",
+        "TemplarGreaves"
+      ]
+    },
+    {
+      "suit": "Nightmare",
+      "title": "T3永恒梦魇",
+      "items": [
+        "NightmareHood",
+        "NightmareChestplate",
+        "NightmareLeggings"
+      ]
+    },
+    {
+      "suit": "Fallen",
+      "title": "T3堕落天使",
+      "items": [
+        "FallenHood",
+        "FallenRobe",
+        "FallenLeggings"
+      ]
+    },
+    {
+      "suit": "Soulforged",
+      "title": "T4魂铸意志",
+      "items": [
+        "SoulforgedHelmet",
+        "SoulforgedChestplate",
+        "SoulforgedGreaves"
+      ]
+    },
+    {
+      "suit": "Abyss",
+      "title": "T4深渊行者",
+      "items": [
+        "AbyssHood",
+        "AbyssChestplate",
+        "AbyssLeggings"
+      ]
+    },
+    {
+      "suit": "Dark",
+      "title": "T4黑暗信使",
+      "items": [
+        "DarkHood",
+        "DarkRobe",
+        "DarkLeggings"
+      ]
+    }
+  ]
+}

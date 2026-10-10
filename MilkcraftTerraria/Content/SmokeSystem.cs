@@ -112,6 +112,47 @@ public sealed class SmokeSystem : ModSystem
         string logPath = Path.Combine(OutputDirectory, "milkcraft-client-render.log");
         try
         {
+            if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_PLATFORM_MULTIPLAYER_DIAGNOSTIC") == "1")
+            {
+                string result = PlatformMultiplayerDiagnostics.Run();
+                File.WriteAllText(Path.Combine(OutputDirectory, "platform-multiplayer-reproduction.log"), result + "\n");
+                File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + result + "\n");
+                return;
+            }
+
+            if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_BOSS_VISUAL_DIAGNOSTIC") == "1")
+            {
+                string result = ProgressionBossVisualDiagnostics.Render(OutputDirectory);
+                File.WriteAllText(Path.Combine(OutputDirectory, "boss-visual-diagnostics.log"), result + "\n");
+                File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + result + "\n");
+                return;
+            }
+
+            if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_BOSS_PET_DIAGNOSTIC") == "1")
+            {
+                string result = MilkcraftBossPetDiagnostics.Run();
+                string marker = "candidate-build=0.3.2-world-feedback\n";
+                File.WriteAllText(Path.Combine(OutputDirectory, "boss-pet-diagnostics.log"), marker + result + "\n");
+                File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + marker + result + "\n");
+                return;
+            }
+
+            if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_BOSS_NATIVE_DIAGNOSTIC") == "1")
+            {
+                string result = ProgressionBossNativeDiagnostics.Run();
+                File.WriteAllText(Path.Combine(OutputDirectory, "boss-native-drops-and-damage.log"), result + "\n");
+                File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + result + "\n");
+                return;
+            }
+
+            if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_BOSS_SUMMON_DIAGNOSTIC") == "1")
+            {
+                string result = ProgressionBossSummonDiagnostics.Run();
+                File.WriteAllText(Path.Combine(OutputDirectory, "boss-summon-itemcheck.log"), result + "\n");
+                File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + result + "\n");
+                return;
+            }
+
             if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_MOUNT_DIAGNOSTIC") == "1")
             {
                 string expansionMountResult = AdvancedMountExpansionDiagnostics.RenderStandingRiders(OutputDirectory);
@@ -209,6 +250,14 @@ public sealed class SmokeSystem : ModSystem
                 string enchantResult = ProgressionEnchantDiagnostics.Run();
                 string result = alchemyResult + "\n" + bossResult + "\n" + enchantResult;
                 File.WriteAllText(Path.Combine(OutputDirectory, "progression-diagnostics.log"), result + "\n");
+                File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + result + "\n");
+                return;
+            }
+
+            if (Environment.GetEnvironmentVariable("MILKCRAFT_TERRARIA_BOSS_RELEASE_DIAGNOSTIC") == "1")
+            {
+                string result = ProgressionBossReleaseDiagnostics.Run();
+                File.WriteAllText(Path.Combine(OutputDirectory, "boss-release-diagnostics.log"), result + "\n");
                 File.WriteAllText(logPath, "MILKCRAFT TERRARIA CLIENT RENDER PASS\n" + result + "\n");
                 return;
             }
@@ -334,9 +383,9 @@ public sealed class SmokeSystem : ModSystem
             int[] outputs = Main.recipe.Take(Recipe.numRecipes)
                 .Where(recipe => recipe is not null && modItemTypes.Contains(recipe.createItem.type))
                 .Select(recipe => recipe.createItem.type).ToArray();
-            Require(modItemTypes.Count == 112, $"expected 112 registered items, found {modItemTypes.Count}");
-            Require(modTileTypes.Length == 9, $"expected 9 registered tiles, found {modTileTypes.Length}");
-            Require(outputs.Length == 93, $"expected 93 mod-output recipes, found {outputs.Length}; total recipes={Recipe.numRecipes}");
+            Require(modItemTypes.Count == 159, $"expected 159 registered items, found {modItemTypes.Count}");
+            Require(modTileTypes.Length == 23, $"expected 23 registered tiles, found {modTileTypes.Length}");
+            Require(outputs.Length == 100, $"expected 100 mod-output recipes, found {outputs.Length}; total recipes={Recipe.numRecipes}");
             Require(outputs.Count(type => type == ModContent.ItemType<DazhouIronSword>()) == 1,
                 "DazhouIronSword must have exactly one registered recipe");
             Require(!outputs.Contains(ModContent.ItemType<HiddenIronSword>()),
@@ -365,7 +414,7 @@ public sealed class SmokeSystem : ModSystem
             if (stationFailure != null)
                 throw new InvalidOperationException("Station placement/break smoke failed; preview was still rendered.\n" + stationFailure);
             File.WriteAllText(Path.Combine(OutputDirectory, "milkcraft-client-render.log"),
-                $"MILKCRAFT TERRARIA CLIENT RENDER PASS\nitems=112 tiles=9 mod-output-recipes=93 leather-recipe=PASS total-recipes={Recipe.numRecipes} recipe-dump=recipe-dump-112.json\n" +
+                $"MILKCRAFT TERRARIA CLIENT RENDER PASS\nitems=159 tiles=23 mod-output-recipes=100 leather-recipe=PASS total-recipes={Recipe.numRecipes} recipe-dump=recipe-dump-159.json\n" +
                 "tier3-tier4=38 new items/recipes; armor progression totals 50/35/31 and 73/51/42\n" +
                 "tier-license=one-time per tier, character-saved, current-world stage checked; old-world flags supported\n" +
                 $"7-stations-place-break-drop-once=PASS\n" +
@@ -1346,7 +1395,7 @@ public sealed class SmokeSystem : ModSystem
             recipes = recipes.Count(recipe => recipe.createItem.type == type)
         }).ToArray();
 
-        File.WriteAllText(Path.Combine(OutputDirectory, "recipe-dump-112.json"),
+        File.WriteAllText(Path.Combine(OutputDirectory, "recipe-dump-159.json"),
             JsonSerializer.Serialize(new { modItemCount = itemRows.Length, registeredRecipeCount = Recipe.numRecipes,
                 exportedRecipeCount = recipes.Length,
                 modOutputRecipeCount = recipes.Count(recipe => modItemTypes.Contains(recipe.createItem.type)),
@@ -1823,6 +1872,9 @@ public sealed class SmokeSystem : ModSystem
         bool oldMech1 = NPC.downedMechBoss1;
         bool oldMech2 = NPC.downedMechBoss2;
         bool oldMech3 = NPC.downedMechBoss3;
+        bool oldObsidianGuardian = MilkcraftBossWorldSystem.ObsidianGuardianDowned;
+        bool oldSphinx = MilkcraftBossWorldSystem.SphinxDowned;
+        bool oldFrostWitch = MilkcraftBossWorldSystem.FrostWitchDowned;
         try
         {
             NPC.downedMechBossAny = false;
@@ -1839,7 +1891,13 @@ public sealed class SmokeSystem : ModSystem
             Require(Tier3T4ProgressPlayer.WorldAllowsTier(4), "Golem unlocks T4");
             Require(fresh.ActivateLicense(4) && !fresh.ActivateLicense(4), "T4 license must activate exactly once");
             NPC.downedMechBoss1 = NPC.downedMechBoss2 = NPC.downedMechBoss3 = true;
-            Require(Tier3T4ProgressPlayer.WorldGrantsT3ChampionTitle, "all three mechanical bosses grant the T3 title");
+            Require(!Tier3T4ProgressPlayer.WorldGrantsT3ChampionTitle,
+                "mechanical boss flags no longer grant the T3 champion title");
+            MilkcraftBossWorldSystem.ObsidianGuardianDowned = true;
+            MilkcraftBossWorldSystem.SphinxDowned = true;
+            MilkcraftBossWorldSystem.FrostWitchDowned = true;
+            Require(Tier3T4ProgressPlayer.WorldGrantsT3ChampionTitle,
+                "the Obsidian Guardian, Sphinx, and Frost Witch grant the T3 champion title");
         }
         finally
         {
@@ -1848,6 +1906,9 @@ public sealed class SmokeSystem : ModSystem
             NPC.downedMechBoss1 = oldMech1;
             NPC.downedMechBoss2 = oldMech2;
             NPC.downedMechBoss3 = oldMech3;
+            MilkcraftBossWorldSystem.ObsidianGuardianDowned = oldObsidianGuardian;
+            MilkcraftBossWorldSystem.SphinxDowned = oldSphinx;
+            MilkcraftBossWorldSystem.FrostWitchDowned = oldFrostWitch;
         }
     }
 
@@ -5464,7 +5525,7 @@ public sealed class SmokeSystem : ModSystem
         return player;
     }
 
-    private static Player CreateActionPlayer(int head, int body, int legs, int weapon,
+    internal static Player CreateActionPlayer(int head, int body, int legs, int weapon,
         int direction, float aimAngle, bool male, int pose)
     {
         Player player = Main.LocalPlayer.SerializedClone();

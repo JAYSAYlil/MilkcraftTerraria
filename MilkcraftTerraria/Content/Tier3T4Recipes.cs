@@ -12,8 +12,8 @@ public sealed class Tier3T4RecipeSystem : ModSystem
 {
     public override void AddRecipes()
     {
-        // T3 materials are deliberately fixed-output batches and become
-        // available after any mechanical boss, including in existing worlds.
+        // T3 recipes retain the mechanical-boss stage gate; their fixed proofs
+        // and class materials now come from the three Dusk bosses.
         AddStageRecipe<OriginBar>(8, Tile<MilkcraftFurnaceTile>(), 3,
             M<MagicIronBar>(4), V(ItemID.HallowedBar, 1), M<TemplarPotion>(1));
         AddStageRecipe<OrnateLeather>(8, Tile<MilkcraftLoomTile>(), 3,
@@ -21,8 +21,8 @@ public sealed class Tier3T4RecipeSystem : ModSystem
         AddStageRecipe<RunicWool>(8, Tile<MilkcraftLoomTile>(), 3,
             M<MagicWool>(4), V(ItemID.FallenStar, 1), M<FallenPotion>(1));
 
-        // T4 materials are gated by the Golem progression flag and use the
-        // corresponding fixed-cycle core from the Golem reward sequence.
+        // T4 recipes retain the Golem-stage gate and use the fixed three-role
+        // reward cycle from Castle Core.
         AddStageRecipe<CinderBar>(8, Tile<MilkcraftFurnaceTile>(), 4,
             M<OriginBar>(4), V(ItemID.ChlorophyteBar, 1), M<SoulforgedPotion>(1));
         AddStageRecipe<BaneboundLeather>(8, Tile<MilkcraftLoomTile>(), 4,
@@ -33,9 +33,9 @@ public sealed class Tier3T4RecipeSystem : ModSystem
         // Each character activates one permanent, tier-wide license from one
         // material of each class family. The item cannot be re-used afterward.
         AddStageRecipe<T3EquipmentLicense>(1, TileID.MythrilAnvil, 3,
-            M<OriginBar>(1), M<OrnateLeather>(1), M<RunicWool>(1));
+            M<WraithWarriorProof>(1), M<JungleLordProof>(1), M<BansheeProof>(1));
         AddStageRecipe<T4EquipmentLicense>(1, TileID.MythrilAnvil, 4,
-            M<CinderBar>(1), M<BaneboundLeather>(1), M<SighWool>(1));
+            M<CastleCoreClearSeal>(1));
 
         AddAlchemyRecipe<TemplarPotion>(3, ItemID.SoulofFright, ItemID.Daybloom, ModContent.ItemType<CrystalSkull>());
         AddAlchemyRecipe<NightmarePotion>(3, ItemID.SoulofMight, ItemID.Moonglow, ModContent.ItemType<AlienKeratin>());

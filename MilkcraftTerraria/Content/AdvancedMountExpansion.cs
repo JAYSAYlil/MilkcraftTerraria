@@ -294,6 +294,42 @@ public sealed class WhiteUnicornMount : ModMount
     }
 }
 
+public sealed class WhiteDodoMount : ModMount
+{
+    public override string Texture => $"{Mod.Name}/Content/Mounts/WhiteDodo";
+    public override void SetStaticDefaults()
+    {
+        AdvancedMountDefaults.SetAtlas(MountData, this, "WhiteDodo");
+        MountData.buff = ModContent.BuffType<WhiteDodoMountBuff>();
+        AdvancedMountDefaults.SetGroundFrames(MountData, runningDelay: 78);
+        Array.Fill(MountData.playerYOffsets, 23);
+        MountData.heightBoost = 34;
+        MountData.runSpeed = 7.7f;
+        MountData.dashSpeed = 13f;
+        MountData.acceleration = 0.36f;
+        MountData.jumpHeight = 12;
+        MountData.jumpSpeed = 6.0f;
+        MountData.fallDamage = 0.75f;
+        MountData.flightTimeMax = 120;
+        MountData.inAirFrameStart = 9; MountData.inAirFrameCount = 1; MountData.inAirFrameDelay = 8;
+        MountData.flyingFrameStart = 10; MountData.flyingFrameCount = 6; MountData.flyingFrameDelay = 7;
+        MountData.swimFrameStart = 9; MountData.swimFrameCount = 1; MountData.swimFrameDelay = 8;
+        MountData.usesHover = false;
+        MountData.xOffset = 0; MountData.yOffset = 10; MountData.playerHeadOffset = 16;
+        MountData.spawnDust = DustID.SnowBlock; MountData.spawnDustNoGravity = true;
+    }
+    public override void UpdateEffects(Player player)
+    {
+        if (!player.mount.Active || player.mount.Type != Type) return;
+        Lighting.AddLight(player.MountedCenter, 0.24f, 0.18f, 0.23f);
+        if (!Main.dedServ && player.whoAmI == Main.myPlayer && Main.GameUpdateCount % 7 == 0)
+        {
+            int d = Dust.NewDust(player.Bottom - new Vector2(7f, 3f), 14, 5, DustID.SnowflakeIce, 0f, 0.8f, 100);
+            Main.dust[d].noGravity = true;
+        }
+    }
+}
+
 public abstract class ExpansionMountBuff : ModBuff
 {
     protected abstract int MountType { get; }
@@ -311,6 +347,7 @@ public sealed class WhiteNineTailedFoxMountBuff : ExpansionMountBuff { protected
 public sealed class RhinoMountBuff : ExpansionMountBuff { protected override int MountType => ModContent.MountType<RhinoMount>(); }
 public sealed class FlameWarhorseMountBuff : ExpansionMountBuff { protected override int MountType => ModContent.MountType<FlameWarhorseMount>(); }
 public sealed class WhiteUnicornMountBuff : ExpansionMountBuff { protected override int MountType => ModContent.MountType<WhiteUnicornMount>(); }
+public sealed class WhiteDodoMountBuff : ExpansionMountBuff { protected override int MountType => ModContent.MountType<WhiteDodoMount>(); }
 
 /// <summary>Player-specific dash/contact state. All NPC strikes originate from the local owner.</summary>
 public sealed class AdvancedMountAbilityPlayer : ModPlayer
@@ -500,14 +537,50 @@ public sealed class AdvancedMountAbilityPlayer : ModPlayer
     {
         _flameTick++;
         Vector2 groundProbe = new(Player.Center.X - 2f, Player.Bottom.Y);
-        if (Player.whoAmI != Main.myPlayer || Math.Abs(Player.velocity.X) <= 0.5f || Player.velocity.Y != 0f
-            || !Collision.SolidCollision(groundProbe, 4, 3) || _flameTick < 8) return;
+        if (Player.whoAmI != Main.myPlayer || Math.Abs(Player.velocity.X) <= 0.5f || Player.justJumped || Player.velocity.Y < 0f
+            || !HasGroundSupport() || HasLiquidAt(new Rectangle((int)groundProbe.X - 12, (int)groundProbe.Y - 5, 28, 12))
+            || _flameTick < 8) return;
         Vector2 position = new(Player.Center.X, Player.Bottom.Y - 3f);
         if (_lastFlamePosition != Vector2.Zero && Vector2.Distance(position, _lastFlamePosition) < 24f) return;
         _flameTick = 0;
         _lastFlamePosition = position;
         Projectile.NewProjectile(Player.GetSource_Misc("MilkcraftFlameWarhorseTrail"), position, Vector2.Zero,
             ModContent.ProjectileType<FlameWarhorseTrailFire>(), 30, 0f, Player.whoAmI);
+    }
+
+    private bool HasGroundSupport()
+    {
+        if (Collision.SolidCollision(new Vector2(Player.Center.X - 2f, Player.Bottom.Y), 4, 3)) return true;
+        // SolidCollision intentionally excludes one-way platforms. A short native
+        // downward TileCollision query recognizes platforms, half-blocks, and slopes
+        // while still allowing the player to drop through them with controlDown.
+        Vector2 resolved = Collision.TileCollision(Player.position, new Vector2(0f, 2f),
+            Player.width, Player.height, Player.controlDown, Player.controlDown, (int)Player.gravDir);
+        return resolved.Y < 1.99f;
+    }
+
+    internal static bool HasLiquidAt(Rectangle area)
+    {
+        int left = area.Left / 16, right = (area.Right - 1) / 16;
+        int top = area.Top / 16, bottom = (area.Bottom - 1) / 16;
+        for (int x = left; x <= right; x++)
+        for (int y = top; y <= bottom; y++)
+        {
+            if (!WorldGen.InWorld(x, y)) continue;
+            Tile tile = Main.tile[x, y];
+            if (tile.LiquidAmount == 0) continue;
+
+            // Terraria stores liquid depth as 0..255, filling from the bottom
+            // of each tile. Require the fire's actual pixel rectangle to touch
+            // that filled portion instead of treating any wet tile as full.
+            int liquidHeight = (tile.LiquidAmount * 16 + 254) / 255;
+            int liquidTop = (y + 1) * 16 - liquidHeight;
+            int tileLeft = x * 16;
+            int tileRight = tileLeft + 16;
+            if (area.Left < tileRight && area.Right > tileLeft && area.Top < (y + 1) * 16 && area.Bottom > liquidTop)
+                return true;
+        }
+        return false;
     }
 }
 
@@ -536,6 +609,11 @@ public sealed class FlameWarhorseTrailFire : ModProjectile
     public override void AI()
     {
         Projectile.velocity = Vector2.Zero;
+        if (AdvancedMountAbilityPlayer.HasLiquidAt(Projectile.Hitbox))
+        {
+            Projectile.Kill();
+            return;
+        }
         Lighting.AddLight(Projectile.Center, 0.42f, 0.12f, 0.025f);
         if (Projectile.owner == Main.myPlayer)
         {
@@ -684,89 +762,14 @@ public sealed class AdvancedMountBossLoot : GlobalNPC
                 ModContent.ItemType<WhiteNineTailedFoxSummon>(), 4));
     }
 
-    public override void OnKill(NPC npc)
-    {
-        if (Main.netMode == NetmodeID.MultiplayerClient || npc.type != NPCID.HallowBoss || Main.expertMode || !NPC.downedGolemBoss)
-            return;
-        bool enragedAtDeath = AdvancedMountDefaults.IsHallowBossGenuinelyEnraged(npc);
-        if (enragedAtDeath || Main.rand.NextBool(4))
-            Item.NewItem(npc.GetSource_Loot(), npc.Hitbox, ModContent.ItemType<WhiteUnicornSummon>());
-    }
 }
 
 public sealed class AdvancedMountBagLoot : GlobalItem
 {
-    public override bool InstancePerEntity => true;
-    private bool _empressEnragedAtKill;
-    private bool _empressEligibleAtKill;
-
-    public override void OnSpawn(Item item, IEntitySource source)
-    {
-        if (item.type == ItemID.FairyQueenBossBag && source is EntitySource_Loot loot
-            && loot.Entity is NPC npc && npc.type == NPCID.HallowBoss)
-        {
-            _empressEnragedAtKill = AdvancedMountDefaults.IsHallowBossGenuinelyEnraged(npc);
-            _empressEligibleAtKill = NPC.downedGolemBoss;
-        }
-    }
-
-    public override GlobalItem Clone(Item from, Item to)
-    {
-        var clone = (AdvancedMountBagLoot)base.Clone(from, to);
-        clone._empressEnragedAtKill = _empressEnragedAtKill;
-        clone._empressEligibleAtKill = _empressEligibleAtKill;
-        return clone;
-    }
-
-    public override void SaveData(Item item, Terraria.ModLoader.IO.TagCompound tag)
-    {
-        if (item.type == ItemID.FairyQueenBossBag)
-        {
-            if (_empressEnragedAtKill) tag["MilkcraftEmpressEnragedMountDrop"] = true;
-            if (_empressEligibleAtKill) tag["MilkcraftEmpressMountEligible"] = true;
-        }
-    }
-
-    public override void LoadData(Item item, Terraria.ModLoader.IO.TagCompound tag)
-    {
-        _empressEnragedAtKill = item.type == ItemID.FairyQueenBossBag && tag.GetBool("MilkcraftEmpressEnragedMountDrop");
-        _empressEligibleAtKill = item.type == ItemID.FairyQueenBossBag && tag.GetBool("MilkcraftEmpressMountEligible");
-    }
-
-    public override void NetSend(Item item, System.IO.BinaryWriter writer)
-    {
-        writer.Write(_empressEnragedAtKill);
-        writer.Write(_empressEligibleAtKill);
-    }
-
-    public override void NetReceive(Item item, System.IO.BinaryReader reader)
-    {
-        _empressEnragedAtKill = reader.ReadBoolean();
-        _empressEligibleAtKill = reader.ReadBoolean();
-    }
-
-    public override bool CanStack(Item destination, Item source)
-        => destination.type != ItemID.FairyQueenBossBag || (destination.GetGlobalItem<AdvancedMountBagLoot>()._empressEnragedAtKill
-            == source.GetGlobalItem<AdvancedMountBagLoot>()._empressEnragedAtKill
-            && destination.GetGlobalItem<AdvancedMountBagLoot>()._empressEligibleAtKill
-            == source.GetGlobalItem<AdvancedMountBagLoot>()._empressEligibleAtKill);
-
-    public override bool CanStackInWorld(Item destination, Item source) => CanStack(destination, source);
-
     public override void ModifyItemLoot(Item item, ItemLoot itemLoot)
     {
         if (item.type == ItemID.PlanteraBossBag)
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<WhiteNineTailedFoxSummon>(), 4));
-    }
-
-    public override bool CanRightClick(Item item)
-        => item.type == ItemID.FairyQueenBossBag;
-
-    public override void RightClick(Item item, Player player)
-    {
-        if (item.type != ItemID.FairyQueenBossBag || !_empressEligibleAtKill) return;
-        if (_empressEnragedAtKill || Main.rand.NextBool(4))
-            player.QuickSpawnItem(player.GetSource_OpenItem(item.type), ModContent.ItemType<WhiteUnicornSummon>());
     }
 }
 

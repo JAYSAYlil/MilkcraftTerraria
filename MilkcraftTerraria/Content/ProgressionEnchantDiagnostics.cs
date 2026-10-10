@@ -753,6 +753,10 @@ internal static class ProgressionEnchantDiagnostics
     {
         const int normalSlot = 110;
         const int frostedSlot = 111;
+        int playerIndex = Math.Clamp(Main.myPlayer, 0, Main.maxPlayers - 1);
+        Player target = Main.player[playerIndex];
+        bool oldPlayerActive = target.active, oldPlayerDead = target.dead;
+        Vector2 oldPlayerPosition = target.position;
         int buffType = ModContent.BuffType<MilkcraftFrosted>();
         NPC normal = new();
         NPC frosted = new();
@@ -764,13 +768,25 @@ internal static class ProgressionEnchantDiagnostics
         normal.aiStyle = frosted.aiStyle = 0; // isolate vanilla NPC update physics from random slime jumps
         normal.noGravity = frosted.noGravity = true;
         normal.noTileCollide = frosted.noTileCollide = true;
-        normal.target = frosted.target = Main.myPlayer;
+        normal.target = frosted.target = playerIndex;
         normal.velocity = frosted.velocity = new Vector2(10f, 0f);
+        normal.timeLeft = frosted.timeLeft = 600;
         normal.position = new Vector2(800f, 360f);
         frosted.position = new Vector2(900f, 360f);
         frosted.AddBuff(buffType, 120);
         Main.npc[normalSlot] = normal;
         Main.npc[frostedSlot] = frosted;
+
+        // This older no-gravity calibration case used a menu-state actor at an
+        // unrelated world position. NPC.UpdateNPC consequently despawned both
+        // samples after its first native update, producing identical one-frame
+        // displacement. Keep the actor alive and within a real update radius.
+        target.active = true;
+        target.dead = false;
+        target.position = new Vector2(850f, 340f);
+
+        try
+        {
 
         MethodInfo updateNpc = typeof(NPC).GetMethod("UpdateNPC", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic,
             binder: null, types: new[] { typeof(int) }, modifiers: null);
@@ -788,6 +804,8 @@ internal static class ProgressionEnchantDiagnostics
         {
             updateNpc.Invoke(normal, new object[] { normalSlot });
             updateNpc.Invoke(frosted, new object[] { frostedSlot });
+            if (!normal.active || !frosted.active)
+                throw new InvalidOperationException($"Frosted no-gravity native movement fixture despawned prematurely at tick={tick + 1}: normalActive={normal.active} frostActive={frosted.active} player=({target.active},{target.dead}) playerCenter={target.Center} npcCenters={normal.Center}/{frosted.Center} world={Main.maxTilesX}x{Main.maxTilesY}");
         }
         float normalFirst = normal.Center.X - normalStart;
         float frostFirst = frosted.Center.X - frostStart;
@@ -824,6 +842,13 @@ internal static class ProgressionEnchantDiagnostics
         if (Vector2.Distance(normalOrigStep, new Vector2(8f, 0f)) > 0.01f || Vector2.Distance(teleportOrigStep, new Vector2(200f, 0f)) > 0.01f)
             throw new InvalidOperationException($"frost orig-callback displacement guard failed: normal={normalOrigStep} teleport={teleportOrigStep}");
         return $"NPC.UpdateNPC-physics=PASS isolated-physics 12f normalDx={normalFirst:0.###} frostedDx={frostFirst:0.###} ratio={ratio:0.###}; 120f debuff-expired={expired}; 8f recoveryRatio={recoveryRatio:0.###}; default-AI={defaultSlime}; orig-callback-normal-step={normalOrigStep} teleport-preserved={teleportOrigStep}";
+        }
+        finally
+        {
+            target.active = oldPlayerActive;
+            target.dead = oldPlayerDead;
+            target.position = oldPlayerPosition;
+        }
     }
 
     private static string TestDefaultBlueSlimeJumpLanding(MethodInfo updateNpc, int buffType)
