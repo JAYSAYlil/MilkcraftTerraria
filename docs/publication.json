@@ -1,8 +1,64 @@
 {
   "version": "0.3.3.5",
+  "published_at_utc": "2026-10-10T13:15:54.121869+00:00",
   "github_repository": "https://github.com/JAYSAYlil/MilkcraftTerraria",
   "github_release": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/tag/v0.3.3.5",
   "steam_workshop": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816192019",
   "steam_workshop_id": 3816192019,
-  "sha256": "22FE3EDF95F3E8028F40D2225A0282A9EFD53094DD17A1B06B5ACE3E6F82592A"
+  "steam_visibility": "Public",
+  "sha256": "22FE3EDF95F3E8028F40D2225A0282A9EFD53094DD17A1B06B5ACE3E6F82592A",
+  "github_anonymous_download": "PASS",
+  "github_assets_verified": 8,
+  "steam_native_download": "PASS",
+  "native_release_smoke": "PASS",
+  "native_release_visual": "PASS",
+  "gameplay_assembly_preserved": true,
+  "game_textures_preserved": 351,
+  "new_promotional_images": 4,
+  "additional_workshop_previews": 6,
+  "debug_symbols_removed": true,
+  "machine_build_paths_removed": true,
+  "real_two_client_test": false,
+  "release_assets": [
+    {
+      "name": "MilkcraftTerraria-0.3.3.5-ModSources.zip",
+      "size": 5942892,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/MilkcraftTerraria-0.3.3.5-ModSources.zip"
+    },
+    {
+      "name": "MilkcraftTerraria-0.3.3.5.zip",
+      "size": 14763582,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/MilkcraftTerraria-0.3.3.5.zip"
+    },
+    {
+      "name": "MilkcraftTerraria.tmod",
+      "size": 7206075,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/MilkcraftTerraria.tmod"
+    },
+    {
+      "name": "promo-01-cover.png",
+      "size": 1650641,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/promo-01-cover.png"
+    },
+    {
+      "name": "promo-02-equipment.png",
+      "size": 1600905,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/promo-02-equipment.png"
+    },
+    {
+      "name": "promo-03-bosses.png",
+      "size": 1711741,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/promo-03-bosses.png"
+    },
+    {
+      "name": "promo-04-mounts.png",
+      "size": 1566680,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/promo-04-mounts.png"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 645,
+      "url": "https://github.com/JAYSAYlil/MilkcraftTerraria/releases/download/v0.3.3.5/SHA256SUMS.txt"
+    }
+  ]
 }

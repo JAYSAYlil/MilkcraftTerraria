@@ -10,13 +10,7 @@
 .	oolsuild.ps1 -TModLoaderPath '你的 tModLoader 安装目录'
 ```
 
-脚本使用已安装 tModLoader 自带的 .NET 和编译器，构建数据写入本仓库 `build-sandbox`，产物复制到 `dist`。不会自动运行游戏、启用模组或赠送试玩物品。
-
-制作公开分发包可加 `-PublicPackage`，需要Python 3。此步骤移除调试符号与构建路径，不更改游戏程序集和素材。
-
-```powershell
-.\tools\build.ps1 -TModLoaderPath '你的 tModLoader 安装目录' -PublicPackage
-```
+脚本使用已安装 tModLoader 自带的 .NET 和编译器，构建数据写入本仓库 `build-sandbox`，产物复制到 `dist`。
 
 制作公开分发包可加 `-PublicPackage`，需要Python 3。此步骤移除调试符号与构建路径，不更改游戏程序集和素材。
 
